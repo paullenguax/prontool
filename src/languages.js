@@ -68,7 +68,7 @@ export const LANGUAGE_DATA = {
             hoverColor: 'hover:bg-green-300',
             cells: [
               { ipa: "t", example: "ten", highlighted: "[t]en", needsSchwa: true },
-{ ipa: "p", example: "pen", highlighted: "[p]en", needsSchwa: true },
+              { ipa: "p", example: "pick", highlighted: "[p]ick", needsSchwa: true },
               { ipa: 'k', example: 'kilo', highlighted: '[k]ilo', needsSchwa: true },
               { ipa: 'f', example: 'fly', highlighted: '[f]ly', needsSchwa: true },
               { ipa: 'θ', example: 'thank', highlighted: '[th]ank', needsSchwa: true },
