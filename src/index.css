@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .font-arabic {
+    font-family: 'Scheherazade New', 'Amiri', serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+  }
+}
+
+
 /* Rest of your CSS below */
 
 :root {

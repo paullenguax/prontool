@@ -1,0 +1,717 @@
+language,section,type,ipa,example,filename
+English (RP),Monophthongs,phoneme,iː,heat,english-phoneme-ee.mp3
+English (RP),Monophthongs,word,,heat,english-word-heat.mp3
+English (RP),Monophthongs,phoneme,ɪ,hit,english-phoneme-ih.mp3
+English (RP),Monophthongs,word,,hit,english-word-hit.mp3
+English (RP),Monophthongs,phoneme,ʊ,put,english-phoneme-uh.mp3
+English (RP),Monophthongs,word,,put,english-word-put.mp3
+English (RP),Monophthongs,phoneme,uː,pool,english-phoneme-oo.mp3
+English (RP),Monophthongs,word,,pool,english-word-pool.mp3
+English (RP),Monophthongs,phoneme,e,bread,english-phoneme-e.mp3
+English (RP),Monophthongs,word,,bread,english-word-bread.mp3
+English (RP),Monophthongs,phoneme,ə,about,english-phoneme-schwa.mp3
+English (RP),Monophthongs,word,,about,english-word-about.mp3
+English (RP),Monophthongs,phoneme,ɜː,world,english-phoneme-er.mp3
+English (RP),Monophthongs,word,,world,english-word-world.mp3
+English (RP),Monophthongs,phoneme,ɔː,horse,english-phoneme-or.mp3
+English (RP),Monophthongs,word,,horse,english-word-horse.mp3
+English (RP),Monophthongs,phoneme,æ,bat,english-phoneme-ae.mp3
+English (RP),Monophthongs,word,,bat,english-word-bat.mp3
+English (RP),Monophthongs,phoneme,ʌ,cup,english-phoneme-Lambda.mp3
+English (RP),Monophthongs,word,,cup,english-word-cup.mp3
+English (RP),Monophthongs,phoneme,aː,bar,english-phoneme-a.mp3
+English (RP),Monophthongs,word,,bar,english-word-bar.mp3
+English (RP),Monophthongs,phoneme,ɒ,hot,english-phoneme-ot.mp3
+English (RP),Monophthongs,word,,hot,english-word-hot.mp3
+English (RP),Diphthongs,phoneme,ɪə,here,english-phoneme-ihschwa.mp3
+English (RP),Diphthongs,word,,here,english-word-here.mp3
+English (RP),Diphthongs,phoneme,eɪ,late,english-phoneme-eih.mp3
+English (RP),Diphthongs,word,,late,english-word-late.mp3
+English (RP),Diphthongs,phoneme,ʊə,tour,english-phoneme-uhschwa.mp3
+English (RP),Diphthongs,word,,tour,english-word-tour.mp3
+English (RP),Diphthongs,phoneme,ɔɪ,toy,english-phoneme-ih.mp3
+English (RP),Diphthongs,word,,toy,english-word-toy.mp3
+English (RP),Diphthongs,phoneme,əʊ,blow,english-phoneme-schwauh.mp3
+English (RP),Diphthongs,word,,blow,english-word-blow.mp3
+English (RP),Diphthongs,phoneme,eə,there,english-phoneme-eschwa.mp3
+English (RP),Diphthongs,word,,there,english-word-there.mp3
+English (RP),Diphthongs,phoneme,aɪ,why,english-phoneme-aih.mp3
+English (RP),Diphthongs,word,,why,english-word-why.mp3
+English (RP),Diphthongs,phoneme,aʊ,how,english-phoneme-auh.mp3
+English (RP),Diphthongs,word,,how,english-word-how.mp3
+English (RP),Consonants,phoneme,t,ten,english-phoneme-t.mp3
+English (RP),Consonants,word,,ten,english-word-ten.mp3
+English (RP),Consonants,phoneme,p,pick,english-phoneme-p.mp3
+English (RP),Consonants,word,,pick,english-word-pick.mp3
+English (RP),Consonants,phoneme,k,kilo,english-phoneme-k.mp3
+English (RP),Consonants,word,,kilo,english-word-kilo.mp3
+English (RP),Consonants,phoneme,f,fly,english-phoneme-f.mp3
+English (RP),Consonants,word,,fly,english-word-fly.mp3
+English (RP),Consonants,phoneme,θ,thank,english-phoneme-theta.mp3
+English (RP),Consonants,word,,thank,english-word-thank.mp3
+English (RP),Consonants,phoneme,s,stay,english-phoneme-s.mp3
+English (RP),Consonants,word,,stay,english-word-stay.mp3
+English (RP),Consonants,phoneme,ʃ,ship,english-phoneme-sh.mp3
+English (RP),Consonants,word,,ship,english-word-ship.mp3
+English (RP),Consonants,phoneme,tʃ,choose,english-phoneme-tsh.mp3
+English (RP),Consonants,word,,choose,english-word-choose.mp3
+English (RP),Consonants,phoneme,b,band,english-phoneme-b.mp3
+English (RP),Consonants,word,,band,english-word-band.mp3
+English (RP),Consonants,phoneme,d,dark,english-phoneme-d.mp3
+English (RP),Consonants,word,,dark,english-word-dark.mp3
+English (RP),Consonants,phoneme,g,good,english-phoneme-g.mp3
+English (RP),Consonants,word,,good,english-word-good.mp3
+English (RP),Consonants,phoneme,v,victor,english-phoneme-v.mp3
+English (RP),Consonants,word,,victor,english-word-victor.mp3
+English (RP),Consonants,phoneme,ð,these,english-phoneme-eth.mp3
+English (RP),Consonants,word,,these,english-word-these.mp3
+English (RP),Consonants,phoneme,z,zulu,english-phoneme-z.mp3
+English (RP),Consonants,word,,zulu,english-word-zulu.mp3
+English (RP),Consonants,phoneme,ʒ,pleasure,english-phoneme-zh.mp3
+English (RP),Consonants,word,,pleasure,english-word-pleasure.mp3
+English (RP),Consonants,phoneme,dʒ,job,english-phoneme-dzh.mp3
+English (RP),Consonants,word,,job,english-word-job.mp3
+English (RP),Consonants,phoneme,m,mike,english-phoneme-m.mp3
+English (RP),Consonants,word,,mike,english-word-mike.mp3
+English (RP),Consonants,phoneme,n,november,english-phoneme-n.mp3
+English (RP),Consonants,word,,november,english-word-november.mp3
+English (RP),Consonants,phoneme,ŋ,bring,english-phoneme-ng.mp3
+English (RP),Consonants,word,,bring,english-word-bring.mp3
+English (RP),Consonants,phoneme,j,yankee,english-phoneme-j.mp3
+English (RP),Consonants,word,,yankee,english-word-yankee.mp3
+English (RP),Consonants,phoneme,l,london,english-phoneme-l.mp3
+English (RP),Consonants,word,,london,english-word-london.mp3
+English (RP),Consonants,phoneme,r,robert,english-phoneme-r.mp3
+English (RP),Consonants,word,,robert,english-word-robert.mp3
+English (RP),Consonants,phoneme,w,wednesday,english-phoneme-w.mp3
+English (RP),Consonants,word,,wednesday,english-word-wednesday.mp3
+English (RP),Consonants,phoneme,h,high,english-phoneme-h.mp3
+English (RP),Consonants,word,,high,english-word-high.mp3
+English (General American),Monophthongs,phoneme,i,beet,american_english-phoneme-i.mp3
+English (General American),Monophthongs,word,,beet,american_english-word-beet.mp3
+English (General American),Monophthongs,phoneme,ɪ,bit,american_english-phoneme-ih.mp3
+English (General American),Monophthongs,word,,bit,american_english-word-bit.mp3
+English (General American),Monophthongs,phoneme,ʊ,foot,american_english-phoneme-uh.mp3
+English (General American),Monophthongs,word,,foot,american_english-word-foot.mp3
+English (General American),Monophthongs,phoneme,u,boot,american_english-phoneme-u.mp3
+English (General American),Monophthongs,word,,boot,american_english-word-boot.mp3
+English (General American),Monophthongs,phoneme,e,bait,american_english-phoneme-e.mp3
+English (General American),Monophthongs,word,,bait,american_english-word-bait.mp3
+English (General American),Monophthongs,phoneme,ɛ,bet,american_english-phoneme-.mp3
+English (General American),Monophthongs,word,,bet,american_english-word-bet.mp3
+English (General American),Monophthongs,phoneme,ʌ,cup,american_english-phoneme-Lambda.mp3
+English (General American),Monophthongs,word,,cup,american_english-word-cup.mp3
+English (General American),Monophthongs,phoneme,o,boat,american_english-phoneme-o.mp3
+English (General American),Monophthongs,word,,boat,american_english-word-boat.mp3
+English (General American),Monophthongs,phoneme,æ,cat,american_english-phoneme-ae.mp3
+English (General American),Monophthongs,word,,cat,american_english-word-cat.mp3
+English (General American),Monophthongs,phoneme,ɑ,father,american_english-phoneme-.mp3
+English (General American),Monophthongs,word,,father,american_english-word-father.mp3
+English (General American),Monophthongs,phoneme,ɔ,caught,american_english-phoneme-.mp3
+English (General American),Monophthongs,word,,caught,american_english-word-caught.mp3
+English (General American),Monophthongs,phoneme,ɝ,bird,american_english-phoneme-.mp3
+English (General American),Monophthongs,word,,bird,american_english-word-bird.mp3
+English (General American),Diphthongs,phoneme,eɪ,say,american_english-phoneme-eih.mp3
+English (General American),Diphthongs,word,,say,american_english-word-say.mp3
+English (General American),Diphthongs,phoneme,aɪ,my,american_english-phoneme-aih.mp3
+English (General American),Diphthongs,word,,my,american_english-word-my.mp3
+English (General American),Diphthongs,phoneme,ɔɪ,boy,american_english-phoneme-ih.mp3
+English (General American),Diphthongs,word,,boy,american_english-word-boy.mp3
+English (General American),Diphthongs,phoneme,aʊ,now,american_english-phoneme-auh.mp3
+English (General American),Diphthongs,word,,now,american_english-word-now.mp3
+English (General American),Diphthongs,phoneme,oʊ,go,american_english-phoneme-ouh.mp3
+English (General American),Diphthongs,word,,go,american_english-word-go.mp3
+English (General American),Diphthongs,phoneme,ju,few,american_english-phoneme-ju.mp3
+English (General American),Diphthongs,word,,few,american_english-word-few.mp3
+English (General American),Consonants,phoneme,p,pen,american_english-phoneme-p.mp3
+English (General American),Consonants,word,,pen,american_english-word-pen.mp3
+English (General American),Consonants,phoneme,t,ten,american_english-phoneme-t.mp3
+English (General American),Consonants,word,,ten,american_english-word-ten.mp3
+English (General American),Consonants,phoneme,k,cat,american_english-phoneme-k.mp3
+English (General American),Consonants,word,,cat,american_english-word-cat.mp3
+English (General American),Consonants,phoneme,f,fan,american_english-phoneme-f.mp3
+English (General American),Consonants,word,,fan,american_english-word-fan.mp3
+English (General American),Consonants,phoneme,θ,think,american_english-phoneme-theta.mp3
+English (General American),Consonants,word,,think,american_english-word-think.mp3
+English (General American),Consonants,phoneme,s,see,american_english-phoneme-s.mp3
+English (General American),Consonants,word,,see,american_english-word-see.mp3
+English (General American),Consonants,phoneme,ʃ,shoe,american_english-phoneme-sh.mp3
+English (General American),Consonants,word,,shoe,american_english-word-shoe.mp3
+English (General American),Consonants,phoneme,tʃ,church,american_english-phoneme-tsh.mp3
+English (General American),Consonants,word,,church,american_english-word-church.mp3
+English (General American),Consonants,phoneme,b,bat,american_english-phoneme-b.mp3
+English (General American),Consonants,word,,bat,american_english-word-bat.mp3
+English (General American),Consonants,phoneme,d,dog,american_english-phoneme-d.mp3
+English (General American),Consonants,word,,dog,american_english-word-dog.mp3
+English (General American),Consonants,phoneme,g,go,american_english-phoneme-g.mp3
+English (General American),Consonants,word,,go,american_english-word-go.mp3
+English (General American),Consonants,phoneme,v,van,american_english-phoneme-v.mp3
+English (General American),Consonants,word,,van,american_english-word-van.mp3
+English (General American),Consonants,phoneme,ð,this,american_english-phoneme-eth.mp3
+English (General American),Consonants,word,,this,american_english-word-this.mp3
+English (General American),Consonants,phoneme,z,zoo,american_english-phoneme-z.mp3
+English (General American),Consonants,word,,zoo,american_english-word-zoo.mp3
+English (General American),Consonants,phoneme,ʒ,measure,american_english-phoneme-zh.mp3
+English (General American),Consonants,word,,measure,american_english-word-measure.mp3
+English (General American),Consonants,phoneme,dʒ,judge,american_english-phoneme-dzh.mp3
+English (General American),Consonants,word,,judge,american_english-word-judge.mp3
+Spanish (Castilian),Vowels,phoneme,i,sí,spanish-phoneme-i.mp3
+Spanish (Castilian),Vowels,word,,sí,spanish-word-s.mp3
+Spanish (Castilian),Vowels,phoneme,e,mes,spanish-phoneme-e.mp3
+Spanish (Castilian),Vowels,word,,mes,spanish-word-mes.mp3
+Spanish (Castilian),Vowels,phoneme,a,casa,spanish-phoneme-a.mp3
+Spanish (Castilian),Vowels,word,,casa,spanish-word-casa.mp3
+Spanish (Castilian),Vowels,phoneme,o,sol,spanish-phoneme-o.mp3
+Spanish (Castilian),Vowels,word,,sol,spanish-word-sol.mp3
+Spanish (Castilian),Vowels,phoneme,u,tú,spanish-phoneme-u.mp3
+Spanish (Castilian),Vowels,word,,tú,spanish-word-t.mp3
+Spanish (Castilian),Diphthongs,phoneme,ai̯,baile,spanish-phoneme-ai.mp3
+Spanish (Castilian),Diphthongs,word,,baile,spanish-word-baile.mp3
+Spanish (Castilian),Diphthongs,phoneme,ei̯,seis,spanish-phoneme-ei.mp3
+Spanish (Castilian),Diphthongs,word,,seis,spanish-word-seis.mp3
+Spanish (Castilian),Diphthongs,phoneme,au̯,auto,spanish-phoneme-au.mp3
+Spanish (Castilian),Diphthongs,word,,auto,spanish-word-auto.mp3
+Spanish (Castilian),Consonants,phoneme,p,padre,spanish-phoneme-p.mp3
+Spanish (Castilian),Consonants,word,,padre,spanish-word-padre.mp3
+Spanish (Castilian),Consonants,phoneme,t,toro,spanish-phoneme-t.mp3
+Spanish (Castilian),Consonants,word,,toro,spanish-word-toro.mp3
+Spanish (Castilian),Consonants,phoneme,k,casa,spanish-phoneme-k.mp3
+Spanish (Castilian),Consonants,word,,casa,spanish-word-casa.mp3
+Spanish (Castilian),Consonants,phoneme,f,foco,spanish-phoneme-f.mp3
+Spanish (Castilian),Consonants,word,,foco,spanish-word-foco.mp3
+Spanish (Castilian),Consonants,phoneme,s,sol,spanish-phoneme-s.mp3
+Spanish (Castilian),Consonants,word,,sol,spanish-word-sol.mp3
+Spanish (Castilian),Consonants,phoneme,tʃ,chico,spanish-phoneme-tsh.mp3
+Spanish (Castilian),Consonants,word,,chico,spanish-word-chico.mp3
+Spanish (Castilian),Consonants,phoneme,b,barco,spanish-phoneme-b.mp3
+Spanish (Castilian),Consonants,word,,barco,spanish-word-barco.mp3
+Spanish (Castilian),Consonants,phoneme,d,dedo,spanish-phoneme-d.mp3
+Spanish (Castilian),Consonants,word,,dedo,spanish-word-dedo.mp3
+Spanish (Castilian),Consonants,phoneme,g,gato,spanish-phoneme-g.mp3
+Spanish (Castilian),Consonants,word,,gato,spanish-word-gato.mp3
+Spanish (Castilian),Consonants,phoneme,x,jota,spanish-phoneme-x.mp3
+Spanish (Castilian),Consonants,word,,jota,spanish-word-jota.mp3
+Spanish (Castilian),Consonants,phoneme,m,mano,spanish-phoneme-m.mp3
+Spanish (Castilian),Consonants,word,,mano,spanish-word-mano.mp3
+Spanish (Castilian),Consonants,phoneme,n,nada,spanish-phoneme-n.mp3
+Spanish (Castilian),Consonants,word,,nada,spanish-word-nada.mp3
+Spanish (Castilian),Consonants,phoneme,ɲ,niño,spanish-phoneme-.mp3
+Spanish (Castilian),Consonants,word,,niño,spanish-word-nio.mp3
+Spanish (Castilian),Consonants,phoneme,l,lado,spanish-phoneme-l.mp3
+Spanish (Castilian),Consonants,word,,lado,spanish-word-lado.mp3
+Spanish (Castilian),Consonants,phoneme,ʎ,llave,spanish-phoneme-.mp3
+Spanish (Castilian),Consonants,word,,llave,spanish-word-llave.mp3
+Spanish (Castilian),Consonants,phoneme,r,perro,spanish-phoneme-r.mp3
+Spanish (Castilian),Consonants,word,,perro,spanish-word-perro.mp3
+French (Parisian),Oral Vowels,phoneme,i,si,french-phoneme-i.mp3
+French (Parisian),Oral Vowels,word,,si,french-word-si.mp3
+French (Parisian),Oral Vowels,phoneme,y,tu,french-phoneme-y.mp3
+French (Parisian),Oral Vowels,word,,tu,french-word-tu.mp3
+French (Parisian),Oral Vowels,phoneme,u,vous,french-phoneme-u.mp3
+French (Parisian),Oral Vowels,word,,vous,french-word-vous.mp3
+French (Parisian),Oral Vowels,phoneme,e,été,french-phoneme-e.mp3
+French (Parisian),Oral Vowels,word,,été,french-word-t.mp3
+French (Parisian),Oral Vowels,phoneme,ø,deux,french-phoneme-.mp3
+French (Parisian),Oral Vowels,word,,deux,french-word-deux.mp3
+French (Parisian),Oral Vowels,phoneme,o,beau,french-phoneme-o.mp3
+French (Parisian),Oral Vowels,word,,beau,french-word-beau.mp3
+French (Parisian),Oral Vowels,phoneme,ɛ,belle,french-phoneme-.mp3
+French (Parisian),Oral Vowels,word,,belle,french-word-belle.mp3
+French (Parisian),Oral Vowels,phoneme,œ,peur,french-phoneme-.mp3
+French (Parisian),Oral Vowels,word,,peur,french-word-peur.mp3
+French (Parisian),Oral Vowels,phoneme,ɔ,porte,french-phoneme-.mp3
+French (Parisian),Oral Vowels,word,,porte,french-word-porte.mp3
+French (Parisian),Oral Vowels,phoneme,a,patte,french-phoneme-a.mp3
+French (Parisian),Oral Vowels,word,,patte,french-word-patte.mp3
+French (Parisian),Oral Vowels,phoneme,ə,le,french-phoneme-schwa.mp3
+French (Parisian),Oral Vowels,word,,le,french-word-le.mp3
+French (Parisian),Nasal Vowels,phoneme,ɛ̃,vin,french-phoneme-en.mp3
+French (Parisian),Nasal Vowels,word,,vin,french-word-vin.mp3
+French (Parisian),Nasal Vowels,phoneme,œ̃,un,french-phoneme-oen.mp3
+French (Parisian),Nasal Vowels,word,,un,french-word-un.mp3
+French (Parisian),Nasal Vowels,phoneme,ɑ̃,blanc,french-phoneme-an.mp3
+French (Parisian),Nasal Vowels,word,,blanc,french-word-blanc.mp3
+French (Parisian),Nasal Vowels,phoneme,ɔ̃,bon,french-phoneme-on.mp3
+French (Parisian),Nasal Vowels,word,,bon,french-word-bon.mp3
+French (Parisian),Consonants,phoneme,p,pain,french-phoneme-p.mp3
+French (Parisian),Consonants,word,,pain,french-word-pain.mp3
+French (Parisian),Consonants,phoneme,t,tu,french-phoneme-t.mp3
+French (Parisian),Consonants,word,,tu,french-word-tu.mp3
+French (Parisian),Consonants,phoneme,k,coeur,french-phoneme-k.mp3
+French (Parisian),Consonants,word,,coeur,french-word-coeur.mp3
+French (Parisian),Consonants,phoneme,f,feu,french-phoneme-f.mp3
+French (Parisian),Consonants,word,,feu,french-word-feu.mp3
+French (Parisian),Consonants,phoneme,s,sous,french-phoneme-s.mp3
+French (Parisian),Consonants,word,,sous,french-word-sous.mp3
+French (Parisian),Consonants,phoneme,ʃ,chat,french-phoneme-sh.mp3
+French (Parisian),Consonants,word,,chat,french-word-chat.mp3
+French (Parisian),Consonants,phoneme,b,bain,french-phoneme-b.mp3
+French (Parisian),Consonants,word,,bain,french-word-bain.mp3
+French (Parisian),Consonants,phoneme,d,doux,french-phoneme-d.mp3
+French (Parisian),Consonants,word,,doux,french-word-doux.mp3
+French (Parisian),Consonants,phoneme,g,gare,french-phoneme-g.mp3
+French (Parisian),Consonants,word,,gare,french-word-gare.mp3
+French (Parisian),Consonants,phoneme,v,vous,french-phoneme-v.mp3
+French (Parisian),Consonants,word,,vous,french-word-vous.mp3
+French (Parisian),Consonants,phoneme,z,rose,french-phoneme-z.mp3
+French (Parisian),Consonants,word,,rose,french-word-rose.mp3
+French (Parisian),Consonants,phoneme,ʒ,je,french-phoneme-zh.mp3
+French (Parisian),Consonants,word,,je,french-word-je.mp3
+French (Parisian),Consonants,phoneme,m,mais,french-phoneme-m.mp3
+French (Parisian),Consonants,word,,mais,french-word-mais.mp3
+French (Parisian),Consonants,phoneme,n,non,french-phoneme-n.mp3
+French (Parisian),Consonants,word,,non,french-word-non.mp3
+French (Parisian),Consonants,phoneme,ɲ,agneau,french-phoneme-.mp3
+French (Parisian),Consonants,word,,agneau,french-word-agneau.mp3
+French (Parisian),Consonants,phoneme,l,lui,french-phoneme-l.mp3
+French (Parisian),Consonants,word,,lui,french-word-lui.mp3
+French (Parisian),Consonants,phoneme,ʁ,rue,french-phoneme-.mp3
+French (Parisian),Consonants,word,,rue,french-word-rue.mp3
+Italian (Standard),Vowels,phoneme,i,vino,italian-phoneme-i.mp3
+Italian (Standard),Vowels,word,,vino,italian-word-vino.mp3
+Italian (Standard),Vowels,phoneme,e,mela,italian-phoneme-e.mp3
+Italian (Standard),Vowels,word,,mela,italian-word-mela.mp3
+Italian (Standard),Vowels,phoneme,ɛ,bello,italian-phoneme-.mp3
+Italian (Standard),Vowels,word,,bello,italian-word-bello.mp3
+Italian (Standard),Vowels,phoneme,a,casa,italian-phoneme-a.mp3
+Italian (Standard),Vowels,word,,casa,italian-word-casa.mp3
+Italian (Standard),Vowels,phoneme,ɔ,cosa,italian-phoneme-.mp3
+Italian (Standard),Vowels,word,,cosa,italian-word-cosa.mp3
+Italian (Standard),Vowels,phoneme,o,solo,italian-phoneme-o.mp3
+Italian (Standard),Vowels,word,,solo,italian-word-solo.mp3
+Italian (Standard),Vowels,phoneme,u,luna,italian-phoneme-u.mp3
+Italian (Standard),Vowels,word,,luna,italian-word-luna.mp3
+Italian (Standard),Consonants,phoneme,p,pane,italian-phoneme-p.mp3
+Italian (Standard),Consonants,word,,pane,italian-word-pane.mp3
+Italian (Standard),Consonants,phoneme,t,tempo,italian-phoneme-t.mp3
+Italian (Standard),Consonants,word,,tempo,italian-word-tempo.mp3
+Italian (Standard),Consonants,phoneme,k,casa,italian-phoneme-k.mp3
+Italian (Standard),Consonants,word,,casa,italian-word-casa.mp3
+Italian (Standard),Consonants,phoneme,f,fare,italian-phoneme-f.mp3
+Italian (Standard),Consonants,word,,fare,italian-word-fare.mp3
+Italian (Standard),Consonants,phoneme,s,sole,italian-phoneme-s.mp3
+Italian (Standard),Consonants,word,,sole,italian-word-sole.mp3
+Italian (Standard),Consonants,phoneme,tʃ,ciao,italian-phoneme-tsh.mp3
+Italian (Standard),Consonants,word,,ciao,italian-word-ciao.mp3
+Italian (Standard),Consonants,phoneme,b,bello,italian-phoneme-b.mp3
+Italian (Standard),Consonants,word,,bello,italian-word-bello.mp3
+Italian (Standard),Consonants,phoneme,d,dare,italian-phoneme-d.mp3
+Italian (Standard),Consonants,word,,dare,italian-word-dare.mp3
+Italian (Standard),Consonants,phoneme,g,gatto,italian-phoneme-g.mp3
+Italian (Standard),Consonants,word,,gatto,italian-word-gatto.mp3
+Italian (Standard),Consonants,phoneme,v,vino,italian-phoneme-v.mp3
+Italian (Standard),Consonants,word,,vino,italian-word-vino.mp3
+Italian (Standard),Consonants,phoneme,z,zero,italian-phoneme-z.mp3
+Italian (Standard),Consonants,word,,zero,italian-word-zero.mp3
+Italian (Standard),Consonants,phoneme,dʒ,gelo,italian-phoneme-dzh.mp3
+Italian (Standard),Consonants,word,,gelo,italian-word-gelo.mp3
+Italian (Standard),Consonants,phoneme,m,mare,italian-phoneme-m.mp3
+Italian (Standard),Consonants,word,,mare,italian-word-mare.mp3
+Italian (Standard),Consonants,phoneme,n,naso,italian-phoneme-n.mp3
+Italian (Standard),Consonants,word,,naso,italian-word-naso.mp3
+Italian (Standard),Consonants,phoneme,ɲ,gnomo,italian-phoneme-.mp3
+Italian (Standard),Consonants,word,,gnomo,italian-word-gnomo.mp3
+Italian (Standard),Consonants,phoneme,l,latte,italian-phoneme-l.mp3
+Italian (Standard),Consonants,word,,latte,italian-word-latte.mp3
+Italian (Standard),Consonants,phoneme,ʎ,figlio,italian-phoneme-.mp3
+Italian (Standard),Consonants,word,,figlio,italian-word-figlio.mp3
+Italian (Standard),Consonants,phoneme,r,rosso,italian-phoneme-r.mp3
+Italian (Standard),Consonants,word,,rosso,italian-word-rosso.mp3
+Turkish,Vowels,phoneme,i,bir,turkish-phoneme-i.mp3
+Turkish,Vowels,word,,bir,turkish-word-bir.mp3
+Turkish,Vowels,phoneme,y,gül,turkish-phoneme-y.mp3
+Turkish,Vowels,word,,gül,turkish-word-gl.mp3
+Turkish,Vowels,phoneme,ɯ,kız,turkish-phoneme-.mp3
+Turkish,Vowels,word,,kız,turkish-word-kz.mp3
+Turkish,Vowels,phoneme,u,su,turkish-phoneme-u.mp3
+Turkish,Vowels,word,,su,turkish-word-su.mp3
+Turkish,Vowels,phoneme,e,el,turkish-phoneme-e.mp3
+Turkish,Vowels,word,,el,turkish-word-el.mp3
+Turkish,Vowels,phoneme,ø,göz,turkish-phoneme-.mp3
+Turkish,Vowels,word,,göz,turkish-word-gz.mp3
+Turkish,Vowels,phoneme,a,kapı,turkish-phoneme-a.mp3
+Turkish,Vowels,word,,kapı,turkish-word-kap.mp3
+Turkish,Vowels,phoneme,o,okul,turkish-phoneme-o.mp3
+Turkish,Vowels,word,,okul,turkish-word-okul.mp3
+Turkish,Consonants,phoneme,p,para,turkish-phoneme-p.mp3
+Turkish,Consonants,word,,para,turkish-word-para.mp3
+Turkish,Consonants,phoneme,t,tak,turkish-phoneme-t.mp3
+Turkish,Consonants,word,,tak,turkish-word-tak.mp3
+Turkish,Consonants,phoneme,k,kedi,turkish-phoneme-k.mp3
+Turkish,Consonants,word,,kedi,turkish-word-kedi.mp3
+Turkish,Consonants,phoneme,f,fener,turkish-phoneme-f.mp3
+Turkish,Consonants,word,,fener,turkish-word-fener.mp3
+Turkish,Consonants,phoneme,s,sarı,turkish-phoneme-s.mp3
+Turkish,Consonants,word,,sarı,turkish-word-sar.mp3
+Turkish,Consonants,phoneme,ʃ,şarap,turkish-phoneme-sh.mp3
+Turkish,Consonants,word,,şarap,turkish-word-arap.mp3
+Turkish,Consonants,phoneme,tʃ,çay,turkish-phoneme-tsh.mp3
+Turkish,Consonants,word,,çay,turkish-word-ay.mp3
+Turkish,Consonants,phoneme,b,bal,turkish-phoneme-b.mp3
+Turkish,Consonants,word,,bal,turkish-word-bal.mp3
+Turkish,Consonants,phoneme,d,dağ,turkish-phoneme-d.mp3
+Turkish,Consonants,word,,dağ,turkish-word-da.mp3
+Turkish,Consonants,phoneme,g,gaz,turkish-phoneme-g.mp3
+Turkish,Consonants,word,,gaz,turkish-word-gaz.mp3
+Turkish,Consonants,phoneme,v,ver,turkish-phoneme-v.mp3
+Turkish,Consonants,word,,ver,turkish-word-ver.mp3
+Turkish,Consonants,phoneme,z,zaman,turkish-phoneme-z.mp3
+Turkish,Consonants,word,,zaman,turkish-word-zaman.mp3
+Turkish,Consonants,phoneme,ʒ,jilet,turkish-phoneme-zh.mp3
+Turkish,Consonants,word,,jilet,turkish-word-jilet.mp3
+Turkish,Consonants,phoneme,m,masa,turkish-phoneme-m.mp3
+Turkish,Consonants,word,,masa,turkish-word-masa.mp3
+Turkish,Consonants,phoneme,n,nohut,turkish-phoneme-n.mp3
+Turkish,Consonants,word,,nohut,turkish-word-nohut.mp3
+Turkish,Consonants,phoneme,ɾ,araba,turkish-phoneme-.mp3
+Turkish,Consonants,word,,araba,turkish-word-araba.mp3
+Turkish,Consonants,phoneme,l,lale,turkish-phoneme-l.mp3
+Turkish,Consonants,word,,lale,turkish-word-lale.mp3
+Turkish,Consonants,phoneme,j,yeni,turkish-phoneme-j.mp3
+Turkish,Consonants,word,,yeni,turkish-word-yeni.mp3
+Turkish,Consonants,phoneme,w,,turkish-phoneme-w.mp3
+Russian,Vowels,phoneme,i,мир mir,russian-phoneme-i.mp3
+Russian,Vowels,word,,мир mir,russian-word-mir.mp3
+Russian,Vowels,phoneme,ɨ,мы my,russian-phoneme-.mp3
+Russian,Vowels,word,,мы my,russian-word-my.mp3
+Russian,Vowels,phoneme,u,ум um,russian-phoneme-u.mp3
+Russian,Vowels,word,,ум um,russian-word-um.mp3
+Russian,Vowels,phoneme,e,это eto,russian-phoneme-e.mp3
+Russian,Vowels,word,,это eto,russian-word-eto.mp3
+Russian,Vowels,phoneme,o,он on,russian-phoneme-o.mp3
+Russian,Vowels,word,,он on,russian-word-on.mp3
+Russian,Vowels,phoneme,a,дай dai,russian-phoneme-a.mp3
+Russian,Vowels,word,,дай dai,russian-word-dai.mp3
+Russian,Consonants,phoneme,p,пар par,russian-phoneme-p.mp3
+Russian,Consonants,word,,пар par,russian-word-par.mp3
+Russian,Consonants,phoneme,pʲ,пять pyatʲ,russian-phoneme-p.mp3
+Russian,Consonants,word,,пять pyatʲ,russian-word-pyat.mp3
+Russian,Consonants,phoneme,t,там tam,russian-phoneme-t.mp3
+Russian,Consonants,word,,там tam,russian-word-tam.mp3
+Russian,Consonants,phoneme,tʲ,тень tenʲ,russian-phoneme-t.mp3
+Russian,Consonants,word,,тень tenʲ,russian-word-ten.mp3
+Russian,Consonants,phoneme,k,кот kot,russian-phoneme-k.mp3
+Russian,Consonants,word,,кот kot,russian-word-kot.mp3
+Russian,Consonants,phoneme,kʲ,кит kit,russian-phoneme-k.mp3
+Russian,Consonants,word,,кит kit,russian-word-kit.mp3
+Russian,Consonants,phoneme,b,был byl,russian-phoneme-b.mp3
+Russian,Consonants,word,,был byl,russian-word-byl.mp3
+Russian,Consonants,phoneme,bʲ,бить bitʲ,russian-phoneme-b.mp3
+Russian,Consonants,word,,бить bitʲ,russian-word-bit.mp3
+Russian,Consonants,phoneme,d,дом dom,russian-phoneme-d.mp3
+Russian,Consonants,word,,дом dom,russian-word-dom.mp3
+Russian,Consonants,phoneme,dʲ,день denʲ,russian-phoneme-d.mp3
+Russian,Consonants,word,,день denʲ,russian-word-den.mp3
+Russian,Consonants,phoneme,g,год god,russian-phoneme-g.mp3
+Russian,Consonants,word,,год god,russian-word-god.mp3
+Russian,Consonants,phoneme,gʲ,гид gid,russian-phoneme-g.mp3
+Russian,Consonants,word,,гид gid,russian-word-gid.mp3
+Portuguese (Brazilian),Oral Vowels,phoneme,i,si,portuguese-phoneme-i.mp3
+Portuguese (Brazilian),Oral Vowels,word,,si,portuguese-word-si.mp3
+Portuguese (Brazilian),Oral Vowels,phoneme,e,vê,portuguese-phoneme-e.mp3
+Portuguese (Brazilian),Oral Vowels,word,,vê,portuguese-word-v.mp3
+Portuguese (Brazilian),Oral Vowels,phoneme,ɛ,pé,portuguese-phoneme-.mp3
+Portuguese (Brazilian),Oral Vowels,word,,pé,portuguese-word-p.mp3
+Portuguese (Brazilian),Oral Vowels,phoneme,a,lá,portuguese-phoneme-a.mp3
+Portuguese (Brazilian),Oral Vowels,word,,lá,portuguese-word-la2.mp3
+Portuguese (Brazilian),Oral Vowels,phoneme,ɔ,pó,portuguese-phoneme-.mp3
+Portuguese (Brazilian),Oral Vowels,word,,pó,portuguese-word-p.mp3
+Portuguese (Brazilian),Oral Vowels,phoneme,o,avô,portuguese-phoneme-o.mp3
+Portuguese (Brazilian),Oral Vowels,word,,avô,portuguese-word-av.mp3
+Portuguese (Brazilian),Oral Vowels,phoneme,u,tu,portuguese-phoneme-u.mp3
+Portuguese (Brazilian),Oral Vowels,word,,tu,portuguese-word-tu.mp3
+Portuguese (Brazilian),Nasal Vowels,phoneme,ĩ,fim,portuguese-phoneme-.mp3
+Portuguese (Brazilian),Nasal Vowels,word,,fim,portuguese-word-fim.mp3
+Portuguese (Brazilian),Nasal Vowels,phoneme,ẽ,bem,portuguese-phoneme-.mp3
+Portuguese (Brazilian),Nasal Vowels,word,,bem,portuguese-word-bem.mp3
+Portuguese (Brazilian),Nasal Vowels,phoneme,ã,cão,portuguese-phoneme-.mp3
+Portuguese (Brazilian),Nasal Vowels,word,,cão,portuguese-word-co.mp3
+Portuguese (Brazilian),Nasal Vowels,phoneme,õ,som,portuguese-phoneme-.mp3
+Portuguese (Brazilian),Nasal Vowels,word,,som,portuguese-word-som.mp3
+Portuguese (Brazilian),Nasal Vowels,phoneme,ũ,um,portuguese-phoneme-.mp3
+Portuguese (Brazilian),Nasal Vowels,word,,um,portuguese-word-um.mp3
+Portuguese (Brazilian),Consonants,phoneme,p,pão,portuguese-phoneme-p.mp3
+Portuguese (Brazilian),Consonants,word,,pão,portuguese-word-po.mp3
+Portuguese (Brazilian),Consonants,phoneme,t,tudo,portuguese-phoneme-t.mp3
+Portuguese (Brazilian),Consonants,word,,tudo,portuguese-word-tudo.mp3
+Portuguese (Brazilian),Consonants,phoneme,k,casa,portuguese-phoneme-k.mp3
+Portuguese (Brazilian),Consonants,word,,casa,portuguese-word-casa.mp3
+Portuguese (Brazilian),Consonants,phoneme,f,fazer,portuguese-phoneme-f.mp3
+Portuguese (Brazilian),Consonants,word,,fazer,portuguese-word-fazer.mp3
+Portuguese (Brazilian),Consonants,phoneme,s,sol,portuguese-phoneme-s.mp3
+Portuguese (Brazilian),Consonants,word,,sol,portuguese-word-sol.mp3
+Portuguese (Brazilian),Consonants,phoneme,ʃ,chá,portuguese-phoneme-sh.mp3
+Portuguese (Brazilian),Consonants,word,,chá,portuguese-word-cha2.mp3
+Portuguese (Brazilian),Consonants,phoneme,b,bom,portuguese-phoneme-b.mp3
+Portuguese (Brazilian),Consonants,word,,bom,portuguese-word-bom.mp3
+Portuguese (Brazilian),Consonants,phoneme,d,dia,portuguese-phoneme-d.mp3
+Portuguese (Brazilian),Consonants,word,,dia,portuguese-word-dia.mp3
+Portuguese (Brazilian),Consonants,phoneme,g,gato,portuguese-phoneme-g.mp3
+Portuguese (Brazilian),Consonants,word,,gato,portuguese-word-gato.mp3
+Portuguese (Brazilian),Consonants,phoneme,v,voz,portuguese-phoneme-v.mp3
+Portuguese (Brazilian),Consonants,word,,voz,portuguese-word-voz.mp3
+Portuguese (Brazilian),Consonants,phoneme,z,zero,portuguese-phoneme-z.mp3
+Portuguese (Brazilian),Consonants,word,,zero,portuguese-word-zero.mp3
+Portuguese (Brazilian),Consonants,phoneme,ʒ,já,portuguese-phoneme-zh.mp3
+Portuguese (Brazilian),Consonants,word,,já,portuguese-word-ja2.mp3
+Mandarin Chinese,Initials (声母),phoneme,p,八 bā,mandarin-phoneme-p.mp3
+Mandarin Chinese,Initials (声母),word,,八 bā,mandarin-word-ba1.mp3
+Mandarin Chinese,Initials (声母),phoneme,t,大 dà,mandarin-phoneme-t.mp3
+Mandarin Chinese,Initials (声母),word,,大 dà,mandarin-word-da4.mp3
+Mandarin Chinese,Initials (声母),phoneme,k,个 gè,mandarin-phoneme-k.mp3
+Mandarin Chinese,Initials (声母),word,,个 gè,mandarin-word-g.mp3
+Mandarin Chinese,Initials (声母),phoneme,ts,早 zǎo,mandarin-phoneme-ts.mp3
+Mandarin Chinese,Initials (声母),word,,早 zǎo,mandarin-word-za3o.mp3
+Mandarin Chinese,Initials (声母),phoneme,tʂ,中 zhōng,mandarin-phoneme-t.mp3
+Mandarin Chinese,Initials (声母),word,,中 zhōng,mandarin-word-zhng.mp3
+Mandarin Chinese,Initials (声母),phoneme,tɕ,家 jiā,mandarin-phoneme-t.mp3
+Mandarin Chinese,Initials (声母),word,,家 jiā,mandarin-word-jia1.mp3
+Mandarin Chinese,Initials (声母),phoneme,pʰ,怕 pà,mandarin-phoneme-p.mp3
+Mandarin Chinese,Initials (声母),word,,怕 pà,mandarin-word-pa4.mp3
+Mandarin Chinese,Initials (声母),phoneme,tʰ,他 tā,mandarin-phoneme-t.mp3
+Mandarin Chinese,Initials (声母),word,,他 tā,mandarin-word-ta1.mp3
+Mandarin Chinese,Initials (声母),phoneme,kʰ,卡 kǎ,mandarin-phoneme-k.mp3
+Mandarin Chinese,Initials (声母),word,,卡 kǎ,mandarin-word-ka3.mp3
+Mandarin Chinese,Initials (声母),phoneme,tsʰ,草 cǎo,mandarin-phoneme-ts.mp3
+Mandarin Chinese,Initials (声母),word,,草 cǎo,mandarin-word-ca3o.mp3
+Mandarin Chinese,Initials (声母),phoneme,tʂʰ,车 chē,mandarin-phoneme-t.mp3
+Mandarin Chinese,Initials (声母),word,,车 chē,mandarin-word-ch.mp3
+Mandarin Chinese,Initials (声母),phoneme,tɕʰ,七 qī,mandarin-phoneme-t.mp3
+Mandarin Chinese,Initials (声母),word,,七 qī,mandarin-word-q.mp3
+Mandarin Chinese,Initials (声母),phoneme,f,发 fā,mandarin-phoneme-f.mp3
+Mandarin Chinese,Initials (声母),word,,发 fā,mandarin-word-fa1.mp3
+Mandarin Chinese,Initials (声母),phoneme,s,三 sān,mandarin-phoneme-s.mp3
+Mandarin Chinese,Initials (声母),word,,三 sān,mandarin-word-sa1n.mp3
+Mandarin Chinese,Initials (声母),phoneme,ʂ,是 shì,mandarin-phoneme-.mp3
+Mandarin Chinese,Initials (声母),word,,是 shì,mandarin-word-sh.mp3
+Mandarin Chinese,Initials (声母),phoneme,ɕ,西 xī,mandarin-phoneme-.mp3
+Mandarin Chinese,Initials (声母),word,,西 xī,mandarin-word-x.mp3
+Mandarin Chinese,Initials (声母),phoneme,x,好 hǎo,mandarin-phoneme-x.mp3
+Mandarin Chinese,Initials (声母),word,,好 hǎo,mandarin-word-ha3o.mp3
+Mandarin Chinese,Initials (声母),phoneme,m,马 mǎ,mandarin-phoneme-m.mp3
+Mandarin Chinese,Initials (声母),word,,马 mǎ,mandarin-word-ma3.mp3
+Mandarin Chinese,Initials (声母),phoneme,n,你 nǐ,mandarin-phoneme-n.mp3
+Mandarin Chinese,Initials (声母),word,,你 nǐ,mandarin-word-n.mp3
+Mandarin Chinese,Initials (声母),phoneme,l,来 lái,mandarin-phoneme-l.mp3
+Mandarin Chinese,Initials (声母),word,,来 lái,mandarin-word-la2i.mp3
+Mandarin Chinese,Initials (声母),phoneme,ɻ,人 rén,mandarin-phoneme-.mp3
+Mandarin Chinese,Initials (声母),word,,人 rén,mandarin-word-rn.mp3
+Mandarin Chinese,Finals (韵母),phoneme,a,啊 ā,mandarin-phoneme-a.mp3
+Mandarin Chinese,Finals (韵母),word,,啊 ā,mandarin-word-a1.mp3
+Mandarin Chinese,Finals (韵母),phoneme,o,哦 ō,mandarin-phoneme-o.mp3
+Mandarin Chinese,Finals (韵母),word,,哦 ō,mandarin-word-.mp3
+Mandarin Chinese,Finals (韵母),phoneme,ɤ,饿 è,mandarin-phoneme-.mp3
+Mandarin Chinese,Finals (韵母),word,,饿 è,mandarin-word-.mp3
+Mandarin Chinese,Finals (韵母),phoneme,i,衣 yī,mandarin-phoneme-i.mp3
+Mandarin Chinese,Finals (韵母),word,,衣 yī,mandarin-word-y.mp3
+Mandarin Chinese,Finals (韵母),phoneme,u,五 wǔ,mandarin-phoneme-u.mp3
+Mandarin Chinese,Finals (韵母),word,,五 wǔ,mandarin-word-w.mp3
+Mandarin Chinese,Finals (韵母),phoneme,y,鱼 yú,mandarin-phoneme-y.mp3
+Mandarin Chinese,Finals (韵母),word,,鱼 yú,mandarin-word-y.mp3
+Mandarin Chinese,Finals (韵母),phoneme,ai,爱 ài,mandarin-phoneme-ai.mp3
+Mandarin Chinese,Finals (韵母),word,,爱 ài,mandarin-word-a4i.mp3
+Mandarin Chinese,Finals (韵母),phoneme,ei,诶 éi,mandarin-phoneme-ei.mp3
+Mandarin Chinese,Finals (韵母),word,,诶 éi,mandarin-word-i.mp3
+Mandarin Chinese,Finals (韵母),phoneme,au,奥 ào,mandarin-phoneme-au.mp3
+Mandarin Chinese,Finals (韵母),word,,奥 ào,mandarin-word-a4o.mp3
+Mandarin Chinese,Finals (韵母),phoneme,ou,欧 ōu,mandarin-phoneme-ou.mp3
+Mandarin Chinese,Finals (韵母),word,,欧 ōu,mandarin-word-u.mp3
+Mandarin Chinese,Finals (韵母),phoneme,an,安 ān,mandarin-phoneme-an.mp3
+Mandarin Chinese,Finals (韵母),word,,安 ān,mandarin-word-a1n.mp3
+Mandarin Chinese,Finals (韵母),phoneme,ən,恩 ēn,mandarin-phoneme-schwan.mp3
+Mandarin Chinese,Finals (韵母),word,,恩 ēn,mandarin-word-n.mp3
+Mandarin Chinese,Finals (韵母),phoneme,aŋ,昂 áng,mandarin-phoneme-ang.mp3
+Mandarin Chinese,Finals (韵母),word,,昂 áng,mandarin-word-a2ng.mp3
+Mandarin Chinese,Finals (韵母),phoneme,əŋ,鞥 ēng,mandarin-phoneme-schwang.mp3
+Mandarin Chinese,Finals (韵母),word,,鞥 ēng,mandarin-word-ng.mp3
+Mandarin Chinese,Finals (韵母),phoneme,ia,呀 yā,mandarin-phoneme-ia.mp3
+Mandarin Chinese,Finals (韵母),word,,呀 yā,mandarin-word-ya1.mp3
+Mandarin Chinese,Finals (韵母),phoneme,ie,耶 yē,mandarin-phoneme-ie.mp3
+Mandarin Chinese,Finals (韵母),word,,耶 yē,mandarin-word-y.mp3
+Mandarin Chinese,Finals (韵母),phoneme,ua,蛙 wā,mandarin-phoneme-ua.mp3
+Mandarin Chinese,Finals (韵母),word,,蛙 wā,mandarin-word-wa1.mp3
+Mandarin Chinese,Finals (韵母),phoneme,uo,窝 wō,mandarin-phoneme-uo.mp3
+Mandarin Chinese,Finals (韵母),word,,窝 wō,mandarin-word-w.mp3
+Mandarin Chinese,Finals (韵母),phoneme,yɛ,月 yuè,mandarin-phoneme-y.mp3
+Mandarin Chinese,Finals (韵母),word,,月 yuè,mandarin-word-yu.mp3
+Mandarin Chinese,Finals (韵母),phoneme,iau,腰 yāo,mandarin-phoneme-iau.mp3
+Mandarin Chinese,Finals (韵母),word,,腰 yāo,mandarin-word-ya1o.mp3
+Mandarin Chinese,Finals (韵母),phoneme,iou,优 yōu,mandarin-phoneme-iou.mp3
+Mandarin Chinese,Finals (韵母),word,,优 yōu,mandarin-word-yu.mp3
+Mandarin Chinese,Finals (韵母),phoneme,uai,歪 wāi,mandarin-phoneme-uai.mp3
+Mandarin Chinese,Finals (韵母),word,,歪 wāi,mandarin-word-wa1i.mp3
+Mandarin Chinese,Finals (韵母),phoneme,uei,威 wēi,mandarin-phoneme-uei.mp3
+Mandarin Chinese,Finals (韵母),word,,威 wēi,mandarin-word-wi.mp3
+Mandarin Chinese,Tones (声调),tone,mā,妈 (mother),mandarin-tone-ma1.mp3
+Mandarin Chinese,Tones (声调),tone,má,麻 (hemp),mandarin-tone-ma2.mp3
+Mandarin Chinese,Tones (声调),tone,mǎ,马 (horse),mandarin-tone-ma3.mp3
+Mandarin Chinese,Tones (声调),tone,mà,骂 (scold),mandarin-tone-ma4.mp3
+Mandarin Chinese,Tones (声调),tone,ma,吗 (question),mandarin-tone-ma.mp3
+Japanese (Tokyo),Vowels,phoneme,a,あか aka,japanese-phoneme-a.mp3
+Japanese (Tokyo),Vowels,word,,あか aka,japanese-word-aka.mp3
+Japanese (Tokyo),Vowels,phoneme,i,いぬ inu,japanese-phoneme-i.mp3
+Japanese (Tokyo),Vowels,word,,いぬ inu,japanese-word-inu.mp3
+Japanese (Tokyo),Vowels,phoneme,ɯ,うま uma,japanese-phoneme-.mp3
+Japanese (Tokyo),Vowels,word,,うま uma,japanese-word-uma.mp3
+Japanese (Tokyo),Vowels,phoneme,e,えき eki,japanese-phoneme-e.mp3
+Japanese (Tokyo),Vowels,word,,えき eki,japanese-word-eki.mp3
+Japanese (Tokyo),Vowels,phoneme,o,おか oka,japanese-phoneme-o.mp3
+Japanese (Tokyo),Vowels,word,,おか oka,japanese-word-oka.mp3
+Japanese (Tokyo),Consonants,phoneme,p,ぱん pan,japanese-phoneme-p.mp3
+Japanese (Tokyo),Consonants,word,,ぱん pan,japanese-word-pan.mp3
+Japanese (Tokyo),Consonants,phoneme,t,たこ tako,japanese-phoneme-t.mp3
+Japanese (Tokyo),Consonants,word,,たこ tako,japanese-word-tako.mp3
+Japanese (Tokyo),Consonants,phoneme,k,かき kaki,japanese-phoneme-k.mp3
+Japanese (Tokyo),Consonants,word,,かき kaki,japanese-word-kaki.mp3
+Japanese (Tokyo),Consonants,phoneme,s,さけ sake,japanese-phoneme-s.mp3
+Japanese (Tokyo),Consonants,word,,さけ sake,japanese-word-sake.mp3
+Japanese (Tokyo),Consonants,phoneme,tɕ,ちず chizu,japanese-phoneme-t.mp3
+Japanese (Tokyo),Consonants,word,,ちず chizu,japanese-word-chizu.mp3
+Japanese (Tokyo),Consonants,phoneme,h,はな hana,japanese-phoneme-h.mp3
+Japanese (Tokyo),Consonants,word,,はな hana,japanese-word-hana.mp3
+Japanese (Tokyo),Consonants,phoneme,b,ばん ban,japanese-phoneme-b.mp3
+Japanese (Tokyo),Consonants,word,,ばん ban,japanese-word-ban.mp3
+Japanese (Tokyo),Consonants,phoneme,d,だれ dare,japanese-phoneme-d.mp3
+Japanese (Tokyo),Consonants,word,,だれ dare,japanese-word-dare.mp3
+Japanese (Tokyo),Consonants,phoneme,g,がく gaku,japanese-phoneme-g.mp3
+Japanese (Tokyo),Consonants,word,,がく gaku,japanese-word-gaku.mp3
+Japanese (Tokyo),Consonants,phoneme,z,ざる zaru,japanese-phoneme-z.mp3
+Japanese (Tokyo),Consonants,word,,ざる zaru,japanese-word-zaru.mp3
+Japanese (Tokyo),Consonants,phoneme,ʑ,じかん jikan,japanese-phoneme-.mp3
+Japanese (Tokyo),Consonants,word,,じかん jikan,japanese-word-jikan.mp3
+Japanese (Tokyo),Consonants,phoneme,ʒ,ージー jī,japanese-phoneme-zh.mp3
+Japanese (Tokyo),Consonants,word,,ージー jī,japanese-word-j.mp3
+Arabic (MSA),Short Vowels (حركات),phoneme,a,كتب (kataba),arabic-phoneme-a.mp3
+Arabic (MSA),Short Vowels (حركات),word,,كتب (kataba),arabic-word-kataba.mp3
+Arabic (MSA),Short Vowels (حركات),phoneme,i,بنت (bint),arabic-phoneme-i.mp3
+Arabic (MSA),Short Vowels (حركات),word,,بنت (bint),arabic-word-bint.mp3
+Arabic (MSA),Short Vowels (حركات),phoneme,u,كتب (kutiba),arabic-phoneme-u.mp3
+Arabic (MSA),Short Vowels (حركات),word,,كتب (kutiba),arabic-word-kutiba.mp3
+Arabic (MSA),Long Vowels,phoneme,aː,باب (baab),arabic-phoneme-a.mp3
+Arabic (MSA),Long Vowels,word,,باب (baab),arabic-word-baab.mp3
+Arabic (MSA),Long Vowels,phoneme,iː,كبير (kabiir),arabic-phoneme-ee.mp3
+Arabic (MSA),Long Vowels,word,,كبير (kabiir),arabic-word-kabiir.mp3
+Arabic (MSA),Long Vowels,phoneme,uː,نور (nuur),arabic-phoneme-oo.mp3
+Arabic (MSA),Long Vowels,word,,نور (nuur),arabic-word-nuur.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,b,باب (baab),arabic-phoneme-b.mp3
+Arabic (MSA),Consonants (الحروف),word,,باب (baab),arabic-word-baab.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,t,تين (tiin),arabic-phoneme-t.mp3
+Arabic (MSA),Consonants (الحروف),word,,تين (tiin),arabic-word-tiin.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,d,دار (daar),arabic-phoneme-d.mp3
+Arabic (MSA),Consonants (الحروف),word,,دار (daar),arabic-word-daar.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,k,كتب (kataba),arabic-phoneme-k.mp3
+Arabic (MSA),Consonants (الحروف),word,,كتب (kataba),arabic-word-kataba.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,q,قلب (qalb),arabic-phoneme-q.mp3
+Arabic (MSA),Consonants (الحروف),word,,قلب (qalb),arabic-word-qalb.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,ʔ,أسد (ʔasad),arabic-phoneme-.mp3
+Arabic (MSA),Consonants (الحروف),word,,أسد (ʔasad),arabic-word-asad.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,tˤ,طير (tˤayr),arabic-phoneme-t.mp3
+Arabic (MSA),Consonants (الحروف),word,,طير (tˤayr),arabic-word-tayr.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,dˤ,ضرب (dˤarab),arabic-phoneme-d.mp3
+Arabic (MSA),Consonants (الحروف),word,,ضرب (dˤarab),arabic-word-darab.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,sˤ,صبر (sˤabr),arabic-phoneme-s.mp3
+Arabic (MSA),Consonants (الحروف),word,,صبر (sˤabr),arabic-word-sabr.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,ðˤ,ظهر (ðˤahr),arabic-phoneme-eth.mp3
+Arabic (MSA),Consonants (الحروف),word,,ظهر (ðˤahr),arabic-word-ethahr.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,f,فم (fam),arabic-phoneme-f.mp3
+Arabic (MSA),Consonants (الحروف),word,,فم (fam),arabic-word-fam.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,θ,ثلج (θalj),arabic-phoneme-theta.mp3
+Arabic (MSA),Consonants (الحروف),word,,ثلج (θalj),arabic-word-thetaalj.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,ð,ذهب (ðahab),arabic-phoneme-eth.mp3
+Arabic (MSA),Consonants (الحروف),word,,ذهب (ðahab),arabic-word-ethahab.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,s,سمك (samak),arabic-phoneme-s.mp3
+Arabic (MSA),Consonants (الحروف),word,,سمك (samak),arabic-word-samak.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,z,زيت (zayt),arabic-phoneme-z.mp3
+Arabic (MSA),Consonants (الحروف),word,,زيت (zayt),arabic-word-zayt.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,ʃ,شمس (ʃams),arabic-phoneme-sh.mp3
+Arabic (MSA),Consonants (الحروف),word,,شمس (ʃams),arabic-word-shams.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,x,خبز (xubz),arabic-phoneme-x.mp3
+Arabic (MSA),Consonants (الحروف),word,,خبز (xubz),arabic-word-xubz.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,ɣ,غرب (ɣarb),arabic-phoneme-.mp3
+Arabic (MSA),Consonants (الحروف),word,,غرب (ɣarb),arabic-word-arb.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,ħ,حب (ħubb),arabic-phoneme-.mp3
+Arabic (MSA),Consonants (الحروف),word,,حب (ħubb),arabic-word-ubb.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,ʕ,عين (ʕayn),arabic-phoneme-.mp3
+Arabic (MSA),Consonants (الحروف),word,,عين (ʕayn),arabic-word-ayn.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,h,هواء (hawaʔ),arabic-phoneme-h.mp3
+Arabic (MSA),Consonants (الحروف),word,,هواء (hawaʔ),arabic-word-hawa.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,m,ماء (maaʔ),arabic-phoneme-m.mp3
+Arabic (MSA),Consonants (الحروف),word,,ماء (maaʔ),arabic-word-maa.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,n,نار (naar),arabic-phoneme-n.mp3
+Arabic (MSA),Consonants (الحروف),word,,نار (naar),arabic-word-naar.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,l,ليل (layl),arabic-phoneme-l.mp3
+Arabic (MSA),Consonants (الحروف),word,,ليل (layl),arabic-word-layl.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,r,رأس (raʔs),arabic-phoneme-r.mp3
+Arabic (MSA),Consonants (الحروف),word,,رأس (raʔs),arabic-word-ras.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,j,يد (yad),arabic-phoneme-j.mp3
+Arabic (MSA),Consonants (الحروف),word,,يد (yad),arabic-word-yad.mp3
+Arabic (MSA),Consonants (الحروف),phoneme,w,ورد (ward),arabic-phoneme-w.mp3
+Arabic (MSA),Consonants (الحروف),word,,ورد (ward),arabic-word-ward.mp3
+Hindi (Standard),Vowels (स्वर),phoneme,i,इति iti,hindi-phoneme-i.mp3
+Hindi (Standard),Vowels (स्वर),word,,इति iti,hindi-word-iti.mp3
+Hindi (Standard),Vowels (स्वर),phoneme,iː,ईश्वर iːʃwar,hindi-phoneme-ee.mp3
+Hindi (Standard),Vowels (स्वर),word,,ईश्वर iːʃwar,hindi-word-eeshwar.mp3
+Hindi (Standard),Vowels (स्वर),phoneme,u,उठा uʈʰaː,hindi-phoneme-u.mp3
+Hindi (Standard),Vowels (स्वर),word,,उठा uʈʰaː,hindi-word-ua.mp3
+Hindi (Standard),Vowels (स्वर),phoneme,uː,ऊँचा uːnʧaː,hindi-phoneme-oo.mp3
+Hindi (Standard),Vowels (स्वर),word,,ऊँचा uːnʧaː,hindi-word-oona.mp3
+Hindi (Standard),Vowels (स्वर),phoneme,eː,एक eːk,hindi-phoneme-e.mp3
+Hindi (Standard),Vowels (स्वर),word,,एक eːk,hindi-word-ek.mp3
+Hindi (Standard),Vowels (स्वर),phoneme,oː,ओखली oːkhli,hindi-phoneme-o.mp3
+Hindi (Standard),Vowels (स्वर),word,,ओखली oːkhli,hindi-word-okhli.mp3
+Hindi (Standard),Vowels (स्वर),phoneme,ə,अगर əgar,hindi-phoneme-schwa.mp3
+Hindi (Standard),Vowels (स्वर),word,,अगर əgar,hindi-word-schwagar.mp3
+Hindi (Standard),Vowels (स्वर),phoneme,aː,आम aːm,hindi-phoneme-a.mp3
+Hindi (Standard),Vowels (स्वर),word,,आम aːm,hindi-word-am.mp3
+Hindi (Standard),Vowels (स्वर),phoneme,ɛː,ऐनक ɛːnak,hindi-phoneme-.mp3
+Hindi (Standard),Vowels (स्वर),word,,ऐनक ɛːnak,hindi-word-nak.mp3
+Hindi (Standard),Vowels (स्वर),phoneme,ɔː,औरत ɔːrat,hindi-phoneme-or.mp3
+Hindi (Standard),Vowels (स्वर),word,,औरत ɔːrat,hindi-word-orrat.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,p,पत्थर patʰʰar,hindi-phoneme-p.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,पत्थर patʰʰar,hindi-word-patar.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,t̪,तरबूज t̪arbuːj,hindi-phoneme-t.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,तरबूज t̪arbuːj,hindi-word-tarbooj.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,ʈ,टमाटर ʈamaːʈar,hindi-phoneme-.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,टमाटर ʈamaːʈar,hindi-word-amaar.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,k,कला kalaː,hindi-phoneme-k.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,कला kalaː,hindi-word-kala.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,pʰ,फल pʰal,hindi-phoneme-p.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,फल pʰal,hindi-word-pal.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,t̪ʰ,थाली t̪ʰaːliː,hindi-phoneme-t.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,थाली t̪ʰaːliː,hindi-word-talee.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,ʈʰ,ठंडा ʈʰaɳɖaː,hindi-phoneme-.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,ठंडा ʈʰaɳɖaː,hindi-word-aa.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,kʰ,खाना kʰaːnaː,hindi-phoneme-k.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,खाना kʰaːnaː,hindi-word-kana.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,b,बड़ा baɽaː,hindi-phoneme-b.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,बड़ा baɽaː,hindi-word-baa.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,d̪,दाल d̪aːl,hindi-phoneme-d.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,दाल d̪aːl,hindi-word-dal.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,ɖ,डाल ɖaːl,hindi-phoneme-.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,डाल ɖaːl,hindi-word-al.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,g,गमला gamlaː,hindi-phoneme-g.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,गमला gamlaː,hindi-word-gamla.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,bʱ,भाई bʱaːiː,hindi-phoneme-b.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,भाई bʱaːiː,hindi-word-baee.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,d̪ʱ,धन d̪ʱan,hindi-phoneme-d.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,धन d̪ʱan,hindi-word-dan.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,ɖʱ,ढोल ɖʱoːl,hindi-phoneme-.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,ढोल ɖʱoːl,hindi-word-ol.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,gʱ,घर gʱar,hindi-phoneme-g.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,घर gʱar,hindi-word-gar.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,m,मकान makɑːn,hindi-phoneme-m.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,मकान makɑːn,hindi-word-makn.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,n,नदी nadiː,hindi-phoneme-n.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,नदी nadiː,hindi-word-nadee.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,ɳ,गाना gaːɳaː,hindi-phoneme-.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,गाना gaːɳaː,hindi-word-gaa.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,ŋ,संग səŋg,hindi-phoneme-ng.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,संग səŋg,hindi-word-sschwangg.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,l,लाल laːl,hindi-phoneme-l.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,लाल laːl,hindi-word-lal.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,r,रात raːt,hindi-phoneme-r.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,रात raːt,hindi-word-rat.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,j,यह jəɦ,hindi-phoneme-j.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,यह jəɦ,hindi-word-jschwa.mp3
+Hindi (Standard),Consonants (व्यंजन),phoneme,ʋ,वजन ʋədʒan,hindi-phoneme-.mp3
+Hindi (Standard),Consonants (व्यंजन),word,,वजन ʋədʒan,hindi-word-schwadzhan.mp3

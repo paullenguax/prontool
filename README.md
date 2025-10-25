@@ -1,16 +1,56 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🌍 Language Prefix Conventions
+Prefix	Language / Accent
+english	British English (RP)
+american_english	U.S. English
+portuguese	Brazilian Portuguese
+french	Parisian French
+spanish	Castilian Spanish
+mandarin	Mandarin Chinese
+turkish	Turkish
+italian	Standard Italian
+etc.	Any new code you define in languages.js
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+🧩 Adding a New Language
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Open src/languages.js
 
-## Expanding the ESLint configuration
+Copy an existing language block
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Change:
+Define sections:
+
+category: "vowel" | "diphthong" | "consonant" | "tone"
+grid: [...]  // for vowels/diphthongs
+rows: [...]  // for consonants
+
+
+
+Save – the new flag appears automatically on the landing screen.
+
+Run:
+node make_recording_list.js --lang newlanguage
+to create a fresh list of audio files.
+
+🪄 Helpful Notes
+
+needsSchwa: true adds the small red ə beside consonants that require a helper vowel.
+
+Use [brackets] inside highlighted text to show which letters make the sound.
+
+Add tooltip fields for hover definitions (e.g. "Voiceless bilabial plosive").
+
+🧠 Quick Checklist
+Bucket URL updated in PhonemeChart.jsx
+
+🧰 Optional Tools
+
+Missing-audio indicator – visually flag files not yet uploaded.
+
+Tooltips – show articulatory descriptions on hover.
+
+Playback-speed slider – fine-tune listening practice.
+
+Voice-set suffix – manage multiple speaker versions (already supported).
