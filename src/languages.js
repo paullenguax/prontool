@@ -517,6 +517,66 @@ turkish: {
   ],
 },
 
+russian: {
+  name: "Russian",
+  flag: "🇷🇺",
+  sections: [
+    {
+      title: "Vowels",
+      subtitle: "Stressed vowels",
+      category: "vowel",
+      cols: 5,
+      grid: [
+        [
+          { ipa: "i", example: "мир mir", highlighted: "m[i]r" },
+          { ipa: "ɨ", example: "мы my", highlighted: "m[y]" },
+          { ipa: "u", example: "ум um", highlighted: "[u]m" },
+          { ipa: "e", example: "это eto", highlighted: "[e]to" },
+          { ipa: "o", example: "он on", highlighted: "[o]n" },
+        ],
+        [
+          null,
+          { ipa: "a", example: "дай dai", highlighted: "d[a]i" },
+          null,
+          null,
+          null,
+        ],
+      ],
+    },
+    {
+      title: "Consonants",
+      subtitle: "Hard / Soft pairs",
+      category: "consonant",
+      cols: 7,
+      rows: [
+        {
+          label: "Unvoiced",
+          cells: [
+            { ipa: "p", example: "пар par", highlighted: "[p]ar", needsSchwa: true },
+            { ipa: "pʲ", example: "пять pyatʲ", highlighted: "[p]yatʲ", needsSchwa: true },
+            { ipa: "t", example: "там tam", highlighted: "[t]am", needsSchwa: true },
+            { ipa: "tʲ", example: "тень tenʲ", highlighted: "[t]enʲ", needsSchwa: true },
+            { ipa: "k", example: "кот kot", highlighted: "[k]ot", needsSchwa: true },
+            { ipa: "kʲ", example: "кит kit", highlighted: "[k]it", needsSchwa: true },
+          ],
+        },
+        {
+          label: "Voiced",
+          cells: [
+            { ipa: "b", example: "был byl", highlighted: "[b]yl" },
+            { ipa: "bʲ", example: "бить bitʲ", highlighted: "[b]itʲ" },
+            { ipa: "d", example: "дом dom", highlighted: "[d]om" },
+            { ipa: "dʲ", example: "день denʲ", highlighted: "[d]enʲ" },
+            { ipa: "g", example: "год god", highlighted: "[g]od" },
+            { ipa: "gʲ", example: "гид gid", highlighted: "[g]id" },
+          ],
+        },
+      ],
+    },
+  ],
+},
+
+
 portuguese: {
   name: "Portuguese (Brazilian)",
   flag: "🇧🇷",
@@ -703,6 +763,241 @@ portuguese: {
     },
   ],
 },
+
+japanese: {
+  name: "Japanese (Tokyo)",
+  flag: "🇯🇵",
+  sections: [
+    {
+      title: "Vowels",
+      subtitle: "Five vowel phonemes",
+      category: "vowel",
+      cols: 5,
+      grid: [
+        [
+          { ipa: "a", example: "あか aka", highlighted: "[a]ka" },
+          { ipa: "i", example: "いぬ inu", highlighted: "[i]nu" },
+          { ipa: "ɯ", example: "うま uma", highlighted: "[u]ma" },
+          { ipa: "e", example: "えき eki", highlighted: "[e]ki" },
+          { ipa: "o", example: "おか oka", highlighted: "[o]ka" },
+        ],
+      ],
+    },
+    {
+      title: "Consonants",
+      subtitle: "Voiceless / Voiced / Sonorants",
+      category: "consonant",
+      cols: 6,
+      rows: [
+        {
+          label: "Voiceless",
+          cells: [
+            { ipa: "p", example: "ぱん pan", highlighted: "[p]an", needsSchwa: true },
+            { ipa: "t", example: "たこ tako", highlighted: "[t]ako", needsSchwa: true },
+            { ipa: "k", example: "かき kaki", highlighted: "[k]aki", needsSchwa: true },
+            { ipa: "s", example: "さけ sake", highlighted: "[s]ake" },
+            { ipa: "tɕ", example: "ちず chizu", highlighted: "[ch]izu", needsSchwa: true },
+            { ipa: "h", example: "はな hana", highlighted: "[h]ana" },
+          ],
+        },
+        {
+          label: "Voiced",
+          cells: [
+            { ipa: "b", example: "ばん ban", highlighted: "[b]an" },
+            { ipa: "d", example: "だれ dare", highlighted: "[d]are" },
+            { ipa: "g", example: "がく gaku", highlighted: "[g]aku" },
+            { ipa: "z", example: "ざる zaru", highlighted: "[z]aru" },
+            { ipa: "ʑ", example: "じかん jikan", highlighted: "[j]ikan" },
+            { ipa: "ʒ", example: "ージー jī", highlighted: "[j]ī" },
+          ],
+        },
+      ],
+    },
+  ],
+},
+
+
+arabic: {
+  name: "Arabic (MSA)",
+  flag: "🇸🇦",
+  sections: [
+    {
+      title: "Short Vowels (حركات)",
+      subtitle: "a / i / u vowels",
+      category: "vowel",
+      cols: 3,
+      grid: [
+        [
+          { ipa: "a", example: "كتب kataba", highlighted: "k[a]taba" },
+          { ipa: "i", example: "بنت bint", highlighted: "b[i]nt" },
+          { ipa: "u", example: "كتب kutiba", highlighted: "k[u]tiba" },
+        ],
+      ],
+    },
+    {
+      title: "Long Vowels",
+      subtitle: "ā / ī / ū vowels",
+      category: "vowel",
+      cols: 3,
+      grid: [
+        [
+          { ipa: "aː", example: "باب baab", highlighted: "b[aa]b" },
+          { ipa: "iː", example: "كبير kabiir", highlighted: "kab[ii]r" },
+          { ipa: "uː", example: "نور nuur", highlighted: "n[uu]r" },
+        ],
+      ],
+    },
+    {
+      title: "Consonants (الحروف)",
+      subtitle: "Plain / Emphatic / Pharyngeal",
+      category: "consonant",
+      cols: 6,
+      rows: [
+        {
+          label: "Plain Stops & Affricates",
+          cells: [
+            { ipa: "b", example: "باب baab", highlighted: "[b]aab" },
+            { ipa: "t", example: "تين tiin", highlighted: "[t]iin", needsSchwa: true },
+            { ipa: "d", example: "دار daar", highlighted: "[d]aar", needsSchwa: true },
+            { ipa: "k", example: "كتب kataba", highlighted: "[k]ataba", needsSchwa: true },
+            { ipa: "q", example: "قلب qalb", highlighted: "[q]alb", needsSchwa: true },
+            { ipa: "ʔ", example: "أسد ʔasad", highlighted: "[ʔ]asad", needsSchwa: true },
+          ],
+        },
+        {
+          label: "Emphatic (Pharyngealized)",
+          cells: [
+            { ipa: "tˤ", example: "طير tˤayr", highlighted: "[ṭ]ayr", needsSchwa: true },
+            { ipa: "dˤ", example: "ضرب dˤarab", highlighted: "[ḍ]arab", needsSchwa: true },
+            { ipa: "sˤ", example: "صبر sˤabr", highlighted: "[ṣ]abr" },
+            { ipa: "ðˤ", example: "ظهر ðˤahr", highlighted: "[ẓ]ahr" },
+          ],
+        },
+        {
+          label: "Fricatives & Pharyngeals",
+          cells: [
+            { ipa: "f", example: "فم fam", highlighted: "[f]am" },
+            { ipa: "θ", example: "ثلج θalj", highlighted: "[th]alj" },
+            { ipa: "ð", example: "ذهب ðahab", highlighted: "[dh]ahab" },
+            { ipa: "s", example: "سمك samak", highlighted: "[s]amak" },
+            { ipa: "z", example: "زيت zayt", highlighted: "[z]ayt" },
+            { ipa: "ʃ", example: "شمس ʃams", highlighted: "[sh]ams" },
+          ],
+        },
+        {
+          label: "Pharyngeal / Uvular",
+          cells: [
+            { ipa: "x", example: "خبز xubz", highlighted: "[kh]ubz" },
+            { ipa: "ɣ", example: "غرب ɣarb", highlighted: "[gh]arb" },
+            { ipa: "ħ", example: "حب ħubb", highlighted: "[ḥ]ubb" },
+            { ipa: "ʕ", example: "عين ʕayn", highlighted: "[ʕ]ayn" },
+            { ipa: "h", example: "هواء hawaʔ", highlighted: "[h]awaʔ" },
+          ],
+        },
+        {
+          label: "Sonorants & Approximants",
+          cells: [
+            { ipa: "m", example: "ماء maaʔ", highlighted: "[m]aaʔ" },
+            { ipa: "n", example: "نار naar", highlighted: "[n]aar" },
+            { ipa: "l", example: "ليل layl", highlighted: "[l]ayl" },
+            { ipa: "r", example: "رأس raʔs", highlighted: "[r]aʔs" },
+            { ipa: "j", example: "يد yad", highlighted: "[y]ad" },
+            { ipa: "w", example: "ورد ward", highlighted: "[w]ard" },
+          ],
+        },
+      ],
+    },
+  ],
+},
+
+hindi: {
+  name: "Hindi (Standard)",
+  flag: "🇮🇳",
+  sections: [
+    {
+      title: "Vowels (स्वर)",
+      subtitle: "Short and long vowels",
+      category: "vowel",
+      cols: 6,
+      grid: [
+        [
+          { ipa: "i", example: "इति iti", highlighted: "[i]ti" },
+          { ipa: "iː", example: "ईश्वर iːʃwar", highlighted: "[ee]ʃwar" },
+          { ipa: "u", example: "उठा uʈʰaː", highlighted: "[u]ʈʰaː" },
+          { ipa: "uː", example: "ऊँचा uːnʧaː", highlighted: "[oo]nʧaː" },
+          { ipa: "eː", example: "एक eːk", highlighted: "[e]ːk" },
+          { ipa: "oː", example: "ओखली oːkhli", highlighted: "[o]ːkhli" },
+        ],
+        [
+          { ipa: "ə", example: "अगर əgar", highlighted: "[a]gar" },
+          { ipa: "aː", example: "आम aːm", highlighted: "[aa]m" },
+          { ipa: "ɛː", example: "ऐनक ɛːnak", highlighted: "[ai]nak" },
+          { ipa: "ɔː", example: "औरत ɔːrat", highlighted: "[au]rat" },
+          null,
+          null,
+        ],
+      ],
+    },
+    {
+      title: "Consonants (व्यंजन)",
+      subtitle: "Stops / Nasals / Others",
+      category: "consonant",
+      cols: 8,
+      rows: [
+        {
+          label: "Voiceless Unaspirated",
+          cells: [
+            { ipa: "p", example: "पत्थर patʰʰar", highlighted: "[p]atʰʰar", needsSchwa: true },
+            { ipa: "t̪", example: "तरबूज t̪arbuːj", highlighted: "[t]̪arbuːj", needsSchwa: true },
+            { ipa: "ʈ", example: "टमाटर ʈamaːʈar", highlighted: "[ṭ]amaːʈar", needsSchwa: true },
+            { ipa: "k", example: "कला kalaː", highlighted: "[k]alaː", needsSchwa: true },
+          ],
+        },
+        {
+          label: "Voiceless Aspirated",
+          cells: [
+            { ipa: "pʰ", example: "फल pʰal", highlighted: "[ph]al" },
+            { ipa: "t̪ʰ", example: "थाली t̪ʰaːliː", highlighted: "[th]aːliː" },
+            { ipa: "ʈʰ", example: "ठंडा ʈʰaɳɖaː", highlighted: "[ṭh]aɳɖaː" },
+            { ipa: "kʰ", example: "खाना kʰaːnaː", highlighted: "[kh]aːnaː" },
+          ],
+        },
+        {
+          label: "Voiced Unaspirated",
+          cells: [
+            { ipa: "b", example: "बड़ा baɽaː", highlighted: "[b]aɽaː" },
+            { ipa: "d̪", example: "दाल d̪aːl", highlighted: "[d]̪aːl" },
+            { ipa: "ɖ", example: "डाल ɖaːl", highlighted: "[ḍ]aːl" },
+            { ipa: "g", example: "गमला gamlaː", highlighted: "[g]amlaː" },
+          ],
+        },
+        {
+          label: "Voiced Aspirated",
+          cells: [
+            { ipa: "bʱ", example: "भाई bʱaːiː", highlighted: "[bh]aːiː" },
+            { ipa: "d̪ʱ", example: "धन d̪ʱan", highlighted: "[dh]an" },
+            { ipa: "ɖʱ", example: "ढोल ɖʱoːl", highlighted: "[ḍh]oːl" },
+            { ipa: "gʱ", example: "घर gʱar", highlighted: "[gh]ar" },
+          ],
+        },
+        {
+          label: "Nasals & Approximants",
+          cells: [
+            { ipa: "m", example: "मकान makɑːn", highlighted: "[m]akɑːn" },
+            { ipa: "n", example: "नदी nadiː", highlighted: "[n]adiː" },
+            { ipa: "ɳ", example: "गाना gaːɳaː", highlighted: "gaː[n]aː" },
+            { ipa: "ŋ", example: "संग səŋg", highlighted: "sə[ng]" },
+            { ipa: "l", example: "लाल laːl", highlighted: "[l]aːl" },
+            { ipa: "r", example: "रात raːt", highlighted: "[r]aːt" },
+            { ipa: "j", example: "यह jəɦ", highlighted: "[y]əɦ" },
+            { ipa: "ʋ", example: "वजन ʋədʒan", highlighted: "[v]ədʒan" },
+          ],
+        },
+      ],
+    },
+  ],
+},
+
 
 };
 
