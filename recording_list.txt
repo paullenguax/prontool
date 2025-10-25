@@ -1,0 +1,325 @@
+
+## English (RP)
+
+### Monophthongs
+phoneme: iː   example: heat   filename: english-phoneme-ee.mp3
+word: heat   filename: english-word-heat.mp3
+phoneme: ɪ   example: hit   filename: english-phoneme-ih.mp3
+word: hit   filename: english-word-hit.mp3
+phoneme: ʊ   example: put   filename: english-phoneme-uh.mp3
+word: put   filename: english-word-put.mp3
+phoneme: uː   example: pool   filename: english-phoneme-oo.mp3
+word: pool   filename: english-word-pool.mp3
+phoneme: e   example: bread   filename: english-phoneme-e.mp3
+word: bread   filename: english-word-bread.mp3
+phoneme: ə   example: about   filename: english-phoneme-schwa.mp3
+word: about   filename: english-word-about.mp3
+phoneme: ɜː   example: world   filename: english-phoneme-er.mp3
+word: world   filename: english-word-world.mp3
+phoneme: ɔː   example: horse   filename: english-phoneme-or.mp3
+word: horse   filename: english-word-horse.mp3
+phoneme: æ   example: bat   filename: english-phoneme-ae.mp3
+word: bat   filename: english-word-bat.mp3
+phoneme: ʌ   example: cup   filename: english-phoneme-Lambda.mp3
+word: cup   filename: english-word-cup.mp3
+phoneme: aː   example: bar   filename: english-phoneme-a.mp3
+word: bar   filename: english-word-bar.mp3
+phoneme: ɒ   example: hot   filename: english-phoneme-ot.mp3
+word: hot   filename: english-word-hot.mp3
+
+### Diphthongs
+phoneme: ɪə   example: here   filename: english-phoneme-ihschwa.mp3
+word: here   filename: english-word-here.mp3
+phoneme: eɪ   example: late   filename: english-phoneme-eih.mp3
+word: late   filename: english-word-late.mp3
+phoneme: ʊə   example: tour   filename: english-phoneme-uhschwa.mp3
+word: tour   filename: english-word-tour.mp3
+phoneme: ɔɪ   example: toy   filename: english-phoneme-ih.mp3
+word: toy   filename: english-word-toy.mp3
+phoneme: əʊ   example: blow   filename: english-phoneme-schwauh.mp3
+word: blow   filename: english-word-blow.mp3
+phoneme: eə   example: there   filename: english-phoneme-eschwa.mp3
+word: there   filename: english-word-there.mp3
+phoneme: aɪ   example: why   filename: english-phoneme-aih.mp3
+word: why   filename: english-word-why.mp3
+phoneme: aʊ   example: how   filename: english-phoneme-auh.mp3
+word: how   filename: english-word-how.mp3
+
+### Consonants
+phoneme: t   example: ten   filename: english-phoneme-t.mp3
+word: ten   filename: english-word-ten.mp3
+phoneme: p   example: pen   filename: english-phoneme-p.mp3
+word: pen   filename: english-word-pen.mp3
+phoneme: k   example: kilo   filename: english-phoneme-k.mp3
+word: kilo   filename: english-word-kilo.mp3
+phoneme: f   example: fly   filename: english-phoneme-f.mp3
+word: fly   filename: english-word-fly.mp3
+phoneme: θ   example: thank   filename: english-phoneme-theta.mp3
+word: thank   filename: english-word-thank.mp3
+phoneme: s   example: stay   filename: english-phoneme-s.mp3
+word: stay   filename: english-word-stay.mp3
+phoneme: ʃ   example: ship   filename: english-phoneme-sh.mp3
+word: ship   filename: english-word-ship.mp3
+phoneme: tʃ   example: choose   filename: english-phoneme-tsh.mp3
+word: choose   filename: english-word-choose.mp3
+phoneme: b   example: band   filename: english-phoneme-b.mp3
+word: band   filename: english-word-band.mp3
+phoneme: d   example: dark   filename: english-phoneme-d.mp3
+word: dark   filename: english-word-dark.mp3
+phoneme: g   example: good   filename: english-phoneme-g.mp3
+word: good   filename: english-word-good.mp3
+phoneme: v   example: victor   filename: english-phoneme-v.mp3
+word: victor   filename: english-word-victor.mp3
+phoneme: ð   example: these   filename: english-phoneme-eth.mp3
+word: these   filename: english-word-these.mp3
+phoneme: z   example: zulu   filename: english-phoneme-z.mp3
+word: zulu   filename: english-word-zulu.mp3
+phoneme: ʒ   example: pleasure   filename: english-phoneme-zh.mp3
+word: pleasure   filename: english-word-pleasure.mp3
+phoneme: dʒ   example: job   filename: english-phoneme-dzh.mp3
+word: job   filename: english-word-job.mp3
+phoneme: m   example: mike   filename: english-phoneme-m.mp3
+word: mike   filename: english-word-mike.mp3
+phoneme: n   example: november   filename: english-phoneme-n.mp3
+word: november   filename: english-word-november.mp3
+phoneme: ŋ   example: bring   filename: english-phoneme-ng.mp3
+word: bring   filename: english-word-bring.mp3
+phoneme: j   example: yankee   filename: english-phoneme-j.mp3
+word: yankee   filename: english-word-yankee.mp3
+phoneme: l   example: london   filename: english-phoneme-l.mp3
+word: london   filename: english-word-london.mp3
+phoneme: r   example: robert   filename: english-phoneme-r.mp3
+word: robert   filename: english-word-robert.mp3
+phoneme: w   example: wednesday   filename: english-phoneme-w.mp3
+word: wednesday   filename: english-word-wednesday.mp3
+phoneme: h   example: high   filename: english-phoneme-h.mp3
+word: high   filename: english-word-high.mp3
+
+## Spanish (Castilian)
+
+### Vowels
+phoneme: i   example: sí   filename: spanish-phoneme-i.mp3
+word: sí   filename: spanish-word-s.mp3
+phoneme: e   example: mes   filename: spanish-phoneme-e.mp3
+word: mes   filename: spanish-word-mes.mp3
+phoneme: a   example: casa   filename: spanish-phoneme-a.mp3
+word: casa   filename: spanish-word-casa.mp3
+phoneme: o   example: sol   filename: spanish-phoneme-o.mp3
+word: sol   filename: spanish-word-sol.mp3
+phoneme: u   example: tú   filename: spanish-phoneme-u.mp3
+word: tú   filename: spanish-word-t.mp3
+
+### Diphthongs
+phoneme: ai̯   example: baile   filename: spanish-phoneme-ai.mp3
+word: baile   filename: spanish-word-baile.mp3
+phoneme: ei̯   example: seis   filename: spanish-phoneme-ei.mp3
+word: seis   filename: spanish-word-seis.mp3
+phoneme: au̯   example: auto   filename: spanish-phoneme-au.mp3
+word: auto   filename: spanish-word-auto.mp3
+
+### Consonants
+phoneme: p   example: padre   filename: spanish-phoneme-p.mp3
+word: padre   filename: spanish-word-padre.mp3
+phoneme: t   example: toro   filename: spanish-phoneme-t.mp3
+word: toro   filename: spanish-word-toro.mp3
+phoneme: k   example: casa   filename: spanish-phoneme-k.mp3
+word: casa   filename: spanish-word-casa.mp3
+phoneme: f   example: foco   filename: spanish-phoneme-f.mp3
+word: foco   filename: spanish-word-foco.mp3
+phoneme: s   example: sol   filename: spanish-phoneme-s.mp3
+word: sol   filename: spanish-word-sol.mp3
+phoneme: tʃ   example: chico   filename: spanish-phoneme-tsh.mp3
+word: chico   filename: spanish-word-chico.mp3
+phoneme: b   example: barco   filename: spanish-phoneme-b.mp3
+word: barco   filename: spanish-word-barco.mp3
+phoneme: d   example: dedo   filename: spanish-phoneme-d.mp3
+word: dedo   filename: spanish-word-dedo.mp3
+phoneme: g   example: gato   filename: spanish-phoneme-g.mp3
+word: gato   filename: spanish-word-gato.mp3
+phoneme: x   example: jota   filename: spanish-phoneme-x.mp3
+word: jota   filename: spanish-word-jota.mp3
+phoneme: m   example: mano   filename: spanish-phoneme-m.mp3
+word: mano   filename: spanish-word-mano.mp3
+phoneme: n   example: nada   filename: spanish-phoneme-n.mp3
+word: nada   filename: spanish-word-nada.mp3
+phoneme: ɲ   example: niño   filename: spanish-phoneme-.mp3
+word: niño   filename: spanish-word-nio.mp3
+phoneme: l   example: lado   filename: spanish-phoneme-l.mp3
+word: lado   filename: spanish-word-lado.mp3
+phoneme: ʎ   example: llave   filename: spanish-phoneme-.mp3
+word: llave   filename: spanish-word-llave.mp3
+phoneme: r   example: perro   filename: spanish-phoneme-r.mp3
+word: perro   filename: spanish-word-perro.mp3
+
+## French (Parisian)
+
+### Oral Vowels
+phoneme: i   example: si   filename: french-phoneme-i.mp3
+word: si   filename: french-word-si.mp3
+phoneme: y   example: tu   filename: french-phoneme-y.mp3
+word: tu   filename: french-word-tu.mp3
+phoneme: u   example: vous   filename: french-phoneme-u.mp3
+word: vous   filename: french-word-vous.mp3
+phoneme: e   example: été   filename: french-phoneme-e.mp3
+word: été   filename: french-word-t.mp3
+phoneme: ø   example: deux   filename: french-phoneme-.mp3
+word: deux   filename: french-word-deux.mp3
+phoneme: o   example: beau   filename: french-phoneme-o.mp3
+word: beau   filename: french-word-beau.mp3
+phoneme: ɛ   example: belle   filename: french-phoneme-.mp3
+word: belle   filename: french-word-belle.mp3
+phoneme: œ   example: peur   filename: french-phoneme-.mp3
+word: peur   filename: french-word-peur.mp3
+phoneme: ɔ   example: porte   filename: french-phoneme-.mp3
+word: porte   filename: french-word-porte.mp3
+phoneme: a   example: patte   filename: french-phoneme-a.mp3
+word: patte   filename: french-word-patte.mp3
+phoneme: ə   example: le   filename: french-phoneme-schwa.mp3
+word: le   filename: french-word-le.mp3
+
+### Nasal Vowels
+phoneme: ɛ̃   example: vin   filename: french-phoneme-en.mp3
+word: vin   filename: french-word-vin.mp3
+phoneme: œ̃   example: un   filename: french-phoneme-oen.mp3
+word: un   filename: french-word-un.mp3
+phoneme: ɑ̃   example: blanc   filename: french-phoneme-an.mp3
+word: blanc   filename: french-word-blanc.mp3
+phoneme: ɔ̃   example: bon   filename: french-phoneme-on.mp3
+word: bon   filename: french-word-bon.mp3
+
+### Consonants
+phoneme: p   example: pain   filename: french-phoneme-p.mp3
+word: pain   filename: french-word-pain.mp3
+phoneme: t   example: tu   filename: french-phoneme-t.mp3
+word: tu   filename: french-word-tu.mp3
+phoneme: k   example: coeur   filename: french-phoneme-k.mp3
+word: coeur   filename: french-word-coeur.mp3
+phoneme: f   example: feu   filename: french-phoneme-f.mp3
+word: feu   filename: french-word-feu.mp3
+phoneme: s   example: sous   filename: french-phoneme-s.mp3
+word: sous   filename: french-word-sous.mp3
+phoneme: ʃ   example: chat   filename: french-phoneme-sh.mp3
+word: chat   filename: french-word-chat.mp3
+phoneme: b   example: bain   filename: french-phoneme-b.mp3
+word: bain   filename: french-word-bain.mp3
+phoneme: d   example: doux   filename: french-phoneme-d.mp3
+word: doux   filename: french-word-doux.mp3
+phoneme: g   example: gare   filename: french-phoneme-g.mp3
+word: gare   filename: french-word-gare.mp3
+phoneme: v   example: vous   filename: french-phoneme-v.mp3
+word: vous   filename: french-word-vous.mp3
+phoneme: z   example: rose   filename: french-phoneme-z.mp3
+word: rose   filename: french-word-rose.mp3
+phoneme: ʒ   example: je   filename: french-phoneme-zh.mp3
+word: je   filename: french-word-je.mp3
+phoneme: m   example: mais   filename: french-phoneme-m.mp3
+word: mais   filename: french-word-mais.mp3
+phoneme: n   example: non   filename: french-phoneme-n.mp3
+word: non   filename: french-word-non.mp3
+phoneme: ɲ   example: agneau   filename: french-phoneme-.mp3
+word: agneau   filename: french-word-agneau.mp3
+phoneme: l   example: lui   filename: french-phoneme-l.mp3
+word: lui   filename: french-word-lui.mp3
+phoneme: ʁ   example: rue   filename: french-phoneme-.mp3
+word: rue   filename: french-word-rue.mp3
+
+## Mandarin Chinese
+
+### Initials (声母)
+phoneme: p   example: 八 bā   filename: mandarin-phoneme-p.mp3
+word: 八 bā   filename: mandarin-word-ba1.mp3
+phoneme: t   example: 大 dà   filename: mandarin-phoneme-t.mp3
+word: 大 dà   filename: mandarin-word-da4.mp3
+phoneme: k   example: 个 gè   filename: mandarin-phoneme-k.mp3
+word: 个 gè   filename: mandarin-word-g.mp3
+phoneme: ts   example: 早 zǎo   filename: mandarin-phoneme-ts.mp3
+word: 早 zǎo   filename: mandarin-word-za3o.mp3
+phoneme: tʂ   example: 中 zhōng   filename: mandarin-phoneme-t.mp3
+word: 中 zhōng   filename: mandarin-word-zhng.mp3
+phoneme: tɕ   example: 家 jiā   filename: mandarin-phoneme-t.mp3
+word: 家 jiā   filename: mandarin-word-jia1.mp3
+phoneme: pʰ   example: 怕 pà   filename: mandarin-phoneme-p.mp3
+word: 怕 pà   filename: mandarin-word-pa4.mp3
+phoneme: tʰ   example: 他 tā   filename: mandarin-phoneme-t.mp3
+word: 他 tā   filename: mandarin-word-ta1.mp3
+phoneme: kʰ   example: 卡 kǎ   filename: mandarin-phoneme-k.mp3
+word: 卡 kǎ   filename: mandarin-word-ka3.mp3
+phoneme: tsʰ   example: 草 cǎo   filename: mandarin-phoneme-ts.mp3
+word: 草 cǎo   filename: mandarin-word-ca3o.mp3
+phoneme: tʂʰ   example: 车 chē   filename: mandarin-phoneme-t.mp3
+word: 车 chē   filename: mandarin-word-ch.mp3
+phoneme: tɕʰ   example: 七 qī   filename: mandarin-phoneme-t.mp3
+word: 七 qī   filename: mandarin-word-q.mp3
+phoneme: f   example: 发 fā   filename: mandarin-phoneme-f.mp3
+word: 发 fā   filename: mandarin-word-fa1.mp3
+phoneme: s   example: 三 sān   filename: mandarin-phoneme-s.mp3
+word: 三 sān   filename: mandarin-word-sa1n.mp3
+phoneme: ʂ   example: 是 shì   filename: mandarin-phoneme-.mp3
+word: 是 shì   filename: mandarin-word-sh.mp3
+phoneme: ɕ   example: 西 xī   filename: mandarin-phoneme-.mp3
+word: 西 xī   filename: mandarin-word-x.mp3
+phoneme: x   example: 好 hǎo   filename: mandarin-phoneme-x.mp3
+word: 好 hǎo   filename: mandarin-word-ha3o.mp3
+phoneme: m   example: 马 mǎ   filename: mandarin-phoneme-m.mp3
+word: 马 mǎ   filename: mandarin-word-ma3.mp3
+phoneme: n   example: 你 nǐ   filename: mandarin-phoneme-n.mp3
+word: 你 nǐ   filename: mandarin-word-n.mp3
+phoneme: l   example: 来 lái   filename: mandarin-phoneme-l.mp3
+word: 来 lái   filename: mandarin-word-la2i.mp3
+phoneme: ɻ   example: 人 rén   filename: mandarin-phoneme-.mp3
+word: 人 rén   filename: mandarin-word-rn.mp3
+
+### Finals (韵母)
+phoneme: a   example: 啊 ā   filename: mandarin-phoneme-a.mp3
+word: 啊 ā   filename: mandarin-word-a1.mp3
+phoneme: o   example: 哦 ō   filename: mandarin-phoneme-o.mp3
+word: 哦 ō   filename: mandarin-word-.mp3
+phoneme: ɤ   example: 饿 è   filename: mandarin-phoneme-.mp3
+word: 饿 è   filename: mandarin-word-.mp3
+phoneme: i   example: 衣 yī   filename: mandarin-phoneme-i.mp3
+word: 衣 yī   filename: mandarin-word-y.mp3
+phoneme: u   example: 五 wǔ   filename: mandarin-phoneme-u.mp3
+word: 五 wǔ   filename: mandarin-word-w.mp3
+phoneme: y   example: 鱼 yú   filename: mandarin-phoneme-y.mp3
+word: 鱼 yú   filename: mandarin-word-y.mp3
+phoneme: ai   example: 爱 ài   filename: mandarin-phoneme-ai.mp3
+word: 爱 ài   filename: mandarin-word-a4i.mp3
+phoneme: ei   example: 诶 éi   filename: mandarin-phoneme-ei.mp3
+word: 诶 éi   filename: mandarin-word-i.mp3
+phoneme: au   example: 奥 ào   filename: mandarin-phoneme-au.mp3
+word: 奥 ào   filename: mandarin-word-a4o.mp3
+phoneme: ou   example: 欧 ōu   filename: mandarin-phoneme-ou.mp3
+word: 欧 ōu   filename: mandarin-word-u.mp3
+phoneme: an   example: 安 ān   filename: mandarin-phoneme-an.mp3
+word: 安 ān   filename: mandarin-word-a1n.mp3
+phoneme: ən   example: 恩 ēn   filename: mandarin-phoneme-schwan.mp3
+word: 恩 ēn   filename: mandarin-word-n.mp3
+phoneme: aŋ   example: 昂 áng   filename: mandarin-phoneme-ang.mp3
+word: 昂 áng   filename: mandarin-word-a2ng.mp3
+phoneme: əŋ   example: 鞥 ēng   filename: mandarin-phoneme-schwang.mp3
+word: 鞥 ēng   filename: mandarin-word-ng.mp3
+phoneme: ia   example: 呀 yā   filename: mandarin-phoneme-ia.mp3
+word: 呀 yā   filename: mandarin-word-ya1.mp3
+phoneme: ie   example: 耶 yē   filename: mandarin-phoneme-ie.mp3
+word: 耶 yē   filename: mandarin-word-y.mp3
+phoneme: ua   example: 蛙 wā   filename: mandarin-phoneme-ua.mp3
+word: 蛙 wā   filename: mandarin-word-wa1.mp3
+phoneme: uo   example: 窝 wō   filename: mandarin-phoneme-uo.mp3
+word: 窝 wō   filename: mandarin-word-w.mp3
+phoneme: yɛ   example: 月 yuè   filename: mandarin-phoneme-y.mp3
+word: 月 yuè   filename: mandarin-word-yu.mp3
+phoneme: iau   example: 腰 yāo   filename: mandarin-phoneme-iau.mp3
+word: 腰 yāo   filename: mandarin-word-ya1o.mp3
+phoneme: iou   example: 优 yōu   filename: mandarin-phoneme-iou.mp3
+word: 优 yōu   filename: mandarin-word-yu.mp3
+phoneme: uai   example: 歪 wāi   filename: mandarin-phoneme-uai.mp3
+word: 歪 wāi   filename: mandarin-word-wa1i.mp3
+phoneme: uei   example: 威 wēi   filename: mandarin-phoneme-uei.mp3
+word: 威 wēi   filename: mandarin-word-wi.mp3
+
+### Tones (声调)
+tone: mā   example: 妈 (mother)   filename: mandarin-tone-ma1.mp3
+tone: má   example: 麻 (hemp)   filename: mandarin-tone-ma2.mp3
+tone: mǎ   example: 马 (horse)   filename: mandarin-tone-ma3.mp3
+tone: mà   example: 骂 (scold)   filename: mandarin-tone-ma4.mp3
+tone: ma   example: 吗 (question)   filename: mandarin-tone-ma.mp3
