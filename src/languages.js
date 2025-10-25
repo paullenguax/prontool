@@ -1,6 +1,6 @@
 export const LANGUAGE_DATA = {
   english: {
-    name: 'English (RP)',
+    name: 'English (British RP)',
     flag: '🇬🇧',
     sections: [
       {

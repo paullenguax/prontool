@@ -177,7 +177,7 @@ export default function PhonemeChart({ LANGUAGE_DATA }) {
         <div className="max-w-4xl w-full px-6">
           <div className="text-center mb-8">
             <h1 className="text-4xl font-bold mb-2">Interactive Phoneme Chart</h1>
-            <p className="text-gray-500">Minimal, multilingual, local setup</p>
+            <p className="text-gray-500">Click on a language to begin</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
             {Object.entries(LANGUAGE_DATA).map(([code, lang]) => (
