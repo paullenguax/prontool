@@ -49,6 +49,84 @@ function useAudioPlayer() {
   return { play, playing, error };
 }
 
+// Tooltip component for row labels
+function RowLabel({ label, tooltip }) {
+  const [showTooltip, setShowTooltip] = useState(false);
+
+ return (
+  <div className="relative border border-gray-200 rounded-lg overflow-hidden">
+    {/* Phoneme button - top half */}
+    <button
+      onClick={handlePhonemeClick}
+      onMouseEnter={() => setShowTooltip(true)}
+      onMouseLeave={() => setShowTooltip(false)}
+      className={`relative w-full p-3 transition-all duration-150 focus:outline-none focus:z-10 ${palette} ${
+        isActive ? "ring-2 ring-inset" : ""
+      }`}
+      aria-label={`Play ${category === 'tone' ? 'tone' : 'phoneme'} ${ipa}${description ? `: ${description}` : ''}`}
+    >
+      {/* Tooltip */}
+      {description && showTooltip && (
+        <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 z-20 bg-gray-900 text-white text-xs rounded px-3 py-1.5 whitespace-nowrap shadow-lg pointer-events-none">
+          {description}
+          <div className="absolute top-full left-1/2 transform -translate-x-1/2 -mt-1 w-2 h-2 bg-gray-900 rotate-45" />
+        </div>
+      )}
+      
+      {/* IPA + schwa (or tone with example) */}
+      {category === 'tone' ? (
+        // For tones: show IPA and example together
+        <div className="space-y-1">
+          <div className="text-2xl font-semibold text-gray-900 text-center select-none">
+            {ipa}
+          </div>
+          {example && (
+            <div className="text-sm text-gray-600 text-center">
+              {extractNativeScript(example)}
+            </div>
+          )}
+        </div>
+      ) : (
+        // For phonemes: show IPA with optional schwa
+        <div className="text-2xl font-semibold text-gray-900 text-center select-none flex items-center justify-center gap-1">
+          <span>{ipa}</span>
+          <span
+            className={`text-rose-400 text-lg font-semibold transition-opacity duration-200 ${
+              showSchwa ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            ə
+          </span>
+        </div>
+      )}
+    </button>
+
+    {/* Divider - subtle and inset */}
+    {example && category !== "tone" && <div className="border-t border-gray-300 mx-3" />}
+
+    {/* Word button - bottom half (only if not a tone) */}
+    {example && category !== "tone" && (
+      <button
+        onClick={handleWordClick}
+        className={`w-full p-3 transition-all duration-150 focus:outline-none focus:z-10 ${palette}`}
+        aria-label={`Play word ${extractNativeScript(example)}`}
+      >
+        <div className="text-sm text-gray-700 text-center space-y-0.5">
+          {isDifferent && (
+            <div className="text-base font-medium">
+              {nativeScript}
+            </div>
+          )}
+          <div className={isDifferent ? "text-xs" : "text-base"}>
+            {renderHighlight(highlighted)}
+          </div>
+        </div>
+      </button>
+    )}
+  </div>
+);
+}
+
 // A single phoneme cell
 function PhonemeCell({
   ipa,
@@ -58,110 +136,155 @@ function PhonemeCell({
   playAudio,
   playing,
   needsSchwa = false,
-  category = "consonant", // 👈 new optional prop
+  category = "consonant",
+  description,
+  rowBgColor,
+  rowHoverColor,
 }) {
   const isActive = playing === ipa;
+  const [showTooltip, setShowTooltip] = useState(false);
   const [showSchwa, setShowSchwa] = useState(false);
   const [wordActive, setWordActive] = useState(false);
 
+  // Extract native script from example (before transliteration)
+  const extractNativeScript = (exampleText) => {
+    if (!exampleText) return "";
+    // Remove content in parentheses and everything after
+    const withoutParens = exampleText.replace(/\s*\([^)]*\).*$/, '').trim();
+    // Split on space and take first part (native script)
+    return withoutParens.split(/\s+/)[0] || exampleText;
+  };
 
-  // click handler
-  const handlePhonemeClick = (e) => {
-    e.stopPropagation();
+  // Phoneme click handler
+  const handlePhonemeClick = () => {
     playAudio(language, "phoneme", ipa);
-
     if (needsSchwa) {
       setShowSchwa(true);
-      setTimeout(() => setShowSchwa(false), 800); // quick visual feedback even without audio
+      setTimeout(() => setShowSchwa(false), 800);
     }
   };
 
-  const handleWordClick = (e) => {
-  e.stopPropagation();
-  playAudio(language, "word", example);
-  setWordActive(true);
-  setTimeout(() => setWordActive(false), 700); // about 0.7 s highlight
-};
+  // Word click handler
+  const handleWordClick = () => {
+    playAudio(language, "word", example);
+    setWordActive(true);
+    setTimeout(() => setWordActive(false), 700);
+  };
 
-
-  // keep schwa visible while playback succeeds
+  // Keep schwa visible while playing
   useEffect(() => {
     if (isActive && needsSchwa) setShowSchwa(true);
     if (!isActive) setShowSchwa(false);
   }, [isActive, needsSchwa]);
 
-  // colour palettes by category
-const colourSet = {
-  vowel:
-    "bg-emerald-100 hover:bg-emerald-200 active:bg-emerald-300 ring-emerald-400",
-  diphthong:
-    "bg-teal-100 hover:bg-teal-200 active:bg-teal-300 ring-teal-400",
-  consonant:
-    "bg-indigo-100 hover:bg-indigo-200 active:bg-indigo-300 ring-indigo-400",
-  tone:
-    "bg-amber-100 hover:bg-amber-200 active:bg-amber-300 ring-amber-400",
-};
+  // Color palettes by category
+  const colourSet = {
+    vowel: "bg-sky-50 hover:bg-sky-100 focus:bg-sky-100 ring-sky-400",
+    diphthong: "bg-cyan-50 hover:bg-cyan-100 focus:bg-cyan-100 ring-cyan-400",
+    consonant: "bg-slate-50 hover:bg-slate-100 focus:bg-slate-100 ring-slate-400",
+    tone: "bg-orange-50 hover:bg-orange-100 focus:bg-orange-100 ring-orange-400",
+  };
 
-const palette = colourSet[category] || colourSet.consonant;
+  const palette = rowBgColor && rowHoverColor
+    ? `${rowBgColor} ${rowHoverColor} focus:${rowHoverColor.replace('hover:', '')} ring-green-600`
+    : colourSet[category] || colourSet.consonant;
 
-
-  // highlight brackets in example words
- const renderHighlight = (text) => {
-  if (!text) return example;
-  return text.split(/[\[\]]/).map((part, i) =>
-    i % 2 === 1 ? (
-      <span
-        key={i}
-        className={`font-semibold transition-colors duration-150 ${
-          wordActive ? "text-rose-400" : "text-sky-600"
-        }`}
-      >
-        {part}
-      </span>
-    ) : (
-      <span key={i}>{part}</span>
-    )
-  );
-};
-
-
-  return (
-    <div
-      onClick={handlePhonemeClick}
-      className={`relative border border-gray-200 rounded-lg p-3 transition-all duration-150 cursor-pointer 
-        ${palette}
-        ${isActive ? "ring-2" : ""}
-      `}
-    >
-      {/* phoneme + schwa */}
-      <div className="text-2xl font-semibold text-gray-900 text-center mb-2 select-none flex items-center justify-center gap-1">
-        <span>{ipa}</span>
+  // Highlight brackets in example words
+  const renderHighlight = (text) => {
+    if (!text) return example;
+    return text.split(/[\[\]]/).map((part, i) =>
+      i % 2 === 1 ? (
         <span
-          className={`text-rose-400 text-lg font-semibold transition-opacity duration-200 ${
-            showSchwa ? "opacity-100" : "opacity-0"
+          key={i}
+          className={`font-semibold transition-colors duration-150 ${
+            wordActive ? "text-rose-400" : "text-sky-600"
           }`}
         >
-          ə
+          {part}
         </span>
-      </div>
+      ) : (
+        <span key={i}>{part}</span>
+      )
+    );
+  };
 
-      {/* divider */}
-      <div className="border-t border-gray-300 my-1" />
+  const nativeScript = extractNativeScript(example);
+  const translit = (highlighted || example || "").replace(/[\[\]]/g, '');
+  const isDifferent = nativeScript !== translit;
 
-      {/* example word */}
-      {example && (
-  <div
-    className="text-sm text-gray-700 text-center cursor-pointer"
-    onClick={handleWordClick}
-  >
-    {renderHighlight(highlighted)}
-  </div>
-)}
+  return (
+    <div className="relative border border-gray-200 rounded-lg overflow-hidden">
+      {/* Phoneme button - top half */}
+      <button
+        onClick={handlePhonemeClick}
+        onMouseEnter={() => setShowTooltip(true)}
+        onMouseLeave={() => setShowTooltip(false)}
+        className={`relative w-full p-3 transition-all duration-150 focus:outline-none focus:z-10 ${palette} ${
+          isActive ? "ring-2 ring-inset" : ""
+        }`}
+        aria-label={`Play ${category === 'tone' ? 'tone' : 'phoneme'} ${ipa}${description ? `: ${description}` : ''}`}
+      >
+        {/* Tooltip */}
+        {description && showTooltip && (
+          <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 z-20 bg-gray-900 text-white text-xs rounded px-3 py-1.5 whitespace-nowrap shadow-lg pointer-events-none">
+            {description}
+            <div className="absolute top-full left-1/2 transform -translate-x-1/2 -mt-1 w-2 h-2 bg-gray-900 rotate-45" />
+          </div>
+        )}
+        
+        {/* IPA + schwa (or tone with example) */}
+        {category === 'tone' ? (
+          // For tones: show IPA and example together
+          <div className="space-y-1">
+            <div className="text-2xl font-semibold text-gray-900 text-center select-none">
+              {ipa}
+            </div>
+            {example && (
+              <div className="text-base font-medium text-gray-700 text-center">
+                {nativeScript}
+              </div>
+            )}
+          </div>
+        ) : (
+          // For phonemes: show IPA with optional schwa
+          <div className="text-2xl font-semibold text-gray-900 text-center select-none flex items-center justify-center gap-1">
+            <span>{ipa}</span>
+            <span
+              className={`text-rose-400 text-lg font-semibold transition-opacity duration-200 ${
+                showSchwa ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              ə
+            </span>
+          </div>
+        )}
+      </button>
 
+      {/* Divider - subtle and inset */}
+      {example && category !== "tone" && <div className="border-t border-gray-300 mx-3" />}
+
+      {/* Word button - bottom half (only if not a tone) */}
+      {example && category !== "tone" && (
+        <button
+          onClick={handleWordClick}
+          className={`w-full p-3 transition-all duration-150 focus:outline-none focus:z-10 ${palette}`}
+          aria-label={`Play word ${nativeScript}`}
+        >
+          <div className="text-sm text-gray-700 text-center space-y-0.5">
+            {isDifferent && (
+              <div className="text-base font-medium">
+                {nativeScript}
+              </div>
+            )}
+            <div className={isDifferent ? "text-xs" : "text-base"}>
+              {renderHighlight(highlighted)}
+            </div>
+          </div>
+        </button>
+      )}
     </div>
   );
 }
-
 
 
 
@@ -199,10 +322,10 @@ export default function PhonemeChart({ LANGUAGE_DATA }) {
   // Chart view
   const lang = LANGUAGE_DATA[selected];
 const sectionPalette = {
-  vowel: "bg-emerald-50/40",      // 40 % tint of emerald
-  diphthong: "bg-teal-50/40",     // soft aqua
-  consonant: "bg-indigo-50/40",   // pale violet-blue
-  tone: "bg-amber-50/40",         // warm cream for tones
+  vowel: "bg-sky-50/30",         // even lighter
+  diphthong: "bg-cyan-50/30",    
+  consonant: "bg-slate-50/20",   // very subtle for consonants
+  tone: "bg-orange-50/30",       
 };
 
 
@@ -258,6 +381,7 @@ const sectionPalette = {
                       playing={playing}
                       needsSchwa={cell.needsSchwa}
                       category={section.category}
+                      description={cell.description}
                     />
                   ) : (
                     <div key={idx} className="border border-transparent" />
@@ -270,11 +394,7 @@ const sectionPalette = {
   <div className="space-y-3">
     {section.rows.map((row, rowIdx) => (
       <div key={rowIdx} className="mb-4">
-        {row.label && (
-          <div className="text-sm font-semibold text-gray-500 mb-2">
-            {row.label}
-          </div>
-        )}
+        
         <div
           className="grid gap-2"
           style={{
@@ -288,11 +408,15 @@ const sectionPalette = {
                 ipa={cell.ipa}
                 example={cell.example}
                 highlighted={cell.highlighted}
+                nativeHighlighted={cell.nativeHighlighted}
                 language={selected}
                 playAudio={play}
                 playing={playing}
                 needsSchwa={cell.needsSchwa}
                 category={section.category}
+                description={cell.description}
+                rowBgColor={row.bgColor}        // 👈 ADD THIS
+                rowHoverColor={row.hoverColor}  // 👈 ADD THIS
               />
             ) : (
               <div key={idx} className="border border-transparent" />
