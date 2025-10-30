@@ -49,84 +49,6 @@ function useAudioPlayer() {
   return { play, playing, error };
 }
 
-// Tooltip component for row labels
-function RowLabel({ label, tooltip }) {
-  const [showTooltip, setShowTooltip] = useState(false);
-
- return (
-  <div className="relative border border-gray-200 rounded-lg overflow-hidden">
-    {/* Phoneme button - top half */}
-    <button
-      onClick={handlePhonemeClick}
-      onMouseEnter={() => setShowTooltip(true)}
-      onMouseLeave={() => setShowTooltip(false)}
-      className={`relative w-full p-3 transition-all duration-150 focus:outline-none focus:z-10 ${palette} ${
-        isActive ? "ring-2 ring-inset" : ""
-      }`}
-      aria-label={`Play ${category === 'tone' ? 'tone' : 'phoneme'} ${ipa}${description ? `: ${description}` : ''}`}
-    >
-      {/* Tooltip */}
-      {description && showTooltip && (
-        <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 z-20 bg-gray-900 text-white text-xs rounded px-3 py-1.5 whitespace-nowrap shadow-lg pointer-events-none">
-          {description}
-          <div className="absolute top-full left-1/2 transform -translate-x-1/2 -mt-1 w-2 h-2 bg-gray-900 rotate-45" />
-        </div>
-      )}
-      
-      {/* IPA + schwa (or tone with example) */}
-      {category === 'tone' ? (
-        // For tones: show IPA and example together
-        <div className="space-y-1">
-          <div className="text-2xl font-semibold text-gray-900 text-center select-none">
-            {ipa}
-          </div>
-          {example && (
-            <div className="text-sm text-gray-600 text-center">
-              {extractNativeScript(example)}
-            </div>
-          )}
-        </div>
-      ) : (
-        // For phonemes: show IPA with optional schwa
-        <div className="text-2xl font-semibold text-gray-900 text-center select-none flex items-center justify-center gap-1">
-          <span>{ipa}</span>
-          <span
-            className={`text-rose-400 text-lg font-semibold transition-opacity duration-200 ${
-              showSchwa ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            ə
-          </span>
-        </div>
-      )}
-    </button>
-
-    {/* Divider - subtle and inset */}
-    {example && category !== "tone" && <div className="border-t border-gray-300 mx-3" />}
-
-    {/* Word button - bottom half (only if not a tone) */}
-    {example && category !== "tone" && (
-      <button
-        onClick={handleWordClick}
-        className={`w-full p-3 transition-all duration-150 focus:outline-none focus:z-10 ${palette}`}
-        aria-label={`Play word ${extractNativeScript(example)}`}
-      >
-        <div className="text-sm text-gray-700 text-center space-y-0.5">
-          {isDifferent && (
-            <div className="text-base font-medium">
-              {nativeScript}
-            </div>
-          )}
-          <div className={isDifferent ? "text-xs" : "text-base"}>
-            {renderHighlight(highlighted)}
-          </div>
-        </div>
-      </button>
-    )}
-  </div>
-);
-}
-
 // A single phoneme cell
 function PhonemeCell({
   ipa,
@@ -213,7 +135,7 @@ function PhonemeCell({
   const isDifferent = nativeScript !== translit;
 
   return (
-    <div className="relative border border-gray-200 rounded-lg overflow-hidden">
+    <div className="relative border border-gray-200 rounded-lg overflow-visible">
       {/* Phoneme button - top half */}
       <button
         onClick={handlePhonemeClick}
@@ -321,15 +243,12 @@ export default function PhonemeChart({ LANGUAGE_DATA }) {
 
   // Chart view
   const lang = LANGUAGE_DATA[selected];
-const sectionPalette = {
-  vowel: "bg-sky-50/30",         // even lighter
-  diphthong: "bg-cyan-50/30",    
-  consonant: "bg-slate-50/20",   // very subtle for consonants
-  tone: "bg-orange-50/30",       
-};
-
-
-
+  const sectionPalette = {
+    vowel: "bg-sky-50/30",
+    diphthong: "bg-cyan-50/30",
+    consonant: "bg-slate-50/20",
+    tone: "bg-orange-50/30",
+  };
 
   return (
     <div className="min-h-screen bg-neutral-50 text-gray-900">
@@ -353,9 +272,8 @@ const sectionPalette = {
           <div
             key={i}
             className={`mb-12 border border-gray-100 rounded-xl p-6 shadow-sm transition-colors duration-200 ${
-  sectionPalette[section.category] || "bg-white"
-}`}
-
+              sectionPalette[section.category] || "bg-white"
+            }`}
           >
             <h2 className="text-2xl font-semibold mb-2">{section.title}</h2>
             {section.subtitle && (
@@ -390,49 +308,45 @@ const sectionPalette = {
               </div>
             )}
 
-{section.rows && (
-  <div className="space-y-3">
-    {section.rows.map((row, rowIdx) => (
-      <div key={rowIdx} className="mb-4">
-        
-        <div
-          className="grid gap-2"
-          style={{
-            gridTemplateColumns: `repeat(${section.cols || 4}, minmax(0, 1fr))`,
-          }}
-        >
-          {row.cells.map((cell, idx) =>
-            cell ? (
-              <PhonemeCell
-                key={idx}
-                ipa={cell.ipa}
-                example={cell.example}
-                highlighted={cell.highlighted}
-                nativeHighlighted={cell.nativeHighlighted}
-                language={selected}
-                playAudio={play}
-                playing={playing}
-                needsSchwa={cell.needsSchwa}
-                category={section.category}
-                description={cell.description}
-                rowBgColor={row.bgColor}        // 👈 ADD THIS
-                rowHoverColor={row.hoverColor}  // 👈 ADD THIS
-              />
-            ) : (
-              <div key={idx} className="border border-transparent" />
-            )
-          )}
-        </div>
-      </div>
-    ))}
-  </div>
-)}
-
-
+            {section.rows && (
+              <div className="space-y-3">
+                {section.rows.map((row, rowIdx) => (
+                  <div key={rowIdx} className="mb-4">
+                    <div
+                      className="grid gap-2"
+                      style={{
+                        gridTemplateColumns: `repeat(${section.cols || 4}, minmax(0, 1fr))`,
+                      }}
+                    >
+                      {row.cells.map((cell, idx) =>
+                        cell ? (
+                          <PhonemeCell
+                            key={idx}
+                            ipa={cell.ipa}
+                            example={cell.example}
+                            highlighted={cell.highlighted}
+                            nativeHighlighted={cell.nativeHighlighted}
+                            language={selected}
+                            playAudio={play}
+                            playing={playing}
+                            needsSchwa={cell.needsSchwa}
+                            category={section.category}
+                            description={cell.description}
+                            rowBgColor={row.bgColor}
+                            rowHoverColor={row.hoverColor}
+                          />
+                        ) : (
+                          <div key={idx} className="border border-transparent" />
+                        )
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         ))}
       </div>
     </div>
   );
 }
-
