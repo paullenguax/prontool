@@ -2,187 +2,289 @@
 ## English (British RP)
 
 ### Monophthongs
-  phoneme: iː         example: heat                 filename: english-phoneme-ii.mp3
-  word: heat                           filename: english-word-heat.mp3
-  phoneme: ɪ          example: hit                  filename: english-phoneme-ih.mp3
-  word: hit                            filename: english-word-hit.mp3
-  phoneme: ʊ          example: put                  filename: english-phoneme-uh.mp3
-  word: put                            filename: english-word-put.mp3
-  phoneme: uː         example: pool                 filename: english-phoneme-oo.mp3
-  word: pool                           filename: english-word-pool.mp3
-  phoneme: e          example: bread                filename: english-phoneme-e.mp3
-  word: bread                          filename: english-word-bread.mp3
-  phoneme: ə          example: about                filename: english-phoneme-schwa.mp3
-  word: about                          filename: english-word-about.mp3
-  phoneme: ɜː         example: world                filename: english-phoneme-er.mp3
-  word: world                          filename: english-word-world.mp3
-  phoneme: ɔː         example: horse                filename: english-phoneme-or.mp3
-  word: horse                          filename: english-word-horse.mp3
-  phoneme: æ          example: bat                  filename: english-phoneme-ae.mp3
-  word: bat                            filename: english-word-bat.mp3
-  phoneme: ʌ          example: cup                  filename: english-phoneme-Lambda.mp3
-  word: cup                            filename: english-word-cup.mp3
-  phoneme: aː         example: bar                  filename: english-phoneme-aa.mp3
-  word: bar                            filename: english-word-bar.mp3
-  phoneme: ɒ          example: hot                  filename: english-phoneme-ot.mp3
-  word: hot                            filename: english-word-hot.mp3
+  phoneme: iː         example: fleece               filename: english-phoneme-ii.mp3
+  word: fleece                         filename: english-word-flehehceh.mp3
+  phoneme: ɪ          example: kit                  filename: english-phoneme-ih.mp3
+  word: kit                            filename: english-word-kit.mp3
+  phoneme: ʊ          example: foot                 filename: english-phoneme-uh.mp3
+  word: foot                           filename: english-word-fohoht.mp3
+  phoneme: uː         example: goose                filename: english-phoneme-ohoh.mp3
+  word: goose                          filename: english-word-gohohseh.mp3
+  phoneme: ɛ          example: dress                filename: english-phoneme-eh.mp3
+  word: dress                          filename: english-word-drehss.mp3
+  phoneme: ə          example: comma                filename: english-phoneme-schwa.mp3
+  word: comma                          filename: english-word-cohmma.mp3
+  phoneme: ɜː         example: nurse                filename: english-phoneme-ehr.mp3
+  word: nurse                          filename: english-word-nurseh.mp3
+  phoneme: ɔː         example: thought              filename: english-phoneme-ohr.mp3
+  word: thought                        filename: english-word-thohught.mp3
+  phoneme: æ          example: trap                 filename: english-phoneme-ae.mp3
+  word: trap                           filename: english-word-trap.mp3
+  phoneme: ʌ          example: strut                filename: english-phoneme-Lambda.mp3
+  word: strut                          filename: english-word-strut.mp3
+  phoneme: ɑː         example: palm                 filename: english-phoneme-aa.mp3
+  word: palm                           filename: english-word-palm.mp3
+  phoneme: ɒ          example: lot                  filename: english-phoneme-oht.mp3
+  word: lot                            filename: english-word-loht.mp3
 
 ### Diphthongs
-  phoneme: eɪ         example: late                 filename: english-phoneme-ei.mp3
-  word: late                           filename: english-word-late.mp3
-  phoneme: aɪ         example: why                  filename: english-phoneme-ai.mp3
-  word: why                            filename: english-word-why.mp3
-  phoneme: ɔɪ         example: toy                  filename: english-phoneme-oi.mp3
-  word: toy                            filename: english-word-toy.mp3
-  phoneme: əʊ         example: blow                 filename: english-phoneme-ou.mp3
-  word: blow                           filename: english-word-blow.mp3
-  phoneme: aʊ         example: how                  filename: english-phoneme-au.mp3
-  word: how                            filename: english-word-how.mp3
-  phoneme: ɪə         example: here                 filename: english-phoneme-ia.mp3
-  word: here                           filename: english-word-here.mp3
-  phoneme: eə         example: there                filename: english-phoneme-ea.mp3
-  word: there                          filename: english-word-there.mp3
-  phoneme: ʊə         example: tour                 filename: english-phoneme-ua.mp3
-  word: tour                           filename: english-word-tour.mp3
+  phoneme: eɪ         example: face                 filename: english-phoneme-ehi.mp3
+  word: face                           filename: english-word-faceh.mp3
+  phoneme: aɪ         example: price                filename: english-phoneme-ai.mp3
+  word: price                          filename: english-word-priceh.mp3
+  phoneme: ɔɪ         example: choice               filename: english-phoneme-ohi.mp3
+  word: choice                         filename: english-word-chohiceh.mp3
+  phoneme: əʊ         example: goat                 filename: english-phoneme-ohu.mp3
+  word: goat                           filename: english-word-gohat.mp3
+  phoneme: aʊ         example: mouth                filename: english-phoneme-au.mp3
+  word: mouth                          filename: english-word-mohuth.mp3
+  phoneme: ɪə         example: near                 filename: english-phoneme-yva.mp3
+  word: near                           filename: english-word-nehar.mp3
+  phoneme: eə         example: square               filename: english-phoneme-eha.mp3
+  word: square                         filename: english-word-sqwareh.mp3
+  phoneme: ʊə         example: cure                 filename: english-phoneme-wa.mp3
+  word: cure                           filename: english-word-cureh.mp3
 
 ### Consonants
-  phoneme: p          example: pick                 filename: english-phoneme-p.mp3
-  word: pick                           filename: english-word-pick.mp3
-  phoneme: t          example: tango                filename: english-phoneme-t.mp3
-  word: tango                          filename: english-word-tango.mp3
-  phoneme: k          example: kilo                 filename: english-phoneme-k.mp3
-  word: kilo                           filename: english-word-kilo.mp3
-  phoneme: tʃ         example: choose               filename: english-phoneme-ch.mp3
-  word: choose                         filename: english-word-choose.mp3
-  phoneme: f          example: fly                  filename: english-phoneme-f.mp3
-  word: fly                            filename: english-word-fly.mp3
-  phoneme: θ          example: thank                filename: english-phoneme-theta.mp3
-  word: thank                          filename: english-word-thank.mp3
-  phoneme: s          example: stay                 filename: english-phoneme-s.mp3
-  word: stay                           filename: english-word-stay.mp3
-  phoneme: ʃ          example: ship                 filename: english-phoneme-sh.mp3
-  word: ship                           filename: english-word-ship.mp3
-  phoneme: h          example: high                 filename: english-phoneme-h.mp3
-  word: high                           filename: english-word-high.mp3
-  phoneme: b          example: band                 filename: english-phoneme-b.mp3
-  word: band                           filename: english-word-band.mp3
-  phoneme: d          example: dark                 filename: english-phoneme-d.mp3
-  word: dark                           filename: english-word-dark.mp3
-  phoneme: g          example: good                 filename: english-phoneme-g.mp3
-  word: good                           filename: english-word-good.mp3
-  phoneme: dʒ         example: job                  filename: english-phoneme-dzh.mp3
-  word: job                            filename: english-word-job.mp3
-  phoneme: v          example: victor               filename: english-phoneme-v.mp3
-  word: victor                         filename: english-word-victor.mp3
-  phoneme: ð          example: these                filename: english-phoneme-eth.mp3
-  word: these                          filename: english-word-these.mp3
-  phoneme: z          example: zulu                 filename: english-phoneme-z.mp3
-  word: zulu                           filename: english-word-zulu.mp3
-  phoneme: ʒ          example: pleasure             filename: english-phoneme-zh.mp3
-  word: pleasure                       filename: english-word-pleasure.mp3
-  phoneme: m          example: mike                 filename: english-phoneme-m.mp3
-  word: mike                           filename: english-word-mike.mp3
-  phoneme: n          example: november             filename: english-phoneme-n.mp3
-  word: november                       filename: english-word-november.mp3
-  phoneme: ŋ          example: bring                filename: english-phoneme-ng.mp3
-  word: bring                          filename: english-word-bring.mp3
-  phoneme: w          example: wednesday            filename: english-phoneme-w.mp3
-  word: wednesday                      filename: english-word-wednesday.mp3
-  phoneme: l          example: london               filename: english-phoneme-l.mp3
-  word: london                         filename: english-word-london.mp3
-  phoneme: r          example: robert               filename: english-phoneme-r.mp3
-  word: robert                         filename: english-word-robert.mp3
-  phoneme: j          example: yankee               filename: english-phoneme-j.mp3
-  word: yankee                         filename: english-word-yankee.mp3
+  phoneme: p          example: pin                  filename: english-phoneme-p.mp3
+  word: pin                            filename: english-word-pin.mp3
+  phoneme: t          example: tin                  filename: english-phoneme-t.mp3
+  word: tin                            filename: english-word-tin.mp3
+  phoneme: k          example: kin                  filename: english-phoneme-k.mp3
+  word: kin                            filename: english-word-kin.mp3
+  phoneme: tʃ         example: chin                 filename: english-phoneme-ch.mp3
+  word: chin                           filename: english-word-chin.mp3
+  phoneme: f          example: fin                  filename: english-phoneme-f.mp3
+  word: fin                            filename: english-word-fin.mp3
+  phoneme: θ          example: thin                 filename: english-phoneme-thehta.mp3
+  word: thin                           filename: english-word-thin.mp3
+  phoneme: s          example: sin                  filename: english-phoneme-s.mp3
+  word: sin                            filename: english-word-sin.mp3
+  phoneme: ʃ          example: shin                 filename: english-phoneme-sh.mp3
+  word: shin                           filename: english-word-shin.mp3
+  phoneme: h          example: hint                 filename: english-phoneme-h.mp3
+  word: hint                           filename: english-word-hint.mp3
+  phoneme: b          example: bin                  filename: english-phoneme-b.mp3
+  word: bin                            filename: english-word-bin.mp3
+  phoneme: d          example: din                  filename: english-phoneme-d.mp3
+  word: din                            filename: english-word-din.mp3
+  phoneme: g          example: give                 filename: english-phoneme-g.mp3
+  word: give                           filename: english-word-giveh.mp3
+  phoneme: dʒ         example: gin                  filename: english-phoneme-dzh.mp3
+  word: gin                            filename: english-word-gin.mp3
+  phoneme: v          example: vim                  filename: english-phoneme-v.mp3
+  word: vim                            filename: english-word-vim.mp3
+  phoneme: ð          example: this                 filename: english-phoneme-ehth.mp3
+  word: this                           filename: english-word-this.mp3
+  phoneme: z          example: zoo                  filename: english-phoneme-z.mp3
+  word: zoo                            filename: english-word-zohoh.mp3
+  phoneme: ʒ          example: vision               filename: english-phoneme-zh.mp3
+  word: vision                         filename: english-word-visiohn.mp3
+  phoneme: m          example: map                  filename: english-phoneme-m.mp3
+  word: map                            filename: english-word-map.mp3
+  phoneme: n          example: nap                  filename: english-phoneme-n.mp3
+  word: nap                            filename: english-word-nap.mp3
+  phoneme: ŋ          example: sing                 filename: english-phoneme-ng.mp3
+  word: sing                           filename: english-word-sing.mp3
+  phoneme: w          example: win                  filename: english-phoneme-w.mp3
+  word: win                            filename: english-word-win.mp3
+  phoneme: l          example: lip                  filename: english-phoneme-l.mp3
+  word: lip                            filename: english-word-lip.mp3
+  phoneme: ɹ          example: rip                  filename: english-phoneme-r.mp3
+  word: rip                            filename: english-word-rip.mp3
+  phoneme: j          example: yes                  filename: english-phoneme-yv.mp3
+  word: yes                            filename: english-word-yvehs.mp3
 
 ## English (General American)
 
 ### Monophthongs
-  phoneme: i          example: heat                 filename: american_english-phoneme-i.mp3
-  word: heat                           filename: american_english-word-heat.mp3
-  phoneme: ɪ          example: hit                  filename: american_english-phoneme-ih.mp3
-  word: hit                            filename: american_english-word-hit.mp3
-  phoneme: ʊ          example: put                  filename: american_english-phoneme-uh.mp3
-  word: put                            filename: american_english-word-put.mp3
-  phoneme: u          example: pool                 filename: american_english-phoneme-u.mp3
-  word: pool                           filename: american_english-word-pool.mp3
-  phoneme: e          example: bread                filename: american_english-phoneme-e.mp3
-  word: bread                          filename: american_english-word-bread.mp3
-  phoneme: ɛ          example: bet                  filename: american_english-phoneme-eh.mp3
-  word: bet                            filename: american_english-word-bet.mp3
-  phoneme: ə          example: about                filename: american_english-phoneme-schwa.mp3
-  word: about                          filename: american_english-word-about.mp3
-  phoneme: ʌ          example: cup                  filename: american_english-phoneme-Lambda.mp3
-  word: cup                            filename: american_english-word-cup.mp3
-  phoneme: o          example: boat                 filename: american_english-phoneme-o.mp3
-  word: boat                           filename: american_english-word-boat.mp3
-  phoneme: æ          example: cat                  filename: american_english-phoneme-ae.mp3
-  word: cat                            filename: american_english-word-cat.mp3
-  phoneme: ɑ          example: father               filename: american_english-phoneme-.mp3
-  word: father                         filename: american_english-word-father.mp3
-  phoneme: ɔ          example: caught               filename: american_english-phoneme-oh.mp3
-  word: caught                         filename: american_english-word-caught.mp3
-  phoneme: ɚ          example: bird                 filename: american_english-phoneme-er2.mp3
-  word: bird                           filename: american_english-word-bird.mp3
+  phoneme: i          example: fleece               filename: american_english-phoneme-i.mp3
+  word: fleece                         filename: american_english-word-flehehceh.mp3
+  phoneme: ɪ          example: kit                  filename: american_english-phoneme-ih.mp3
+  word: kit                            filename: american_english-word-kit.mp3
+  phoneme: ʊ          example: foot                 filename: american_english-phoneme-uh.mp3
+  word: foot                           filename: american_english-word-fohoht.mp3
+  phoneme: u          example: goose                filename: american_english-phoneme-u.mp3
+  word: goose                          filename: american_english-word-gohohseh.mp3
+  phoneme: ɛ          example: dress                filename: american_english-phoneme-eh.mp3
+  word: dress                          filename: american_english-word-drehss.mp3
+  phoneme: ə          example: comma                filename: american_english-phoneme-schwa.mp3
+  word: comma                          filename: american_english-word-cohmma.mp3
+  phoneme: ʌ          example: strut                filename: american_english-phoneme-Lambda.mp3
+  word: strut                          filename: american_english-word-strut.mp3
+  phoneme: æ          example: trap                 filename: american_english-phoneme-ae.mp3
+  word: trap                           filename: american_english-word-trap.mp3
+  phoneme: ɑ          example: lot                  filename: american_english-phoneme-ah.mp3
+  word: lot                            filename: american_english-word-loht.mp3
+  phoneme: ɔ          example: thought              filename: american_english-phoneme-ohh.mp3
+  word: thought                        filename: american_english-word-thohught.mp3
+  phoneme: ɚ          example: nurse                filename: american_english-phoneme-er2.mp3
+  word: nurse                          filename: american_english-word-nurseh.mp3
 
 ### Diphthongs
-  phoneme: eɪ         example: late                 filename: american_english-phoneme-ei.mp3
-  word: late                           filename: american_english-word-late.mp3
-  phoneme: aɪ         example: why                  filename: american_english-phoneme-ai.mp3
-  word: why                            filename: american_english-word-why.mp3
-  phoneme: ɔɪ         example: toy                  filename: american_english-phoneme-oi.mp3
-  word: toy                            filename: american_english-word-toy.mp3
-  phoneme: aʊ         example: how                  filename: american_english-phoneme-au.mp3
-  word: how                            filename: american_english-word-how.mp3
-  phoneme: oʊ         example: close                filename: american_english-phoneme-ow.mp3
-  word: close                          filename: american_english-word-close.mp3
+  phoneme: eɪ         example: face                 filename: american_english-phoneme-ehi.mp3
+  word: face                           filename: american_english-word-faceh.mp3
+  phoneme: aɪ         example: price                filename: american_english-phoneme-ai.mp3
+  word: price                          filename: american_english-word-priceh.mp3
+  phoneme: oʊ         example: goat                 filename: american_english-phoneme-ohw.mp3
+  word: goat                           filename: american_english-word-gohat.mp3
+  phoneme: aʊ         example: mouth                filename: american_english-phoneme-au.mp3
+  word: mouth                          filename: american_english-word-mohuth.mp3
+  phoneme: ɔɪ         example: choice               filename: american_english-phoneme-ohi.mp3
+  word: choice                         filename: american_english-word-chohiceh.mp3
+
+### R-colored Vowels
+  phoneme: ɪɚ         example: near                 filename: american_english-phoneme-ehehr.mp3
+  word: near                           filename: american_english-word-nehar.mp3
+  phoneme: ɛɚ         example: square               filename: american_english-phoneme-air.mp3
+  word: square                         filename: american_english-word-sqwareh.mp3
+  phoneme: ʊɚ         example: cure                 filename: american_english-phoneme-ohohr.mp3
+  word: cure                           filename: american_english-word-cureh.mp3
+  phoneme: ɔɚ         example: north                filename: american_english-phoneme-ohar.mp3
+  word: north                          filename: american_english-word-nohrth.mp3
 
 ### Consonants
-  phoneme: p          example: pick                 filename: american_english-phoneme-p.mp3
-  word: pick                           filename: american_english-word-pick.mp3
-  phoneme: t          example: tango                filename: american_english-phoneme-t.mp3
-  word: tango                          filename: american_english-word-tango.mp3
-  phoneme: k          example: kilo                 filename: american_english-phoneme-k.mp3
-  word: kilo                           filename: american_english-word-kilo.mp3
-  phoneme: tʃ         example: church               filename: american_english-phoneme-ch.mp3
-  word: church                         filename: american_english-word-church.mp3
-  phoneme: f          example: fly                  filename: american_english-phoneme-f.mp3
-  word: fly                            filename: american_english-word-fly.mp3
-  phoneme: θ          example: thank                filename: american_english-phoneme-theta.mp3
-  word: thank                          filename: american_english-word-thank.mp3
-  phoneme: s          example: stay                 filename: american_english-phoneme-s.mp3
-  word: stay                           filename: american_english-word-stay.mp3
-  phoneme: ʃ          example: ship                 filename: american_english-phoneme-sh.mp3
-  word: ship                           filename: american_english-word-ship.mp3
-  phoneme: h          example: high                 filename: american_english-phoneme-h.mp3
-  word: high                           filename: american_english-word-high.mp3
-  phoneme: b          example: bat                  filename: american_english-phoneme-b.mp3
-  word: bat                            filename: american_english-word-bat.mp3
-  phoneme: d          example: dog                  filename: american_english-phoneme-d.mp3
-  word: dog                            filename: american_english-word-dog.mp3
-  phoneme: g          example: go                   filename: american_english-phoneme-g.mp3
-  word: go                             filename: american_english-word-go.mp3
-  phoneme: dʒ         example: job                  filename: american_english-phoneme-dzh.mp3
-  word: job                            filename: american_english-word-job.mp3
-  phoneme: v          example: victor               filename: american_english-phoneme-v.mp3
-  word: victor                         filename: american_english-word-victor.mp3
-  phoneme: ð          example: this                 filename: american_english-phoneme-eth.mp3
+  phoneme: p          example: pin                  filename: american_english-phoneme-p.mp3
+  word: pin                            filename: american_english-word-pin.mp3
+  phoneme: t          example: tin                  filename: american_english-phoneme-t.mp3
+  word: tin                            filename: american_english-word-tin.mp3
+  phoneme: k          example: kin                  filename: american_english-phoneme-k.mp3
+  word: kin                            filename: american_english-word-kin.mp3
+  phoneme: tʃ         example: chin                 filename: american_english-phoneme-ch.mp3
+  word: chin                           filename: american_english-word-chin.mp3
+  phoneme: f          example: fin                  filename: american_english-phoneme-f.mp3
+  word: fin                            filename: american_english-word-fin.mp3
+  phoneme: θ          example: thin                 filename: american_english-phoneme-thehta.mp3
+  word: thin                           filename: american_english-word-thin.mp3
+  phoneme: s          example: sin                  filename: american_english-phoneme-s.mp3
+  word: sin                            filename: american_english-word-sin.mp3
+  phoneme: ʃ          example: shin                 filename: american_english-phoneme-sh.mp3
+  word: shin                           filename: american_english-word-shin.mp3
+  phoneme: h          example: hint                 filename: american_english-phoneme-h.mp3
+  word: hint                           filename: american_english-word-hint.mp3
+  phoneme: b          example: bin                  filename: american_english-phoneme-b.mp3
+  word: bin                            filename: american_english-word-bin.mp3
+  phoneme: d          example: din                  filename: american_english-phoneme-d.mp3
+  word: din                            filename: american_english-word-din.mp3
+  phoneme: g          example: give                 filename: american_english-phoneme-g.mp3
+  word: give                           filename: american_english-word-giveh.mp3
+  phoneme: dʒ         example: gin                  filename: american_english-phoneme-dzh.mp3
+  word: gin                            filename: american_english-word-gin.mp3
+  phoneme: v          example: vim                  filename: american_english-phoneme-v.mp3
+  word: vim                            filename: american_english-word-vim.mp3
+  phoneme: ð          example: this                 filename: american_english-phoneme-ehth.mp3
   word: this                           filename: american_english-word-this.mp3
   phoneme: z          example: zoo                  filename: american_english-phoneme-z.mp3
-  word: zoo                            filename: american_english-word-zoo.mp3
-  phoneme: ʒ          example: measure              filename: american_english-phoneme-zh.mp3
-  word: measure                        filename: american_english-word-measure.mp3
-  phoneme: m          example: mike                 filename: american_english-phoneme-m.mp3
-  word: mike                           filename: american_english-word-mike.mp3
-  phoneme: n          example: november             filename: american_english-phoneme-n.mp3
-  word: november                       filename: american_english-word-november.mp3
-  phoneme: ŋ          example: bring                filename: american_english-phoneme-ng.mp3
-  word: bring                          filename: american_english-word-bring.mp3
-  phoneme: w          example: wednesday            filename: american_english-phoneme-w.mp3
-  word: wednesday                      filename: american_english-word-wednesday.mp3
-  phoneme: l          example: london               filename: american_english-phoneme-l.mp3
-  word: london                         filename: american_english-word-london.mp3
-  phoneme: r          example: robert               filename: american_english-phoneme-r.mp3
-  word: robert                         filename: american_english-word-robert.mp3
-  phoneme: j          example: yankee               filename: american_english-phoneme-j.mp3
-  word: yankee                         filename: american_english-word-yankee.mp3
+  word: zoo                            filename: american_english-word-zohoh.mp3
+  phoneme: ʒ          example: vision               filename: american_english-phoneme-zh.mp3
+  word: vision                         filename: american_english-word-visiohn.mp3
+  phoneme: m          example: map                  filename: american_english-phoneme-m.mp3
+  word: map                            filename: american_english-word-map.mp3
+  phoneme: n          example: nap                  filename: american_english-phoneme-n.mp3
+  word: nap                            filename: american_english-word-nap.mp3
+  phoneme: ŋ          example: sing                 filename: american_english-phoneme-ng.mp3
+  word: sing                           filename: american_english-word-sing.mp3
+  phoneme: w          example: win                  filename: american_english-phoneme-w.mp3
+  word: win                            filename: american_english-word-win.mp3
+  phoneme: l          example: lip                  filename: american_english-phoneme-l.mp3
+  word: lip                            filename: american_english-word-lip.mp3
+  phoneme: ɹ          example: rip                  filename: american_english-phoneme-r.mp3
+  word: rip                            filename: american_english-word-rip.mp3
+  phoneme: j          example: yes                  filename: american_english-phoneme-yv.mp3
+  word: yes                            filename: american_english-word-yvehs.mp3
+
+## English (General Australian)
+
+### Monophthongs
+  phoneme: iː         example: fleece               filename: australian_english-phoneme-ii.mp3
+  word: fleece                         filename: australian_english-word-flehehceh.mp3
+  phoneme: ɪ          example: kit                  filename: australian_english-phoneme-ih.mp3
+  word: kit                            filename: australian_english-word-kit.mp3
+  phoneme: ʊ          example: foot                 filename: australian_english-phoneme-uh.mp3
+  word: foot                           filename: australian_english-word-fohoht.mp3
+  phoneme: uː         example: goose                filename: australian_english-phoneme-ohoh.mp3
+  word: goose                          filename: australian_english-word-gohohseh.mp3
+  phoneme: e          example: dress                filename: australian_english-phoneme-eh.mp3
+  word: dress                          filename: australian_english-word-drehss.mp3
+  phoneme: ə          example: comma                filename: australian_english-phoneme-schwa.mp3
+  word: comma                          filename: australian_english-word-cohmma.mp3
+  phoneme: ɜː         example: nurse                filename: australian_english-phoneme-ehr.mp3
+  word: nurse                          filename: australian_english-word-nurseh.mp3
+  phoneme: oː         example: thought              filename: australian_english-phoneme-ohoh2.mp3
+  word: thought                        filename: australian_english-word-thohught.mp3
+  phoneme: æ          example: trap                 filename: australian_english-phoneme-ae.mp3
+  word: trap                           filename: australian_english-word-trap.mp3
+  phoneme: a          example: palm                 filename: australian_english-phoneme-a.mp3
+  word: palm                           filename: australian_english-word-palm.mp3
+  phoneme: ɐ          example: strut                filename: australian_english-phoneme-uhr.mp3
+  word: strut                          filename: australian_english-word-strut.mp3
+  phoneme: ɔ          example: lot                  filename: australian_english-phoneme-ohh.mp3
+  word: lot                            filename: australian_english-word-loht.mp3
+
+### Diphthongs
+  phoneme: æɪ         example: face                 filename: australian_english-phoneme-ayv.mp3
+  word: face                           filename: australian_english-word-faceh.mp3
+  phoneme: ɑɪ         example: price                filename: australian_english-phoneme-ahyv.mp3
+  word: price                          filename: australian_english-word-priceh.mp3
+  phoneme: oɪ         example: choice               filename: australian_english-phoneme-ohih.mp3
+  word: choice                         filename: australian_english-word-chohiceh.mp3
+  phoneme: æʊ         example: mouth                filename: australian_english-phoneme-aohw.mp3
+  word: mouth                          filename: australian_english-word-mohuth.mp3
+  phoneme: oʊ         example: goat                 filename: australian_english-phoneme-ohw.mp3
+  word: goat                           filename: australian_english-word-gohat.mp3
+  phoneme: ɪə         example: near                 filename: australian_english-phoneme-yva.mp3
+  word: near                           filename: australian_english-word-nehar.mp3
+  phoneme: eː         example: square               filename: australian_english-phoneme-eheh.mp3
+  word: square                         filename: australian_english-word-sqwareh.mp3
+  phoneme: ʊə         example: cure                 filename: australian_english-phoneme-wa.mp3
+  word: cure                           filename: australian_english-word-cureh.mp3
+
+### Consonants
+  phoneme: p          example: pin                  filename: australian_english-phoneme-p.mp3
+  word: pin                            filename: australian_english-word-pin.mp3
+  phoneme: t          example: tin                  filename: australian_english-phoneme-t.mp3
+  word: tin                            filename: australian_english-word-tin.mp3
+  phoneme: k          example: kin                  filename: australian_english-phoneme-k.mp3
+  word: kin                            filename: australian_english-word-kin.mp3
+  phoneme: tʃ         example: chin                 filename: australian_english-phoneme-ch.mp3
+  word: chin                           filename: australian_english-word-chin.mp3
+  phoneme: f          example: fin                  filename: australian_english-phoneme-f.mp3
+  word: fin                            filename: australian_english-word-fin.mp3
+  phoneme: θ          example: thin                 filename: australian_english-phoneme-thehta.mp3
+  word: thin                           filename: australian_english-word-thin.mp3
+  phoneme: s          example: sin                  filename: australian_english-phoneme-s.mp3
+  word: sin                            filename: australian_english-word-sin.mp3
+  phoneme: ʃ          example: shin                 filename: australian_english-phoneme-sh.mp3
+  word: shin                           filename: australian_english-word-shin.mp3
+  phoneme: h          example: hint                 filename: australian_english-phoneme-h.mp3
+  word: hint                           filename: australian_english-word-hint.mp3
+  phoneme: b          example: bin                  filename: australian_english-phoneme-b.mp3
+  word: bin                            filename: australian_english-word-bin.mp3
+  phoneme: d          example: din                  filename: australian_english-phoneme-d.mp3
+  word: din                            filename: australian_english-word-din.mp3
+  phoneme: g          example: give                 filename: australian_english-phoneme-g.mp3
+  word: give                           filename: australian_english-word-giveh.mp3
+  phoneme: dʒ         example: gin                  filename: australian_english-phoneme-dzh.mp3
+  word: gin                            filename: australian_english-word-gin.mp3
+  phoneme: v          example: vim                  filename: australian_english-phoneme-v.mp3
+  word: vim                            filename: australian_english-word-vim.mp3
+  phoneme: ð          example: this                 filename: australian_english-phoneme-ehth.mp3
+  word: this                           filename: australian_english-word-this.mp3
+  phoneme: z          example: zoo                  filename: australian_english-phoneme-z.mp3
+  word: zoo                            filename: australian_english-word-zohoh.mp3
+  phoneme: ʒ          example: vision               filename: australian_english-phoneme-zh.mp3
+  word: vision                         filename: australian_english-word-visiohn.mp3
+  phoneme: m          example: map                  filename: australian_english-phoneme-m.mp3
+  word: map                            filename: australian_english-word-map.mp3
+  phoneme: n          example: nap                  filename: australian_english-phoneme-n.mp3
+  word: nap                            filename: australian_english-word-nap.mp3
+  phoneme: ŋ          example: sing                 filename: australian_english-phoneme-ng.mp3
+  word: sing                           filename: australian_english-word-sing.mp3
+  phoneme: w          example: win                  filename: australian_english-phoneme-w.mp3
+  word: win                            filename: australian_english-word-win.mp3
+  phoneme: l          example: lip                  filename: australian_english-phoneme-l.mp3
+  word: lip                            filename: australian_english-word-lip.mp3
+  phoneme: ɹ          example: rip                  filename: australian_english-phoneme-r.mp3
+  word: rip                            filename: australian_english-word-rip.mp3
+  phoneme: j          example: yes                  filename: australian_english-phoneme-yv.mp3
+  word: yes                            filename: australian_english-word-yvehs.mp3
