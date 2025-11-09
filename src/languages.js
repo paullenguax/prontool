@@ -8,64 +8,42 @@ export const LANGUAGE_DATA = {
         "title": "Monophthongs",
         "subtitle": "Arranged by tongue position",
         "category": "vowel",
-        "cols": 5,
-        "grid": [
+        "list": 
           [
             { "ipa": "iː", "example": "fleece", "highlighted": "fl[ee]ce", "description": "close front unrounded vowel" },
             { "ipa": "ɪ", "example": "kit", "highlighted": "k[i]t", "description": "near-close front unrounded vowel" },
-            null,
             { "ipa": "ʊ", "example": "foot", "highlighted": "f[oo]t", "description": "near-close back rounded vowel" },
-            { "ipa": "uː", "example": "goose", "highlighted": "g[oo]se", "description": "close back rounded vowel" }
-          ],
-          [
+            { "ipa": "uː", "example": "goose", "highlighted": "g[oo]se", "description": "close back rounded vowel" },
             { "ipa": "ɛ", "example": "dress", "highlighted": "dr[e]ss", "description": "open-mid front unrounded vowel" },
-            null,
             { "ipa": "ə", "example": "comma", "highlighted": "comm[a]", "description": "mid central vowel (schwa)" },
             { "ipa": "ɜː", "example": "nurse", "highlighted": "n[ur]se", "description": "open-mid central unrounded vowel" },
-            { "ipa": "ɔː", "example": "thought", "highlighted": "th[ough]t", "description": "open-mid back rounded vowel" }
-          ],
-          [
+            { "ipa": "ɔː", "example": "thought", "highlighted": "th[ough]t", "description": "open-mid back rounded vowel" },
             { "ipa": "æ", "example": "trap", "highlighted": "tr[a]p", "description": "near-open front unrounded vowel" },
-            null,
             { "ipa": "ʌ", "example": "strut", "highlighted": "str[u]t", "description": "open-mid back unrounded vowel" },
             { "ipa": "ɑː", "example": "palm", "highlighted": "p[a]lm", "description": "open back unrounded vowel" },
             { "ipa": "ɒ", "example": "lot", "highlighted": "l[o]t", "description": "open back rounded vowel" }
           ]
-        ]
       },
       {
         "title": "Diphthongs",
         "subtitle": "Grouped by glide target",
         "category": "diphthong",
-        "cols": 3,
-        "grid": [
-          [
+        "list": [
             { "ipa": "eɪ", "example": "face", "highlighted": "f[a]ce", "description": "closing diphthong to [ɪ]" },
             { "ipa": "aɪ", "example": "price", "highlighted": "pr[i]ce", "description": "closing diphthong to [ɪ]" },
-            { "ipa": "ɔɪ", "example": "choice", "highlighted": "ch[oi]ce", "description": "closing diphthong to [ɪ]" }
-          ],
-          [
+            { "ipa": "ɔɪ", "example": "choice", "highlighted": "ch[oi]ce", "description": "closing diphthong to [ɪ]" },
             { "ipa": "əʊ", "example": "goat", "highlighted": "g[oa]t", "description": "closing diphthong to [ʊ]" },
             { "ipa": "aʊ", "example": "mouth", "highlighted": "m[ou]th", "description": "closing diphthong to [ʊ]" },
-            null
-          ],
-          [
             { "ipa": "ɪə", "example": "near", "highlighted": "n[ea]r", "description": "centring diphthong" },
             { "ipa": "eə", "example": "square", "highlighted": "squ[are]", "description": "centring diphthong" },
             { "ipa": "ʊə", "example": "cure", "highlighted": "c[ure]", "description": "centring diphthong" }
-          ]
         ]
       },
       {
         "title": "Consonants",
         "subtitle": "Organized by place and voicing",
         "category": "consonant",
-        "cols": 9,
-        "rows": [
-          {
-            "bgColor": "bg-green-200",
-            "hoverColor": "hover:bg-green-300",
-            "cells": [
+        "list": [
               { "ipa": "p", "example": "pin", "highlighted": "[p]in", "needsSchwa": true, "description": "voiceless bilabial stop" },
               { "ipa": "t", "example": "tin", "highlighted": "[t]in", "needsSchwa": true, "description": "voiceless alveolar stop" },
               { "ipa": "k", "example": "kin", "highlighted": "[k]in", "needsSchwa": true, "description": "voiceless velar stop" },
@@ -74,13 +52,7 @@ export const LANGUAGE_DATA = {
               { "ipa": "θ", "example": "thin", "highlighted": "[th]in", "needsSchwa": true, "description": "voiceless dental fricative" },
               { "ipa": "s", "example": "sin", "highlighted": "[s]in", "needsSchwa": true, "description": "voiceless alveolar fricative" },
               { "ipa": "ʃ", "example": "shin", "highlighted": "[sh]in", "needsSchwa": true, "description": "voiceless postalveolar fricative" },
-              { "ipa": "h", "example": "hint", "highlighted": "[h]int", "needsSchwa": true, "description": "voiceless glottal fricative" }
-            ]
-          },
-          {
-            "bgColor": "bg-green-300",
-            "hoverColor": "hover:bg-green-400",
-            "cells": [
+              { "ipa": "h", "example": "hint", "highlighted": "[h]int", "needsSchwa": true, "description": "voiceless glottal fricative" },
               { "ipa": "b", "example": "bin", "highlighted": "[b]in", "needsSchwa": true, "description": "voiced bilabial stop" },
               { "ipa": "d", "example": "din", "highlighted": "[d]in", "needsSchwa": true, "description": "voiced alveolar stop" },
               { "ipa": "g", "example": "give", "highlighted": "[g]ive", "needsSchwa": true, "description": "voiced velar stop" },
@@ -89,28 +61,17 @@ export const LANGUAGE_DATA = {
               { "ipa": "ð", "example": "this", "highlighted": "[th]is", "needsSchwa": true, "description": "voiced dental fricative" },
               { "ipa": "z", "example": "zoo", "highlighted": "[z]oo", "needsSchwa": true, "description": "voiced alveolar fricative" },
               { "ipa": "ʒ", "example": "vision", "highlighted": "vi[s]ion", "needsSchwa": true, "description": "voiced postalveolar fricative" },
-              null
-            ]
-          },
-          {
-            "bgColor": "bg-green-100",
-            "hoverColor": "hover:bg-green-200",
-            "cells": [
               { "ipa": "m", "example": "map", "highlighted": "[m]ap", "needsSchwa": true, "description": "bilabial nasal" },
               { "ipa": "n", "example": "nap", "highlighted": "[n]ap", "needsSchwa": true, "description": "alveolar nasal" },
               { "ipa": "ŋ", "example": "sing", "highlighted": "si[ng]", "description": "velar nasal" },
-              null,
               { "ipa": "w", "example": "win", "highlighted": "[w]in", "needsSchwa": true, "description": "labial-velar approximant" },
-              null,
               { "ipa": "l", "example": "lip", "highlighted": "[l]ip", "needsSchwa": true, "description": "alveolar lateral approximant" },
               { "ipa": "ɹ", "example": "rip", "highlighted": "[r]ip", "needsSchwa": true, "description": "alveolar approximant" },
               { "ipa": "j", "example": "yes", "highlighted": "[y]es", "needsSchwa": true, "description": "palatal approximant" }
             ]
           }
         ]
-      }
-    ]
-  },
+      },
 
   "american_english": {
     "name": "English (General American)",
@@ -121,74 +82,49 @@ export const LANGUAGE_DATA = {
         "title": "Monophthongs",
         "subtitle": "Arranged by tongue position",
         "category": "vowel",
-        "cols": 5,
-        "grid": [
-          [
+        "list": [
+          
             { "ipa": "i", "example": "fleece", "highlighted": "fl[ee]ce", "description": "close front unrounded vowel" },
             { "ipa": "ɪ", "example": "kit", "highlighted": "k[i]t", "description": "near-close front unrounded vowel" },
-            null,
             { "ipa": "ʊ", "example": "foot", "highlighted": "f[oo]t", "description": "near-close back rounded vowel" },
-            { "ipa": "u", "example": "goose", "highlighted": "g[oo]se", "description": "close back rounded vowel" }
-          ],
-          [
-            null,
+            { "ipa": "u", "example": "goose", "highlighted": "g[oo]se", "description": "close back rounded vowel" },
             { "ipa": "ɛ", "example": "dress", "highlighted": "dr[e]ss", "description": "open-mid front unrounded vowel" },
             { "ipa": "ə", "example": "comma", "highlighted": "comm[a]", "description": "mid central vowel (schwa)" },
             { "ipa": "ʌ", "example": "strut", "highlighted": "str[u]t", "description": "open-mid back unrounded vowel" },
-            null,
-          ],
-          [
             { "ipa": "æ", "example": "trap", "highlighted": "tr[a]p", "description": "near-open front unrounded vowel" },
             { "ipa": "ɑ", "example": "lot", "highlighted": "l[o]t", "description": "open back unrounded vowel (LOT-PALM merged)" },
-            null,
-            { "ipa": "ɔ", "example": "thought", "highlighted": "th[ough]t", "description": "open-mid back rounded vowel (non-merged)" },
-            { "ipa": "ɚ", "example": "nurse", "highlighted": "n[ur]se", "description": "r-colored schwa" }
-          ]
+            { "ipa": "ɔ", "example": "thought", "highlighted": "th[ough]t", "description": "open-mid back rounded vowel (non-merged)"},
+            { "ipa": "ɚ", "example": "nurse", "highlighted": "n[ur]se", "description": "r-colored schwa"},
         ]
       },
       {
         "title": "Diphthongs",
         "subtitle": "Gliding vowel combinations",
         "category": "diphthong",
-        "cols": 3,
-        "grid": [
-          [
+        "list": [
             { "ipa": "eɪ", "example": "face", "highlighted": "f[a]ce", "description": "mid front to close front" },
             { "ipa": "aɪ", "example": "price", "highlighted": "pr[i]ce", "description": "open to near-close front" },
-            { "ipa": "oʊ", "example": "goat", "highlighted": "g[oa]t", "description": "mid back to close back" }
-            
-          ],
-          [  
+            { "ipa": "oʊ", "example": "goat", "highlighted": "g[oa]t", "description": "mid back to close back" },
             { "ipa": "aʊ", "example": "mouth", "highlighted": "m[ou]th", "description": "open to near-close back" },
             { "ipa": "ɔɪ", "example": "choice", "highlighted": "ch[oi]ce", "description": "open-mid back to near-close front" },
-            null
-          ]
         ]
       },
       {
         "title": "R-colored Vowels",
         "subtitle": "Rhotic vowel nuclei",
         "category": "vowel",
-        "cols": 4,
-        "grid": [
-          [
+        "list": [
             { "ipa": "ɪɚ", "example": "near", "highlighted": "n[ea]r", "description": "near r-colored" },
             { "ipa": "ɛɚ", "example": "square", "highlighted": "squ[are]", "description": "square r-colored" },
             { "ipa": "ʊɚ", "example": "cure", "highlighted": "c[ure]", "description": "cure r-colored" },
             { "ipa": "ɔɚ", "example": "north", "highlighted": "n[or]th", "description": "force r-colored" }
-          ]
         ]
       },
       {
         "title": "Consonants",
         "subtitle": "Organized by place and voicing",
         "category": "consonant",
-        "cols": 9,
-        "rows": [
-          {
-            "bgColor": "bg-green-200",
-            "hoverColor": "hover:bg-green-300",
-            "cells": [
+        "list": [
               { "ipa": "p", "example": "pin", "highlighted": "[p]in", "needsSchwa": true, "description": "voiceless bilabial stop" },
               { "ipa": "t", "example": "tin", "highlighted": "[t]in", "needsSchwa": true, "description": "voiceless alveolar stop" },
               { "ipa": "k", "example": "kin", "highlighted": "[k]in", "needsSchwa": true, "description": "voiceless velar stop" },
@@ -197,13 +133,7 @@ export const LANGUAGE_DATA = {
               { "ipa": "θ", "example": "thin", "highlighted": "[th]in", "needsSchwa": true, "description": "voiceless dental fricative" },
               { "ipa": "s", "example": "sin", "highlighted": "[s]in", "needsSchwa": true, "description": "voiceless alveolar fricative" },
               { "ipa": "ʃ", "example": "shin", "highlighted": "[sh]in", "needsSchwa": true, "description": "voiceless postalveolar fricative" },
-              { "ipa": "h", "example": "hint", "highlighted": "[h]int", "needsSchwa": true, "description": "voiceless glottal fricative" }
-            ]
-          },
-          {
-            "bgColor": "bg-green-300",
-            "hoverColor": "hover:bg-green-400",
-            "cells": [
+              { "ipa": "h", "example": "hint", "highlighted": "[h]int", "needsSchwa": true, "description": "voiceless glottal fricative" },
               { "ipa": "b", "example": "bin", "highlighted": "[b]in", "needsSchwa": true, "description": "voiced bilabial stop" },
               { "ipa": "d", "example": "din", "highlighted": "[d]in", "needsSchwa": true, "description": "voiced alveolar stop" },
               { "ipa": "g", "example": "give", "highlighted": "[g]ive", "needsSchwa": true, "description": "voiced velar stop" },
@@ -212,27 +142,16 @@ export const LANGUAGE_DATA = {
               { "ipa": "ð", "example": "this", "highlighted": "[th]is", "needsSchwa": true, "description": "voiced dental fricative" },
               { "ipa": "z", "example": "zoo", "highlighted": "[z]oo", "needsSchwa": true, "description": "voiced alveolar fricative" },
               { "ipa": "ʒ", "example": "vision", "highlighted": "vi[s]ion", "needsSchwa": true, "description": "voiced postalveolar fricative" },
-              null
-            ]
-          },
-          {
-            "bgColor": "bg-green-100",
-            "hoverColor": "hover:bg-green-200",
-            "cells": [
               { "ipa": "m", "example": "map", "highlighted": "[m]ap", "needsSchwa": true, "description": "bilabial nasal" },
               { "ipa": "n", "example": "nap", "highlighted": "[n]ap", "needsSchwa": true, "description": "alveolar nasal" },
               { "ipa": "ŋ", "example": "sing", "highlighted": "si[ng]", "description": "velar nasal" },
-              null,
               { "ipa": "w", "example": "win", "highlighted": "[w]in", "needsSchwa": true, "description": "labial-velar approximant" },
-              null,
               { "ipa": "l", "example": "lip", "highlighted": "[l]ip", "needsSchwa": true, "description": "alveolar lateral approximant" },
               { "ipa": "ɹ", "example": "rip", "highlighted": "[r]ip", "needsSchwa": true, "description": "alveolar approximant" },
               { "ipa": "j", "example": "yes", "highlighted": "[y]es", "needsSchwa": true, "description": "palatal approximant" }
             ]
           }
         ]
-      }
-    ]
   },
 
   "australian_english": {
