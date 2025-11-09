@@ -1,4 +1,4 @@
-// PhonemeChart.jsx – FINAL CLEAN VERSION
+// PhonemeChart.jsx – FINAL + MODAL + ALL FIXES
 import React, { useState, useRef, useEffect, useMemo, useCallback } from "react";
 import {
   Volume2, Moon, Sun, Search, Download, X,
@@ -114,7 +114,7 @@ const ResponsiveGrid = ({ children, compact }) => {
 // ────────────────────────────────────── PHONEME CELL ──────────────────────────────────────
 const PhonemeCell = React.memo(function PhonemeCell({
   ipa, example, highlighted, language, playAudio, playing, voice,
-  needsSchwa = false, category, description, dark, compact, compareIPA
+  needsSchwa = false, category, description, dark, compact, compareIPA, compareLang
 }) {
   const isPlaying = playing?.lang === language && playing?.id === ipa;
   const [showTooltip, setShowTooltip] = useState(false);
@@ -184,18 +184,16 @@ const PhonemeCell = React.memo(function PhonemeCell({
     );
   }, [highlighted, displayWord, wordActive, dark]);
 
-  const isDifferent = compareIPA !== undefined && compareIPA !== ipa;
+  const isDifferent = compareLang && compareIPA !== null && compareIPA !== ipa;
 
-return (
-  <div className={`${palette} relative overflow-visible`}>
-    {isPlaying && <div className="absolute inset-0 rounded-lg ring-2 ring-inset animate-ping ring-current opacity-75" />}
-    
-    {/* RED ! ONLY IF IPA EXISTS BUT IS DIFFERENT */}
-    {isDifferent && (
-      <div className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold animate-pulse">
-        !
-      </div>
-    )}
+  return (
+    <div className={`${palette} relative overflow-visible`}>
+      {isPlaying && <div className="absolute inset-0 rounded-lg ring-2 ring-inset animate-ping ring-current opacity-75" />}
+      {isDifferent && (
+        <div className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold animate-pulse">
+          !
+        </div>
+      )}
 
       <button
         onClick={handlePhoneme}
@@ -206,8 +204,8 @@ return (
       >
         {description && showTooltip && (
           <div className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-2 z-50 px-3 py-1.5 text-xs font-medium rounded-lg shadow-xl whitespace-nowrap transition-all duration-200 ${
-            dark 
-              ? "bg-slate-800 text-slate-100 border border-slate-700" 
+            dark
+              ? "bg-slate-800 text-slate-100 border border-slate-700"
               : "bg-gray-900 text-white"
           }`}>
             <div className="flex items-center gap-2">
@@ -249,36 +247,75 @@ return (
   );
 });
 
+// ────────────────────────────────────── COMPARE MODAL ──────────────────────────────────────
+const CompareModal = ({ isOpen, onClose, onSelect, selectedLang, dark, languageData }) => {
+  if (!isOpen) return null;
+
+  const languages = Object.entries(languageData)
+    .filter(([code]) => code !== selectedLang)
+    .map(([code, lang]) => ({ code, ...lang }));
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+      <div className={`w-full max-w-md rounded-xl p-6 shadow-2xl ${
+        dark ? "bg-slate-800 text-slate-100" : "bg-white text-gray-900"
+      }`}>
+        <div className="flex justify-between items-center mb-4">
+          <h2 className="text-xl font-bold">Compare Languages</h2>
+          <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
+            <X className="w-6 h-6" />
+          </button>
+        </div>
+        <div className="max-h-96 overflow-y-auto space-y-1">
+          {languages.map(({ code, name, flag }) => (
+            <button
+              key={code}
+              onClick={() => {
+                onSelect(code);
+                onClose();
+              }}
+              className={`w-full flex items-center gap-3 p-3 rounded-lg transition-all ${
+                dark 
+                  ? "hover:bg-slate-700 text-slate-100" 
+                  : "hover:bg-gray-100 text-gray-900"
+              }`}
+            >
+              <span className="text-2xl">{flag}</span>
+              <span className="font-medium text-left">{name}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
 // ────────────────────────────────────── CHART VIEW ──────────────────────────────────────
-const ChartView = ({ 
-  language, voice, compact, dark, playAudio, playing, compareLang, languageData, selected 
-}) => {
+const ChartView = ({ language, voice, compact, dark, playAudio, playing, compareLang, languageData, selected }) => {
   const lang = languageData[language];
 
-const sections = useMemo(() => {
-  if (!compareLang) return lang.sections;
+  const sections = useMemo(() => {
+    if (!compareLang) return lang.sections;
 
-  const compareData = languageData[compareLang];
-  const ipaMap = new Map();
+    const compareData = languageData[compareLang];
+    const ipaMap = new Map();
 
-  // Build map: IPA → IPA from compare language
-  compareData.sections.forEach(sec => {
-    sec.list?.forEach(cell => {
-      if (cell.ipa) {
-        ipaMap.set(cell.ipa, cell.ipa);
-      }
+    compareData.sections.forEach(sec => {
+      sec.list?.forEach(cell => {
+        if (cell.ipa) {
+          ipaMap.set(cell.ipa, cell.ipa);
+        }
+      });
     });
-  });
 
-  // Map current language cells → add compareIPA
-  return lang.sections.map(sec => ({
-    ...sec,
-    list: sec.list?.map(cell => ({
-      ...cell,
-      compareIPA: cell.ipa ? ipaMap.get(cell.ipa) : undefined
-    }))
-  }));
-}, [lang, compareLang, languageData]);
+    return lang.sections.map(sec => ({
+      ...sec,
+      list: sec.list?.map(cell => ({
+        ...cell,
+        compareIPA: cell.ipa ? ipaMap.get(cell.ipa) : null
+      }))
+    }));
+  }, [lang, compareLang, languageData]);
 
   return (
     <div>
@@ -290,9 +327,20 @@ const sections = useMemo(() => {
       )}
 
       {sections.map((section, i) => (
-        <div key={i} className={`mb-6 rounded-xl p-3 sm:p-4 shadow-lg backdrop-blur-sm border ${dark ? "bg-white/5 border-white/10" : "bg-white/70 border-gray-200"}`}>
-          <h2 className={`font-bold ${compact ? "text-base sm:text-lg" : "text-lg sm:text-xl"} mb-1`}>{section.title}</h2>
-          {section.subtitle && <p className={`text-sm ${dark ? "text-slate-400" : "text-gray-500"} mb-3`}>{section.subtitle}</p>}
+        <div
+          key={i}
+          className={`mb-6 rounded-xl p-3 sm:p-4 shadow-lg backdrop-blur-sm border ${
+            dark ? "bg-white/5 border-white/10" : "bg-white/70 border-gray-200"
+          }`}
+        >
+          <h2 className={`font-bold ${compact ? "text-base sm:text-lg" : "text-lg sm:text-xl"} mb-1`}>
+            {section.title}
+          </h2>
+          {section.subtitle && (
+            <p className={`text-sm ${dark ? "text-slate-400" : "text-gray-500"} mb-3`}>
+              {section.subtitle}
+            </p>
+          )}
           {section.list && (
             <ResponsiveGrid compact={compact}>
               {section.list.map((cell, idx) => (
@@ -306,6 +354,8 @@ const sections = useMemo(() => {
                   category={section.category}
                   dark={dark}
                   compact={compact}
+                  compareIPA={cell.compareIPA}
+                  compareLang={compareLang}
                 />
               ))}
             </ResponsiveGrid>
@@ -324,6 +374,7 @@ export default function PhonemeChart({ languageData }) {
   const [dark, setDark] = useDarkMode();
   const [search, setSearch] = useState("");
   const [compact, setCompact] = useState(false);
+  const [showCompareModal, setShowCompareModal] = useState(false);
   const { play, preloadLanguage, playing, error } = useAudioPlayer();
   const chartRef = useRef(null);
 
@@ -345,7 +396,14 @@ export default function PhonemeChart({ languageData }) {
     setVoice(languageData[code].defaultVoice || "female");
     setSearch("");
     setCompact(false);
+    setCompareLang(null);
+    setShowCompareModal(false);
   }, [languageData]);
+
+  const selectCompareLanguage = useCallback(code => {
+    setCompareLang(code);
+    setShowCompareModal(false);
+  }, []);
 
   const filteredSections = useMemo(() => {
     if (!lang || !search) return lang?.sections;
@@ -466,57 +524,65 @@ export default function PhonemeChart({ languageData }) {
 
         <div className={compareLang ? "grid md:grid-cols-2 gap-8" : ""}>
           <div>
-  <ChartView
-    language={selected}
-    voice={voice}
-    compact={compact}
-    dark={dark}
-    playAudio={play}
-    playing={playing}
-    compareLang={compareLang}
-    languageData={languageData}
-    selected={selected}
-  />
-</div>
+            <ChartView
+              language={selected}
+              voice={voice}
+              compact={compact}
+              dark={dark}
+              playAudio={play}
+              playing={playing}
+              compareLang={compareLang}
+              languageData={languageData}
+              selected={selected}
+            />
+          </div>
 
-{compareLang && (
-  <div className="border-l pl-6">
-    <div className="flex justify-between items-center mb-4">
-      <h2 className="text-2xl font-bold flex items-center gap-2">
-        <span className="text-4xl">{languageData[compareLang].flag}</span>
-        {languageData[compareLang].name}
-      </h2>
-      <button onClick={() => setCompareLang(null)} className="text-red-500 hover:text-red-600">
-        <X className="w-6 h-6" />
-      </button>
-    </div>
-    <ChartView
-      language={compareLang}
-      voice={voice}
-      compact={compact}
-      dark={dark}
-      playAudio={play}
-      playing={playing}
-      compareLang={selected}
-      languageData={languageData}
-      selected={selected}
-    />
-  </div>
-)}
+          {compareLang && (
+            <div className="border-l pl-6">
+              <div className="flex items-center gap-3 mb-6">
+                <h1 className="text-2xl sm:text-3xl font-bold flex items-center gap-2">
+                  <span className="text-5xl">{languageData[compareLang].flag}</span>
+                  {languageData[compareLang].name}
+                </h1>
+                <button onClick={() => setCompareLang(null)} className="text-red-500 hover:text-red-600">
+                  <X className="w-6 h-6" />
+                </button>
+              </div>
+              <ChartView
+                language={compareLang}
+                voice={voice}
+                compact={compact}
+                dark={dark}
+                playAudio={play}
+                playing={playing}
+                compareLang={selected}
+                languageData={languageData}
+                selected={selected}
+              />
+            </div>
+          )}
         </div>
 
+        {/* NEW: COMPARE BUTTON + MODAL */}
         {!compareLang && (
-          <button
-            onClick={() => {
-              const keys = Object.keys(languageData).filter(k => k !== selected);
-              const choice = prompt(`Compare with:\n${keys.map(k => `${languageData[k].flag} ${languageData[k].name}`).join("\n")}\n\nEnter code (e.g. american_english):`);
-              if (choice && languageData[choice]) setCompareLang(choice);
-            }}
-            className="fixed bottom-6 right-6 bg-gradient-to-r from-sky-500 to-blue-600 text-white p-4 rounded-full shadow-2xl hover:shadow-sky-500/50 transform hover:scale-110 transition-all z-50 flex items-center gap-2"
-          >
-            <ArrowRightLeft className="w-6 h-6" />
-            <span className="hidden sm:inline font-semibold">Compare</span>
-          </button>
+          <>
+            <button
+              onClick={() => setShowCompareModal(true)}
+              className="fixed bottom-6 right-6 bg-gradient-to-r from-sky-500 to-blue-600 text-white p-4 rounded-full shadow-2xl hover:shadow-sky-500/50 transform hover:scale-110 transition-all z-50 flex items-center gap-2"
+            >
+              <ArrowRightLeft className="w-6 h-6" />
+              <span className="hidden sm:inline font-semibold">Compare</span>
+            </button>
+
+            <CompareModal
+              isOpen={showCompareModal}
+              onClose={() => setShowCompareModal(false)}
+              onSelect={selectCompareLanguage}
+              selectedLang={selected}
+              dark={dark}
+              languageData={languageData}
+            />
+          </>
         )}
       </div>
     </div>
