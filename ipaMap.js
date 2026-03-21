@@ -65,7 +65,7 @@ export const IPA_MAP = {
   "ø": "oe", "œ": "oeh", "ɤ": "uh2", "ɯ": "u-", "ɨ": "i-",
 
   // === SPANISH / PORTUGUESE ===
-  "ɲ": "ny", "ʎ": "ly", "ɾ": "tap", "ʁ": "R",
+  "ɲ": "ny", "ʎ": "ly", "ɾ": "tap", "ʁ": "R", "ʝ": "pal",
 
   // === MANDARIN TONES ===
   "ā": "a1", "á": "a2", "ǎ": "a3", "à": "a4",
@@ -75,13 +75,10 @@ export const IPA_MAP = {
   "ū": "u1", "ú": "u2", "ǔ": "u3", "ù": "u4",
   "mā": "ma1", "má": "ma2", "mǎ": "ma3", "mà": "ma4",
   "ǖ": "yu1", "ǘ": "yu2", "ǚ": "yu3", "ǜ": "yu4",
-  "ɕ": "cj",
-"tɕ": "qj",
-"tɕʰ": "qjh",
-"ɻ": "r2",
+  "ɻ": "r2",
 "ia": "ya", "ie": "ye", "ua": "wa", "uo": "wo",
 "yɛ": "yue", "iau": "yao", "iou": "you", "uai": "wai", "uei": "wei",
- "ɚ": "er2",     // èr
+  // ɚ already defined above as "er"
 "ŋ̍": "ng3",     // ńg (syllabic)
   // === ASPIRATION / PALATALIZATION ===
   "ʰ": "h", "ʲ": "j", "ˤ": "pharyn",
@@ -95,7 +92,7 @@ export const IPA_MAP = {
   "ɳ": "nr", "ɴ": "nu",
 
   // === TURKISH / JAPANESE ===
-  "tɕʰ": "tchj",
+  "tɕʰ": "qjh",
 
   // === KOREAN FORTIS ===
   "p͈": "pp", "t͈": "tt", "k͈": "kk", "s͈": "ss", "t͈ɕ": "ttcj",
@@ -104,7 +101,7 @@ export const IPA_MAP = {
   "ʔ": "q2", "q": "q",
 
   // === RUSSIAN ===
-  "ts": "ts", "tɕ": "tch", "ɕː": "shch",
+  "ts": "ts", "dz": "dz", "tɕ": "tch", "ɕː": "shch", "ɫ": "lv",
 
   // === HINDI COMPLEX ===
   "t̪": "t-d", "d̪": "d-d", "t̪ʰ": "t-dh", "d̪ʰ": "d-dh",

@@ -1,7 +1,7 @@
-// PhonemeChart.jsx – FIXED: Dark mode readability + removed bounce animation
+// PhonemeChart.jsx
 import React, { useState, useRef, useEffect, useMemo, useCallback } from "react";
 import {
-  Volume2, Search, Download, X,
+  Search, Download, X,
   Minimize2, Maximize2, ArrowRightLeft
 } from "lucide-react";
 import { sanitizeIdentifier } from "../ipaMap.js";
@@ -9,8 +9,6 @@ import html2canvas from "html2canvas";
 import lenguaxLogo from "./assets/Lenguax-Logo-Abbreviated-Square.png";
 
 const S3_CONFIG = { bucketUrl: "https://8b33twdseq-courses.s3.amazonaws.com/phoneme-audio" };
-
-// Dark mode removed for simplicity
 
 // ────────────────────────────────────── AUDIO PLAYER ──────────────────────────────────────
 function useAudioPlayer() {
@@ -40,7 +38,7 @@ function useAudioPlayer() {
     }
   }, []);
 
-  const play = useCallback(async (lang, type, id, voice = "female") => {
+  const play = useCallback(async (lang, type, id, voice = "female", speed = 1) => {
     const ctx = ctxRef.current;
     if (!ctx) return;
     if (ctx.state === "suspended") await ctx.resume();
@@ -51,9 +49,33 @@ function useAudioPlayer() {
     if (!buffer) { setPlaying(null); return; }
     const src = ctx.createBufferSource();
     src.buffer = buffer;
+    src.playbackRate.value = speed;
     src.connect(ctx.destination);
     src.start(0);
     src.onended = () => setPlaying(null);
+  }, [fetchBuffer]);
+
+  const playSequence = useCallback(async (lang, ipas, voice = "female", speed = 1) => {
+    const ctx = ctxRef.current;
+    if (!ctx) return;
+    if (ctx.state === "suspended") await ctx.resume();
+    for (const ipa of ipas) {
+      const safe = sanitizeIdentifier(ipa);
+      const url = `${S3_CONFIG.bucketUrl}/${lang}-phoneme-${safe}-${voice}.mp3`;
+      setPlaying({ lang, id: ipa, type: "phoneme" });
+      const buffer = await fetchBuffer(url);
+      if (!buffer) continue;
+      await new Promise(resolve => {
+        const src = ctx.createBufferSource();
+        src.buffer = buffer;
+        src.playbackRate.value = speed;
+        src.connect(ctx.destination);
+        src.start(0);
+        src.onended = resolve;
+      });
+      await new Promise(r => setTimeout(r, 350));
+    }
+    setPlaying(null);
   }, [fetchBuffer]);
 
   const preloadLanguage = useCallback(async (lang, ids = [], voice = "female") => {
@@ -67,7 +89,11 @@ function useAudioPlayer() {
     await Promise.allSettled(tasks);
   }, [fetchBuffer]);
 
-  return { play, preloadLanguage, playing: playing ? { lang: playing.lang, id: playing.id, type: playing.type } : null, error };
+  return {
+    play, playSequence, preloadLanguage,
+    playing: playing ? { lang: playing.lang, id: playing.id, type: playing.type } : null,
+    error
+  };
 }
 
 // ────────────────────────────────────── RESPONSIVE GRID ──────────────────────────────────────
@@ -79,9 +105,7 @@ const ResponsiveGrid = ({ children, compact }) => {
     <div className="overflow-visible">
       <div
         className="grid gap-1.5 sm:gap-2"
-        style={{
-          gridTemplateColumns: `repeat(auto-fit, minmax(clamp(${min},${vw},${max}),1fr))`
-        }}
+        style={{ gridTemplateColumns: `repeat(auto-fit, minmax(clamp(${min},${vw},${max}),1fr))` }}
       >
         {children}
       </div>
@@ -91,10 +115,10 @@ const ResponsiveGrid = ({ children, compact }) => {
 
 // ────────────────────────────────────── PHONEME CELL ──────────────────────────────────────
 const PhonemeCell = React.memo(function PhonemeCell({
-  ipa, example, highlighted, language, playAudio, playing, voice,
+  ipa, example, highlighted, language, playAudio, playing, voice, speed = 1,
   needsSchwa = false, category, description, compact, compareIPA, compareLang
 }) {
-  const isPlaying = playing?.lang === language && playing?.id === ipa && playing?.type === 'phoneme';
+  const isPlaying = playing?.lang === language && playing?.id === ipa && playing?.type === "phoneme";
   const [showTooltip, setShowTooltip] = useState(false);
   const [showSchwa, setShowSchwa] = useState(false);
   const [wordActive, setWordActive] = useState(false);
@@ -109,18 +133,18 @@ const PhonemeCell = React.memo(function PhonemeCell({
   const displayWord = nativeScript !== translit ? nativeScript : translit;
 
   const handlePhoneme = useCallback(() => {
-    playAudio(language, "phoneme", ipa, voice);
+    playAudio(language, "phoneme", ipa, voice, speed);
     if (needsSchwa) {
       setShowSchwa(true);
       setTimeout(() => setShowSchwa(false), 800);
     }
-  }, [playAudio, language, ipa, voice, needsSchwa]);
+  }, [playAudio, language, ipa, voice, speed, needsSchwa]);
 
   const handleWord = useCallback(() => {
-    playAudio(language, "word", example, voice);
+    playAudio(language, "word", example, voice, speed);
     setWordActive(true);
     setTimeout(() => setWordActive(false), 700);
-  }, [playAudio, language, example, voice]);
+  }, [playAudio, language, example, voice, speed]);
 
   useEffect(() => {
     if (isPlaying && needsSchwa) setShowSchwa(true);
@@ -145,9 +169,7 @@ const PhonemeCell = React.memo(function PhonemeCell({
         <span
           key={i}
           className={`font-bold transition-all duration-300 ${
-            wordActive
-              ? "text-rose-500 scale-110 drop-shadow-lg"
-              : "text-sky-600"
+            wordActive ? "text-rose-500 scale-110 drop-shadow-lg" : "text-sky-600"
           }`}
         >
           {part}
@@ -156,14 +178,13 @@ const PhonemeCell = React.memo(function PhonemeCell({
     );
   }, [highlighted, displayWord, wordActive]);
 
+  // isDifferent: phoneme absent from compare language (compareIPA will be undefined)
   const isDifferent = compareLang && compareIPA !== null && compareIPA !== ipa;
 
   return (
-    <div className={`${palette} relative overflow-visible`}>
+    <div className={`${palette} relative overflow-visible ${isDifferent || showTooltip ? "z-10" : ""}`}>
       {isDifferent && (
-        <div className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold">
-          !
-        </div>
+        <div className="absolute -top-1 -right-1 z-20 bg-red-500 rounded-full w-3 h-3" title="Not in compare language" />
       )}
       <button
         onClick={handlePhoneme}
@@ -213,7 +234,7 @@ const PhonemeCell = React.memo(function PhonemeCell({
 const CompareModal = ({ isOpen, onClose, onSelect, selectedLang, languageData }) => {
   if (!isOpen) return null;
   const languages = Object.entries(languageData)
-    .filter(([code]) => code !== selectedLang)
+    .filter(([code, lang]) => code !== selectedLang && lang.status !== 'coming_soon')
     .map(([code, lang]) => ({ code, ...lang }));
 
   return (
@@ -229,10 +250,7 @@ const CompareModal = ({ isOpen, onClose, onSelect, selectedLang, languageData })
           {languages.map(({ code, name, flag }) => (
             <button
               key={code}
-              onClick={() => {
-                onSelect(code);
-                onClose();
-              }}
+              onClick={() => { onSelect(code); onClose(); }}
               className="w-full flex items-center gap-3 p-3 rounded-lg transition-all font-medium border hover:bg-gray-100 hover:text-gray-900 border-gray-300"
             >
               <span className="text-2xl">{flag}</span>
@@ -246,10 +264,11 @@ const CompareModal = ({ isOpen, onClose, onSelect, selectedLang, languageData })
 };
 
 // ────────────────────────────────────── CHART VIEW ──────────────────────────────────────
-const ChartView = ({ language, voice, compact, playAudio, playing, compareLang, languageData, selected }) => {
+const ChartView = ({ language, voice, speed, compact, playAudio, playSequence, playing, compareLang, languageData, selected, overrideSections }) => {
   const lang = languageData[language];
   const sections = useMemo(() => {
-    if (!compareLang) return lang.sections;
+    const baseSections = overrideSections || lang.sections;
+    if (!compareLang) return baseSections;
     const compareData = languageData[compareLang];
     const ipaMap = new Map();
     compareData.sections.forEach(sec => {
@@ -257,14 +276,14 @@ const ChartView = ({ language, voice, compact, playAudio, playing, compareLang, 
         if (cell.ipa) ipaMap.set(cell.ipa, cell.ipa);
       });
     });
-    return lang.sections.map(sec => ({
+    return baseSections.map(sec => ({
       ...sec,
       list: sec.list?.map(cell => ({
         ...cell,
         compareIPA: cell.ipa ? ipaMap.get(cell.ipa) : null
       }))
     }));
-  }, [lang, compareLang, languageData]);
+  }, [lang, compareLang, languageData, overrideSections]);
 
   return (
     <div>
@@ -275,17 +294,23 @@ const ChartView = ({ language, voice, compact, playAudio, playing, compareLang, 
         </div>
       )}
       {sections.map((section, i) => (
-        <div
-          key={i}
-          className="mb-6 rounded-xl p-3 sm:p-4 shadow-lg backdrop-blur-sm border bg-white/70 border-gray-200"
-        >
-          <h2 className={`font-bold ${compact ? "text-base sm:text-lg" : "text-lg sm:text-xl"} mb-1`}>
-            {section.title}
-          </h2>
+        <div key={i} className="mb-6 rounded-xl p-3 sm:p-4 shadow-lg backdrop-blur-sm border bg-white/70 border-gray-200 overflow-visible">
+          <div className="flex items-center justify-between mb-1">
+            <h2 className={`font-bold ${compact ? "text-base sm:text-lg" : "text-lg sm:text-xl"}`}>
+              {section.title}
+            </h2>
+            {section.list && section.category !== "tone" && (
+              <button
+                onClick={() => playSequence(language, section.list.map(c => c.ipa).filter(Boolean), voice, speed)}
+                className="text-xs px-2 py-1 rounded-lg bg-gray-100 hover:bg-sky-100 text-gray-500 hover:text-sky-700 border border-gray-200 transition-all"
+                title="Play all phonemes in this section"
+              >
+                ▶ All
+              </button>
+            )}
+          </div>
           {section.subtitle && (
-            <p className="text-sm text-gray-500 mb-3">
-              {section.subtitle}
-            </p>
+            <p className="text-sm text-gray-500 mb-3">{section.subtitle}</p>
           )}
           {section.list && (
             <ResponsiveGrid compact={compact}>
@@ -297,6 +322,7 @@ const ChartView = ({ language, voice, compact, playAudio, playing, compareLang, 
                   playAudio={playAudio}
                   playing={playing}
                   voice={voice}
+                  speed={speed}
                   category={section.category}
                   compact={compact}
                   compareIPA={cell.compareIPA}
@@ -312,16 +338,43 @@ const ChartView = ({ language, voice, compact, playAudio, playing, compareLang, 
 };
 
 // ────────────────────────────────────── MAIN COMPONENT ──────────────────────────────────────
+const CATEGORY_LABELS = { vowel: "Vowels", diphthong: "Diphthongs", consonant: "Consonants", tone: "Tones" };
+
 export default function PhonemeChart({ languageData }) {
   const [selected, setSelected] = useState(null);
   const [compareLang, setCompareLang] = useState(null);
-  const [voice, setVoice] = useState('female');
+  const [voice, setVoice] = useState("female");
+  const [speed, setSpeed] = useState(1);
   const [search, setSearch] = useState("");
+  const [categoryFilter, setCategoryFilter] = useState(null);
   const [compact, setCompact] = useState(false);
   const [showCompareModal, setShowCompareModal] = useState(false);
-  const { play, preloadLanguage, playing, error } = useAudioPlayer();
+  const { play, playSequence, preloadLanguage, playing, error } = useAudioPlayer();
   const chartRef = useRef(null);
   const lang = selected && languageData[selected];
+
+  // URL sync: read on mount
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const langParam = params.get("lang");
+    const compareParam = params.get("compare");
+    if (langParam && languageData[langParam]) {
+      setSelected(langParam);
+      setVoice(languageData[langParam].defaultVoice || "female");
+    }
+    if (compareParam && languageData[compareParam] && languageData[compareParam].status !== 'coming_soon') {
+      setCompareLang(compareParam);
+    }
+  }, [languageData]);
+
+  // URL sync: write on change
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (selected) params.set("lang", selected);
+    if (compareLang) params.set("compare", compareLang);
+    const query = params.toString();
+    history.replaceState(null, "", query ? `?${query}` : window.location.pathname);
+  }, [selected, compareLang]);
 
   useEffect(() => {
     if (selected && lang) {
@@ -338,6 +391,7 @@ export default function PhonemeChart({ languageData }) {
     setSelected(code);
     setVoice(languageData[code].defaultVoice || "female");
     setSearch("");
+    setCategoryFilter(null);
     setCompact(false);
     setCompareLang(null);
     setShowCompareModal(false);
@@ -348,10 +402,21 @@ export default function PhonemeChart({ languageData }) {
     setShowCompareModal(false);
   }, []);
 
+  // Categories present in current language
+  const availableCategories = useMemo(() => {
+    if (!lang) return [];
+    const cats = new Set(lang.sections.map(s => s.category).filter(Boolean));
+    return Object.keys(CATEGORY_LABELS).filter(c => cats.has(c));
+  }, [lang]);
+
+  // Primary language sections: category filter + search
   const filteredSections = useMemo(() => {
-    if (!lang || !search) return lang?.sections;
+    if (!lang) return [];
+    let sections = lang.sections;
+    if (categoryFilter) sections = sections.filter(s => s.category === categoryFilter);
+    if (!search) return sections;
     const q = search.toLowerCase();
-    return lang.sections.map(sec => {
+    return sections.map(sec => {
       if (!sec.list) return sec;
       const filtered = sec.list.filter(cell =>
         cell.ipa?.toLowerCase().includes(q) ||
@@ -360,71 +425,59 @@ export default function PhonemeChart({ languageData }) {
       );
       return filtered.length ? { ...sec, list: filtered } : null;
     }).filter(Boolean);
-  }, [lang, search]);
+  }, [lang, search, categoryFilter]);
+
+  // Compare language sections: IPA-only search (example words differ between languages)
+  const filteredCompareSections = useMemo(() => {
+    if (!compareLang) return undefined;
+    const compareData = languageData[compareLang];
+    if (!compareData) return undefined;
+    let sections = compareData.sections;
+    if (categoryFilter) sections = sections.filter(s => s.category === categoryFilter);
+    if (!search) return sections.length < compareData.sections.length ? sections : undefined;
+    const q = search.toLowerCase();
+    return sections.map(sec => {
+      if (!sec.list) return sec;
+      const filtered = sec.list.filter(cell => cell.ipa?.toLowerCase().includes(q));
+      return filtered.length ? { ...sec, list: filtered } : null;
+    }).filter(Boolean);
+  }, [compareLang, languageData, search, categoryFilter]);
 
   const exportChart = async () => {
     if (!chartRef.current) return;
-    
-    // Hide all elements with no-export class
-    const elementsToHide = document.querySelectorAll('.no-export');
-    elementsToHide.forEach(el => el.style.display = 'none');
-    
-    // Wait for layout to settle
+    const elementsToHide = document.querySelectorAll(".no-export");
+    elementsToHide.forEach(el => el.style.display = "none");
     await new Promise(resolve => setTimeout(resolve, 100));
-    
-    // Capture the chart
-    const canvas = await html2canvas(chartRef.current, { 
-      scale: 2,
-      useCORS: true,
-      allowTaint: true,
-      backgroundColor: '#fafafa',
-      logging: false,
+    const canvas = await html2canvas(chartRef.current, {
+      scale: 2, useCORS: true, allowTaint: true,
+      backgroundColor: "#fafafa", logging: false,
       width: chartRef.current.scrollWidth,
       height: chartRef.current.scrollHeight
     });
-    
-    // Add logo watermark
-    const finalCanvas = document.createElement('canvas');
-    const ctx = finalCanvas.getContext('2d');
+    const finalCanvas = document.createElement("canvas");
+    const ctx = finalCanvas.getContext("2d");
     const padding = 40;
     finalCanvas.width = canvas.width;
     finalCanvas.height = canvas.height + padding * 2;
-    
-    // Fill background
-    ctx.fillStyle = '#fafafa';
+    ctx.fillStyle = "#fafafa";
     ctx.fillRect(0, 0, finalCanvas.width, finalCanvas.height);
-    
-    // Draw the chart
     ctx.drawImage(canvas, 0, padding);
-    
-    // Load and draw logo
     const logo = new Image();
+    const filename = `${lang.name.replace(/[^a-z0-9]/gi, "_")}_${compareLang ? "vs_" + languageData[compareLang].name.replace(/[^a-z0-9]/gi, "_") : "chart"}.png`;
+    const download = (canvasEl) => {
+      const a = document.createElement("a");
+      a.download = filename;
+      a.href = canvasEl.toDataURL();
+      a.click();
+      elementsToHide.forEach(el => el.style.display = "");
+    };
     logo.onload = () => {
       const logoHeight = 60;
       const logoWidth = (logo.width / logo.height) * logoHeight;
-      const x = finalCanvas.width - logoWidth - 40;
-      const y = finalCanvas.height - logoHeight - 20;
-      ctx.drawImage(logo, x, y, logoWidth, logoHeight);
-      
-      // Download
-      const a = document.createElement("a");
-      a.download = `${lang.name.replace(/[^a-z0-9]/gi, "_")}_${compareLang ? "vs_" + languageData[compareLang].name.replace(/[^a-z0-9]/gi, "_") : "chart"}.png`;
-      a.href = finalCanvas.toDataURL();
-      a.click();
-      
-      // Restore hidden elements
-      elementsToHide.forEach(el => el.style.display = '');
+      ctx.drawImage(logo, finalCanvas.width - logoWidth - 40, finalCanvas.height - logoHeight - 20, logoWidth, logoHeight);
+      download(finalCanvas);
     };
-    logo.onerror = () => {
-      // If logo fails, just download without it
-      const a = document.createElement("a");
-      a.download = `${lang.name.replace(/[^a-z0-9]/gi, "_")}_${compareLang ? "vs_" + languageData[compareLang].name.replace(/[^a-z0-9]/gi, "_") : "chart"}.png`;
-      a.href = finalCanvas.toDataURL();
-      a.click();
-      elementsToHide.forEach(el => el.style.display = '');
-    };
-    
-    // Use imported logo
+    logo.onerror = () => download(finalCanvas);
     logo.src = lenguaxLogo;
   };
 
@@ -437,16 +490,28 @@ export default function PhonemeChart({ languageData }) {
             <p className="text-gray-500">Click a language to explore</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-            {Object.entries(languageData).map(([code, l]) => (
-              <button
-                key={code}
-                onClick={() => selectLanguage(code)}
-                className="flex flex-col items-center justify-center rounded-xl p-6 shadow-lg bg-white hover:shadow-xl transition-all hover:scale-105"
-              >
-                <span className="text-4xl mb-2">{l.flag}</span>
-                <span className="font-semibold">{l.name}</span>
-              </button>
-            ))}
+            {Object.entries(languageData).map(([code, l]) => {
+              const comingSoon = l.status === 'coming_soon';
+              return comingSoon ? (
+                <div
+                  key={code}
+                  className="relative flex flex-col items-center justify-center rounded-xl p-6 shadow-sm bg-white opacity-50 cursor-not-allowed select-none"
+                >
+                  <span className="text-4xl mb-2 grayscale">{l.flag}</span>
+                  <span className="font-semibold text-gray-500">{l.name}</span>
+                  <span className="mt-2 text-xs font-medium text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">Coming Soon</span>
+                </div>
+              ) : (
+                <button
+                  key={code}
+                  onClick={() => selectLanguage(code)}
+                  className="flex flex-col items-center justify-center rounded-xl p-6 shadow-lg bg-white hover:shadow-xl transition-all hover:scale-105"
+                >
+                  <span className="text-4xl mb-2">{l.flag}</span>
+                  <span className="font-semibold">{l.name}</span>
+                </button>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -461,11 +526,12 @@ export default function PhonemeChart({ languageData }) {
             {error}
           </div>
         )}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
+
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
           <div className="flex items-center gap-3 no-export">
             <button
               onClick={() => { setSelected(null); setCompareLang(null); }}
-              className="text-sky-500 hover:text-sky-600 font-medium flex items-center gap-2"
+              className="text-sky-500 hover:text-sky-600 font-medium"
             >Back</button>
           </div>
 
@@ -508,12 +574,25 @@ export default function PhonemeChart({ languageData }) {
                   key={v}
                   onClick={() => setVoice(v)}
                   className={`px-3 py-1.5 text-xs font-medium transition-all ${
-                    voice === v
-                      ? "bg-sky-600 text-white"
-                      : "bg-gray-100 text-gray-800 hover:bg-gray-200"
+                    voice === v ? "bg-sky-600 text-white" : "bg-gray-100 text-gray-800 hover:bg-gray-200"
                   }`}
                 >
                   {v === "male" ? "Male" : "Female"}
+                </button>
+              ))}
+            </div>
+
+            {/* Speed */}
+            <div className="flex rounded-lg overflow-hidden border border-gray-300">
+              {[1, 0.5].map(s => (
+                <button
+                  key={s}
+                  onClick={() => setSpeed(s)}
+                  className={`px-3 py-1.5 text-xs font-medium transition-all ${
+                    speed === s ? "bg-sky-600 text-white" : "bg-gray-100 text-gray-800 hover:bg-gray-200"
+                  }`}
+                >
+                  {s === 1 ? "1×" : "½×"}
                 </button>
               ))}
             </div>
@@ -527,13 +606,38 @@ export default function PhonemeChart({ languageData }) {
             </button>
 
             {/* Logo */}
-            <img 
-              src={lenguaxLogo} 
-              alt="Lenguax" 
-              className="h-16 w-auto ml-2"
-            />
+            <img src={lenguaxLogo} alt="Lenguax" className="h-16 w-auto ml-2" />
           </div>
         </div>
+
+        {/* CATEGORY FILTER PILLS */}
+        {availableCategories.length > 1 && (
+          <div className="flex flex-wrap gap-2 mb-6 no-export">
+            <button
+              onClick={() => setCategoryFilter(null)}
+              className={`px-3 py-1 rounded-full text-xs font-medium border transition-all ${
+                !categoryFilter
+                  ? "bg-gray-800 text-white border-gray-800"
+                  : "bg-white text-gray-600 border-gray-300 hover:bg-gray-100"
+              }`}
+            >
+              All
+            </button>
+            {availableCategories.map(cat => (
+              <button
+                key={cat}
+                onClick={() => setCategoryFilter(categoryFilter === cat ? null : cat)}
+                className={`px-3 py-1 rounded-full text-xs font-medium border transition-all ${
+                  categoryFilter === cat
+                    ? "bg-sky-600 text-white border-sky-600"
+                    : "bg-white text-gray-600 border-gray-300 hover:bg-gray-100"
+                }`}
+              >
+                {CATEGORY_LABELS[cat]}
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* CHARTS */}
         <div className={compareLang ? "grid md:grid-cols-2 gap-8" : ""}>
@@ -541,12 +645,15 @@ export default function PhonemeChart({ languageData }) {
             <ChartView
               language={selected}
               voice={voice}
+              speed={speed}
               compact={compact}
               playAudio={play}
+              playSequence={playSequence}
               playing={playing}
               compareLang={compareLang}
               languageData={languageData}
               selected={selected}
+              overrideSections={filteredSections}
             />
           </div>
           {compareLang && (
@@ -563,12 +670,15 @@ export default function PhonemeChart({ languageData }) {
               <ChartView
                 language={compareLang}
                 voice={voice}
+                speed={speed}
                 compact={compact}
                 playAudio={play}
+                playSequence={playSequence}
                 playing={playing}
                 compareLang={selected}
                 languageData={languageData}
                 selected={selected}
+                overrideSections={filteredCompareSections}
               />
             </div>
           )}

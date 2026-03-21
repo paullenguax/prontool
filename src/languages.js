@@ -252,7 +252,7 @@ export const LANGUAGE_DATA = {
       "category": "diphthong",
       "list": [
         { "ipa": "ai̯", "example": "baile", "highlighted": "b[ai]le", "description": "diphthong: a + i" },
-        { "ipa": "ei̯", "example": "seis", "highlighted": "s[ei]s", "description": "d krypthong: e + i" },
+        { "ipa": "ei̯", "example": "seis", "highlighted": "s[ei]s", "description": "diphthong: e + i" },
         { "ipa": "oi̯", "example": "hoy", "highlighted": "h[oy]", "description": "diphthong: o + i" },
         { "ipa": "au̯", "example": "auto", "highlighted": "[au]to", "description": "diphthong: a + u" },
         { "ipa": "eu̯", "example": "Europa", "highlighted": "[Eu]ropa", "description": "diphthong: e + u" },
@@ -282,6 +282,7 @@ export const LANGUAGE_DATA = {
     { "ipa": "ɲ", "example": "niño", "highlighted": "ni[ñ]o", "description": "palatal nasal" },
     { "ipa": "l", "example": "lado", "highlighted": "[l]ado", "description": "alveolar lateral approximant" },
     { "ipa": "ʎ", "example": "llave", "highlighted": "[ll]ave", "description": "palatal lateral approximant" },
+    { "ipa": "ʝ", "example": "yo", "highlighted": "[y]o", "description": "voiced palatal fricative" },
     { "ipa": "ɾ", "example": "caro", "highlighted": "ca[r]o", "description": "alveolar flap (single tap)" },
     { "ipa": "r", "example": "perro", "highlighted": "pe[rr]o", "description": "alveolar trill" }
   ]
@@ -308,7 +309,7 @@ export const LANGUAGE_DATA = {
         { "ipa": "ɛ", "example": "belle", "highlighted": "b[e]lle", "description": "open-mid front unrounded vowel" },
         { "ipa": "œ", "example": "peur", "highlighted": "p[eu]r", "description": "open-mid front rounded vowel" },
         { "ipa": "ɔ", "example": "porte", "highlighted": "p[o]rte", "description": "open-mid back rounded vowel" },
-        { "ipa": "a", "example": "patte", "highlighted": "p[a]tte", "description": "open офиц front unrounded vowel" },
+        { "ipa": "a", "example": "patte", "highlighted": "p[a]tte", "description": "open front unrounded vowel" },
         { "ipa": "ə", "example": "le", "highlighted": "l[e]", "description": "mid central vowel (schwa)" }
       ]
     },
@@ -329,19 +330,19 @@ export const LANGUAGE_DATA = {
       "category": "consonant",
       "list": [
         { "ipa": "p", "example": "pain", "highlighted": "[p]ain", "needsSchwa": true, "description": "voiceless bilabial stop" },
-        { "ipa": "t", "example": "tu", "highlighted": "[t]u", "needsSchwa": true, "description": "voiceless alveolar stop" },
+        { "ipa": "t", "example": "tu", "highlighted": "[t]u", "needsSchwa": true, "description": "voiceless dental stop" },
         { "ipa": "k", "example": "coeur", "highlighted": "[c]oeur", "needsSchwa": true, "description": "voiceless velar stop" },
         { "ipa": "f", "example": "feu", "highlighted": "[f]eu", "description": "voiceless labiodental fricative" },
         { "ipa": "s", "example": "sous", "highlighted": "[s]ous", "description": "voiceless alveolar fricative" },
         { "ipa": "ʃ", "example": "chat", "highlighted": "[ch]at", "description": "voiceless postalveolar fricative" },
         { "ipa": "b", "example": "bain", "highlighted": "[b]ain", "description": "voiced bilabial stop" },
-        { "ipa": "d", "example": "doux", "highlighted": "[d]oux", "description": "voiced alveolar stop" },
+        { "ipa": "d", "example": "doux", "highlighted": "[d]oux", "description": "voiced dental stop" },
         { "ipa": "g", "example": "gare", "highlighted": "[g]are", "description": "voiced velar stop" },
         { "ipa": "v", "example": "vous", "highlighted": "[v]ous", "description": "voiced labiodental fricative" },
         { "ipa": "z", "example": "rose", "highlighted": "ro[s]e", "description": "voiced alveolar fricative" },
         { "ipa": "ʒ", "example": "je", "highlighted": "[j]e", "description": "voiced postalveolar fricative" },
         { "ipa": "m", "example": "mais", "highlighted": "[m]ais", "description": "bilabial nasal" },
-        { "ipa": "n", "example": "non", "highlighted": "[n]on", "description": "alveolar nasal" },
+        { "ipa": "n", "example": "non", "highlighted": "[n]on", "description": "dental nasal" },
         { "ipa": "ɲ", "example": "agneau", "highlighted": "a[gn]eau", "description": "palatal nasal" },
         { "ipa": "l", "example": "lui", "highlighted": "[l]ui", "description": "alveolar lateral approximant" },
         { "ipa": "ʁ", "example": "rue", "highlighted": "[r]ue", "description": "uvular fricative" },
@@ -393,17 +394,19 @@ export const LANGUAGE_DATA = {
       "category": "consonant",
       "list": [
         { "ipa": "p", "example": "pane", "highlighted": "[p]ane", "needsSchwa": true, "description": "voiceless bilabial stop" },
-        { "ipa": "t", "example": "tempo", "highlighted": "[t]empo", "needsSchwa": true, "description": "voiceless alveolar stop" },
+        { "ipa": "t", "example": "tempo", "highlighted": "[t]empo", "needsSchwa": true, "description": "voiceless dental stop" },
         { "ipa": "k", "example": "casa", "highlighted": "[c]asa", "needsSchwa": true, "description": "voiceless velar stop" },
         { "ipa": "tʃ", "example": "ciao", "highlighted": "[c]iao", "needsSchwa": true, "description": "voiceless postalveolar affricate" },
+        { "ipa": "ts", "example": "zucchero", "highlighted": "[z]ucchero", "needsSchwa": true, "description": "voiceless alveolar affricate" },
         { "ipa": "f", "example": "fare", "highlighted": "[f]are", "description": "voiceless labiodental fricative" },
         { "ipa": "s", "example": "sole", "highlighted": "[s]ole", "description": "voiceless alveolar fricative" },
         { "ipa": "b", "example": "bello", "highlighted": "[b]ello", "description": "voiced bilabial stop" },
-        { "ipa": "d", "example": "dare", "highlighted": "[d]are", "description": "voiced alveolar stop" },
+        { "ipa": "d", "example": "dare", "highlighted": "[d]are", "description": "voiced dental stop" },
         { "ipa": "g", "example": "gatto", "highlighted": "[g]atto", "description": "voiced velar stop" },
         { "ipa": "dʒ", "example": "gelo", "highlighted": "[g]elo", "description": "voiced postalveolar affricate" },
+        { "ipa": "dz", "example": "zero", "highlighted": "[z]ero", "description": "voiced alveolar affricate" },
         { "ipa": "v", "example": "vino", "highlighted": "[v]ino", "description": "voiced labiodental fricative" },
-        { "ipa": "z", "example": "zero", "highlighted": "[z]ero", "description": "voiced alveolar fricative" },
+        { "ipa": "z", "example": "rosa", "highlighted": "ro[s]a", "description": "voiced alveolar fricative" },
         { "ipa": "m", "example": "mare", "highlighted": "[m]are", "description": "bilabial nasal" },
         { "ipa": "n", "example": "naso", "highlighted": "[n]aso", "description": "alveolar nasal" },
         { "ipa": "ɲ", "example": "gnomo", "highlighted": "g[n]omo", "description": "palatal nasal" },
@@ -567,7 +570,7 @@ export const LANGUAGE_DATA = {
         { "ipa": "mʲ", "example": "мясо mʲaso", "highlighted": "[mʲ]aso", "description": "bilabial nasal (soft)" },
         { "ipa": "n", "example": "нос nos", "highlighted": "[n]os", "description": "alveolar nasal (hard)" },
         { "ipa": "nʲ", "example": "няня nʲanʲa", "highlighted": "[nʲ]anʲa", "description": "alveolar nasal (soft)" },
-        { "ipa": "l", "example": "лук luk", "highlighted": "[l]uk", "description": "alveolar lateral (hard)" },
+        { "ipa": "ɫ", "example": "лук luk", "highlighted": "[l]uk", "description": "velarized lateral (hard)" },
         { "ipa": "lʲ", "example": "лить lʲitʲ", "highlighted": "[lʲ]itʲ", "description": "alveolar lateral (soft)" },
         { "ipa": "r", "example": "рот rot", "highlighted": "[r]ot", "description": "alveolar trill (hard)" },
         { "ipa": "rʲ", "example": "ряд rʲat", "highlighted": "[rʲ]at", "description": "alveolar trill (soft)" }
@@ -704,7 +707,7 @@ export const LANGUAGE_DATA = {
       "category": "vowel",
       "list": [
         // Simple vowels
-        { "ipa": "a", "example": "啊 a (ah)", "highlighted": "[a]", "description": "open back unrounded vowel" },
+        { "ipa": "a", "example": "啊 a (ah)", "highlighted": "[a]", "description": "open central unrounded vowel" },
         { "ipa": "o", "example": "波 bō (wave)", "highlighted": "b[ō]", "description": "close-mid back rounded vowel" },
         { "ipa": "ɤ", "example": "饿 è (hungry)", "highlighted": "[è]", "description": "close-mid back unrounded vowel" },
         { "ipa": "i", "example": "一 yī (one)", "highlighted": "y[ī]", "description": "close front unrounded vowel" },
@@ -861,7 +864,7 @@ export const LANGUAGE_DATA = {
         { "ipa": "kː", "example": "がっこう gakkou", "highlighted": "ga[kk]ou", "description": "long voiceless velar stop" },
         { "ipa": "tː", "example": "まった matta", "highlighted": "ma[tt]a", "description": "long voiceless alveolar stop" },
         { "ipa": "pː", "example": "いっぱい ippai", "highlighted": "i[pp]ai", "description": "long voiceless bilabial stop" },
-        { "ipa": "sː", "example": "ずっと zutto", "highlighted": "zu[tt]o", "description": "long voiceless alveolar fricative" }
+        { "ipa": "sː", "example": "いっさい issai", "highlighted": "i[ss]ai", "description": "long voiceless alveolar fricative" }
       ]
     }
   ]
@@ -936,8 +939,8 @@ export const LANGUAGE_DATA = {
       "subtitle": "Back consonants",
       "category": "consonant",
       "list": [
-        { "ipa": "x", "example": "خبز xubz", "highlighted": "[x]ubz", "description": "voiceless uvular fricative" },
-        { "ipa": "ɣ", "example": "غرب ɣarb", "highlighted": "[ɣ]arb", "description": "voiced uvular fricative" },
+        { "ipa": "x", "example": "خبز xubz", "highlighted": "[x]ubz", "description": "voiceless velar fricative" },
+        { "ipa": "ɣ", "example": "غرب ɣarb", "highlighted": "[ɣ]arb", "description": "voiced velar fricative" },
         { "ipa": "ħ", "example": "حب ħubb", "highlighted": "[ħ]ubb", "description": "voiceless pharyngeal fricative" },
         { "ipa": "ʕ", "example": "عين ʕayn", "highlighted": "[ʕ]ayn", "description": "voiced pharyngeal fricative" }
       ]

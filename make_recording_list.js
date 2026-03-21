@@ -51,8 +51,8 @@ for (const [langCode, lang] of targetLanguages) {
       
       const ipa = cell.ipa;
       const example = extractWord(cell.example);
-    const id = sanitizeIdentifier(ipa);
-const safeWord = sanitizeIdentifier(example);
+      const id = sanitizeIdentifier(ipa);
+      const safeWord = sanitizeIdentifier(example);
       
       const suffix = voiceArg && voiceArg !== "default" ? `-${voiceArg}` : "";
       const filename = `${langCode}-${type}-${id}${suffix}.mp3`;
@@ -68,28 +68,13 @@ const safeWord = sanitizeIdentifier(example);
       }
     };
     
-    // Process rows (consonants, etc.)
-    if (section.rows) {
-      for (const row of section.rows) {
-        for (const cell of row.cells || []) {
-          if (cell) {
-            const type = section.category === "tone" ? "tone" : "phoneme";
-            processCell(cell, type);
-          }
-        }
-      }
-    }
-    
-    // Process grids (vowels, diphthongs, tones)
-    if (section.grid) {
-      for (const row of section.grid) {
-        for (const cell of row) {
-          if (cell) {
-            const type = section.category === "tone" ? "tone" : "phoneme";
-            processCell(cell, type);
-          }
-        }
-      }
+    const type = section.category === "tone" ? "tone" : "phoneme";
+    const cells = section.list ||
+                  (section.grid ? section.grid.flat() : null) ||
+                  (section.rows ? section.rows.flatMap(r => r.cells || []) : []);
+
+    for (const cell of cells) {
+      if (cell) processCell(cell, type);
     }
   }
 }
