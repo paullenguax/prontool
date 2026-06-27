@@ -190,7 +190,7 @@ const PhonemeCell = React.memo(function PhonemeCell({
         onClick={handlePhoneme}
         onPointerEnter={() => setShowTooltip(true)}
         onPointerLeave={() => setShowTooltip(false)}
-        className={`relative w-full p-2 ${compact ? "sm:p-2.5" : "sm:p-3"} text-center select-none focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-transparent`}
+        className={`relative w-full p-2 ${compact ? "sm:p-2.5" : "sm:p-3"} text-center select-none focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-inset`}
         aria-label={`Play phoneme ${ipa}`}
       >
         {description && showTooltip && (
@@ -212,7 +212,7 @@ const PhonemeCell = React.memo(function PhonemeCell({
           <div className="border-t border-gray-300 mx-2" />
           <button
             onClick={handleWord}
-            className="w-full p-2 sm:p-3 text-center focus:outline-none"
+            className="w-full p-2 sm:p-3 text-center focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-inset"
             aria-label={`Play word ${displayWord}`}
           >
             <div className="text-xs sm:text-sm space-y-0.5">
@@ -263,8 +263,50 @@ const CompareModal = ({ isOpen, onClose, onSelect, selectedLang, languageData })
   );
 };
 
+// ────────────────────────────────────── CONSONANT GRID ──────────────────────────────────────
+const ConsonantGrid = ({ rows, language, playAudio, playing, voice, category, compact, compareLang }) => {
+  const colCount = Math.max(...rows.map(r => r.length));
+  return (
+    <div className="overflow-x-auto -mx-1 px-1">
+      <div className="space-y-1.5 sm:space-y-2" style={{ minWidth: `${colCount * 65}px` }}>
+        {rows.map((row, rowIdx) => {
+          const padded = row.length < colCount
+            ? [...row, ...Array(colCount - row.length).fill(null)]
+            : row;
+          const isMiscRow = rowIdx === rows.length - 1 && rows.length > 2;
+          return (
+            <div
+              key={rowIdx}
+              className={`grid gap-1.5 sm:gap-2${isMiscRow ? " mt-1 pt-1 border-t border-gray-100" : ""}`}
+              style={{ gridTemplateColumns: `repeat(${colCount}, minmax(0, 1fr))` }}
+            >
+              {padded.map((cell, colIdx) =>
+                cell ? (
+                  <PhonemeCell
+                    key={`${cell.ipa}-${rowIdx}-${colIdx}`}
+                    {...cell}
+                    language={language}
+                    playAudio={playAudio}
+                    playing={playing}
+                    voice={voice}
+                    category={category}
+                    compact={compact}
+                    compareLang={compareLang}
+                  />
+                ) : (
+                  <div key={`empty-${rowIdx}-${colIdx}`} />
+                )
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
 // ────────────────────────────────────── CHART VIEW ──────────────────────────────────────
-const ChartView = ({ language, voice, speed, compact, playAudio, playSequence, playing, compareLang, languageData, selected, overrideSections }) => {
+const ChartView = ({ language, voice, compact, playAudio, playSequence, playing, compareLang, languageData, selected, overrideSections }) => {
   const lang = languageData[language];
   const sections = useMemo(() => {
     const baseSections = overrideSections || lang.sections;
@@ -272,16 +314,18 @@ const ChartView = ({ language, voice, speed, compact, playAudio, playSequence, p
     const compareData = languageData[compareLang];
     const ipaMap = new Map();
     compareData.sections.forEach(sec => {
-      sec.list?.forEach(cell => {
-        if (cell.ipa) ipaMap.set(cell.ipa, cell.ipa);
-      });
+      sec.list?.forEach(cell => { if (cell.ipa) ipaMap.set(cell.ipa, cell.ipa); });
+      sec.rows?.flat().forEach(cell => { if (cell?.ipa) ipaMap.set(cell.ipa, cell.ipa); });
     });
     return baseSections.map(sec => ({
       ...sec,
       list: sec.list?.map(cell => ({
         ...cell,
         compareIPA: cell.ipa ? ipaMap.get(cell.ipa) : null
-      }))
+      })),
+      rows: sec.rows?.map(row =>
+        row.map(cell => cell ? { ...cell, compareIPA: ipaMap.get(cell.ipa) ?? null } : null)
+      )
     }));
   }, [lang, compareLang, languageData, overrideSections]);
 
@@ -293,46 +337,61 @@ const ChartView = ({ language, voice, speed, compact, playAudio, playSequence, p
           <h1 className="text-2xl sm:text-3xl font-bold">{lang.name}</h1>
         </div>
       )}
-      {sections.map((section, i) => (
-        <div key={i} className="mb-6 rounded-xl p-3 sm:p-4 shadow-lg backdrop-blur-sm border bg-white/70 border-gray-200 overflow-visible">
-          <div className="flex items-center justify-between mb-1">
-            <h2 className={`font-bold ${compact ? "text-base sm:text-lg" : "text-lg sm:text-xl"}`}>
-              {section.title}
-            </h2>
-            {section.list && section.category !== "tone" && (
-              <button
-                onClick={() => playSequence(language, section.list.map(c => c.ipa).filter(Boolean), voice, speed)}
-                className="text-xs px-2 py-1 rounded-lg bg-gray-100 hover:bg-sky-100 text-gray-500 hover:text-sky-700 border border-gray-200 transition-all"
-                title="Play all phonemes in this section"
-              >
-                ▶ All
-              </button>
+      {sections.map((section, i) => {
+        const allIpas = section.rows
+          ? section.rows.flat().filter(Boolean).map(c => c.ipa).filter(Boolean)
+          : section.list?.map(c => c.ipa).filter(Boolean) ?? [];
+        return (
+          <div key={i} className="mb-6 rounded-xl p-3 sm:p-4 shadow-lg backdrop-blur-sm border bg-white/70 border-gray-200 overflow-visible">
+            <div className="flex items-center justify-between mb-1">
+              <h2 className={`font-bold ${compact ? "text-base sm:text-lg" : "text-lg sm:text-xl"}`}>
+                {section.title}
+              </h2>
+              {allIpas.length > 0 && section.category !== "tone" && (
+                <button
+                  onClick={() => playSequence(language, allIpas, voice)}
+                  className="text-xs px-2 py-1 rounded-lg bg-gray-100 hover:bg-sky-100 text-gray-500 hover:text-sky-700 border border-gray-200 transition-all"
+                  title="Play all phonemes in this section"
+                >
+                  ▶ All
+                </button>
+              )}
+            </div>
+            {section.subtitle && (
+              <p className="text-sm text-gray-500 mb-3">{section.subtitle}</p>
+            )}
+            {section.rows ? (
+              <ConsonantGrid
+                rows={section.rows}
+                language={language}
+                playAudio={playAudio}
+                playing={playing}
+                voice={voice}
+                category={section.category}
+                compact={compact}
+                compareLang={compareLang}
+              />
+            ) : section.list && (
+              <ResponsiveGrid compact={compact}>
+                {section.list.map((cell, idx) => (
+                  <PhonemeCell
+                    key={`${cell.ipa}-${idx}`}
+                    {...cell}
+                    language={language}
+                    playAudio={playAudio}
+                    playing={playing}
+                    voice={voice}
+                    category={section.category}
+                    compact={compact}
+                    compareIPA={cell.compareIPA}
+                    compareLang={compareLang}
+                  />
+                ))}
+              </ResponsiveGrid>
             )}
           </div>
-          {section.subtitle && (
-            <p className="text-sm text-gray-500 mb-3">{section.subtitle}</p>
-          )}
-          {section.list && (
-            <ResponsiveGrid compact={compact}>
-              {section.list.map((cell, idx) => (
-                <PhonemeCell
-                  key={`${cell.ipa}-${idx}`}
-                  {...cell}
-                  language={language}
-                  playAudio={playAudio}
-                  playing={playing}
-                  voice={voice}
-                  speed={speed}
-                  category={section.category}
-                  compact={compact}
-                  compareIPA={cell.compareIPA}
-                  compareLang={compareLang}
-                />
-              ))}
-            </ResponsiveGrid>
-          )}
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 };
@@ -344,7 +403,6 @@ export default function PhonemeChart({ languageData }) {
   const [selected, setSelected] = useState(null);
   const [compareLang, setCompareLang] = useState(null);
   const [voice, setVoice] = useState("female");
-  const [speed, setSpeed] = useState(1);
   const [search, setSearch] = useState("");
   const [categoryFilter, setCategoryFilter] = useState(null);
   const [compact, setCompact] = useState(false);
@@ -582,21 +640,6 @@ export default function PhonemeChart({ languageData }) {
               ))}
             </div>
 
-            {/* Speed */}
-            <div className="flex rounded-lg overflow-hidden border border-gray-300">
-              {[1, 0.5].map(s => (
-                <button
-                  key={s}
-                  onClick={() => setSpeed(s)}
-                  className={`px-3 py-1.5 text-xs font-medium transition-all ${
-                    speed === s ? "bg-sky-600 text-white" : "bg-gray-100 text-gray-800 hover:bg-gray-200"
-                  }`}
-                >
-                  {s === 1 ? "1×" : "½×"}
-                </button>
-              ))}
-            </div>
-
             {/* Export */}
             <button
               onClick={exportChart}
@@ -645,7 +688,6 @@ export default function PhonemeChart({ languageData }) {
             <ChartView
               language={selected}
               voice={voice}
-              speed={speed}
               compact={compact}
               playAudio={play}
               playSequence={playSequence}
@@ -670,7 +712,6 @@ export default function PhonemeChart({ languageData }) {
               <ChartView
                 language={compareLang}
                 voice={voice}
-                speed={speed}
                 compact={compact}
                 playAudio={play}
                 playSequence={playSequence}

@@ -51,7 +51,8 @@ function getExpectedFiles(langCode, voice) {
   const files = [];
   for (const section of lang.sections) {
     const type = section.category === 'tone' ? 'tone' : 'phoneme';
-    for (const cell of section.list || []) {
+    const cells = section.list || section.rows?.flat().filter(Boolean) || [];
+    for (const cell of cells) {
       if (!cell.ipa) continue;
       const phonemeKey = `${PREFIX}/${langCode}-${type}-${sanitizeIdentifier(cell.ipa)}-${voice}.mp3`;
       if (!seen.has(phonemeKey)) {

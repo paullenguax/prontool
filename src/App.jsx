@@ -1,15 +1,17 @@
-// App.jsx
-import PhonemeChart from './PhonemeChart.jsx';
-import { LANGUAGE_DATA } from './languages.js';
-import LANGUAGE_STATUS from './language-status.json';
-
-const languageData = Object.fromEntries(
-  Object.entries(LANGUAGE_DATA).map(([code, lang]) => [
-    code,
-    { ...lang, status: LANGUAGE_STATUS[code] || 'active' }
-  ])
-);
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import LanguageGridPage from './pages/LanguageGridPage.jsx'
+import LanguagePlayerPage from './pages/LanguagePlayerPage.jsx'
+import ComparePage from './pages/ComparePage.jsx'
 
 export default function App() {
-  return <PhonemeChart languageData={languageData} />;
+  return (
+    <BrowserRouter basename="/pronunciation">
+      <Routes>
+        <Route path="/"        element={<LanguageGridPage />} />
+        <Route path="/:lang"   element={<LanguagePlayerPage />} />
+        <Route path="/compare" element={<ComparePage />} />
+        <Route path="*"        element={<Navigate to="/" replace />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
