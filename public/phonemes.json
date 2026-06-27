@@ -1,0 +1,3964 @@
+{
+  "english": {
+    "name": "English (British RP)",
+    "flag": "🇬🇧",
+    "defaultVoice": "male",
+    "sections": [
+      {
+        "title": "Monophthongs",
+        "subtitle": "Arranged by tongue position: front → back, close → open",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "iː",
+            "example": "fleece",
+            "highlighted": "fl[ee]ce",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "uː",
+            "example": "goose",
+            "highlighted": "g[oo]se",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɪ",
+            "example": "kit",
+            "highlighted": "k[i]t",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʊ",
+            "example": "foot",
+            "highlighted": "f[oo]t",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɛ",
+            "example": "dress",
+            "highlighted": "dr[e]ss",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ə",
+            "example": "comma",
+            "highlighted": "comm[a]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɜː",
+            "example": "nurse",
+            "highlighted": "n[ur]se",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɔː",
+            "example": "thought",
+            "highlighted": "th[ough]t",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "æ",
+            "example": "trap",
+            "highlighted": "tr[a]p",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʌ",
+            "example": "strut",
+            "highlighted": "str[u]t",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɑː",
+            "example": "palm",
+            "highlighted": "p[a]lm",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɒ",
+            "example": "lot",
+            "highlighted": "l[o]t",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Diphthongs",
+        "subtitle": "Closing (→ɪ, →ʊ) and centring (→ə)",
+        "category": "diphthong",
+        "cells": [
+          {
+            "ipa": "eɪ",
+            "example": "face",
+            "highlighted": "f[a]ce",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "aɪ",
+            "example": "price",
+            "highlighted": "pr[i]ce",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɔɪ",
+            "example": "choice",
+            "highlighted": "ch[oi]ce",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "əʊ",
+            "example": "goat",
+            "highlighted": "g[oa]t",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "aʊ",
+            "example": "mouth",
+            "highlighted": "m[ou]th",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɪə",
+            "example": "near",
+            "highlighted": "n[ea]r",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "eə",
+            "example": "square",
+            "highlighted": "squ[are]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʊə",
+            "example": "cure",
+            "highlighted": "c[ure]",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Consonants",
+        "subtitle": "Voiceless · Voiced · Sonorants",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "p",
+            "example": "pin",
+            "highlighted": "[p]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "f",
+            "example": "fin",
+            "highlighted": "[f]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "θ",
+            "example": "thin",
+            "highlighted": "[th]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "t",
+            "example": "tin",
+            "highlighted": "[t]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "s",
+            "example": "sin",
+            "highlighted": "[s]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ʃ",
+            "example": "shin",
+            "highlighted": "[sh]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "tʃ",
+            "example": "chin",
+            "highlighted": "[ch]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "k",
+            "example": "kin",
+            "highlighted": "[k]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "h",
+            "example": "hint",
+            "highlighted": "[h]int",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "b",
+            "example": "bin",
+            "highlighted": "[b]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "v",
+            "example": "vim",
+            "highlighted": "[v]im",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ð",
+            "example": "this",
+            "highlighted": "[th]is",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "d",
+            "example": "din",
+            "highlighted": "[d]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "z",
+            "example": "zoo",
+            "highlighted": "[z]oo",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ʒ",
+            "example": "vision",
+            "highlighted": "vi[s]ion",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "dʒ",
+            "example": "gin",
+            "highlighted": "[g]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "g",
+            "example": "give",
+            "highlighted": "[g]ive",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "m",
+            "example": "map",
+            "highlighted": "[m]ap",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "n",
+            "example": "nap",
+            "highlighted": "[n]ap",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ŋ",
+            "example": "sing",
+            "highlighted": "si[ng]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "w",
+            "example": "win",
+            "highlighted": "[w]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "l",
+            "example": "lip",
+            "highlighted": "[l]ip",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ɹ",
+            "example": "rip",
+            "highlighted": "[r]ip",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "j",
+            "example": "yes",
+            "highlighted": "[y]es",
+            "needsSchwa": true
+          }
+        ]
+      }
+    ]
+  },
+  "american_english": {
+    "name": "English (General American)",
+    "flag": "🇺🇸",
+    "defaultVoice": "male",
+    "sections": [
+      {
+        "title": "Monophthongs",
+        "subtitle": "Arranged by tongue position",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "i",
+            "example": "fleece",
+            "highlighted": "fl[ee]ce",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɪ",
+            "example": "kit",
+            "highlighted": "k[i]t",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʊ",
+            "example": "foot",
+            "highlighted": "f[oo]t",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "u",
+            "example": "goose",
+            "highlighted": "g[oo]se",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɛ",
+            "example": "dress",
+            "highlighted": "dr[e]ss",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ə",
+            "example": "comma",
+            "highlighted": "comm[a]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʌ",
+            "example": "strut",
+            "highlighted": "str[u]t",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "æ",
+            "example": "trap",
+            "highlighted": "tr[a]p",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɑ",
+            "example": "lot",
+            "highlighted": "l[o]t",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɔ",
+            "example": "thought",
+            "highlighted": "th[ough]t",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɚ",
+            "example": "nurse",
+            "highlighted": "n[ur]se",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Diphthongs",
+        "subtitle": "Gliding vowel combinations",
+        "category": "diphthong",
+        "cells": [
+          {
+            "ipa": "eɪ",
+            "example": "face",
+            "highlighted": "f[a]ce",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "aɪ",
+            "example": "price",
+            "highlighted": "pr[i]ce",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "oʊ",
+            "example": "goat",
+            "highlighted": "g[oa]t",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "aʊ",
+            "example": "mouth",
+            "highlighted": "m[ou]th",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɔɪ",
+            "example": "choice",
+            "highlighted": "ch[oi]ce",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "R-colored Vowels",
+        "subtitle": "Rhotic vowel nuclei",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "ɪɚ",
+            "example": "near",
+            "highlighted": "n[ea]r",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɛɚ",
+            "example": "square",
+            "highlighted": "squ[are]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʊɚ",
+            "example": "cure",
+            "highlighted": "c[ure]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɔɚ",
+            "example": "north",
+            "highlighted": "n[or]th",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Consonants",
+        "subtitle": "Voiceless · Voiced · Other",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "p",
+            "example": "pin",
+            "highlighted": "[p]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "f",
+            "example": "fin",
+            "highlighted": "[f]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "θ",
+            "example": "thin",
+            "highlighted": "[th]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "t",
+            "example": "tin",
+            "highlighted": "[t]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "s",
+            "example": "sin",
+            "highlighted": "[s]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ʃ",
+            "example": "shin",
+            "highlighted": "[sh]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "tʃ",
+            "example": "chin",
+            "highlighted": "[ch]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "k",
+            "example": "kin",
+            "highlighted": "[k]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "h",
+            "example": "hint",
+            "highlighted": "[h]int",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "b",
+            "example": "bin",
+            "highlighted": "[b]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "v",
+            "example": "vim",
+            "highlighted": "[v]im",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ð",
+            "example": "this",
+            "highlighted": "[th]is",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "d",
+            "example": "din",
+            "highlighted": "[d]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "z",
+            "example": "zoo",
+            "highlighted": "[z]oo",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ʒ",
+            "example": "vision",
+            "highlighted": "vi[s]ion",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "dʒ",
+            "example": "gin",
+            "highlighted": "[g]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "g",
+            "example": "give",
+            "highlighted": "[g]ive",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "m",
+            "example": "map",
+            "highlighted": "[m]ap",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "n",
+            "example": "nap",
+            "highlighted": "[n]ap",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ŋ",
+            "example": "sing",
+            "highlighted": "si[ng]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "w",
+            "example": "win",
+            "highlighted": "[w]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "l",
+            "example": "lip",
+            "highlighted": "[l]ip",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ɹ",
+            "example": "rip",
+            "highlighted": "[r]ip",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "j",
+            "example": "yes",
+            "highlighted": "[y]es",
+            "needsSchwa": true
+          }
+        ]
+      }
+    ]
+  },
+  "australian_english": {
+    "name": "English (General Australian)",
+    "flag": "🇦🇺",
+    "defaultVoice": "male",
+    "sections": [
+      {
+        "title": "Monophthongs",
+        "subtitle": "Arranged by tongue position",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "iː",
+            "example": "fleece",
+            "highlighted": "fl[ee]ce",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɪ",
+            "example": "kit",
+            "highlighted": "k[i]t",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʊ",
+            "example": "foot",
+            "highlighted": "f[oo]t",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "uː",
+            "example": "goose",
+            "highlighted": "g[oo]se",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "e",
+            "example": "dress",
+            "highlighted": "dr[e]ss",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ə",
+            "example": "comma",
+            "highlighted": "comm[a]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɜː",
+            "example": "nurse",
+            "highlighted": "n[ur]se",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "oː",
+            "example": "thought",
+            "highlighted": "th[ough]t",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "æ",
+            "example": "trap",
+            "highlighted": "tr[a]p",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "a",
+            "example": "palm",
+            "highlighted": "p[a]lm",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɐ",
+            "example": "strut",
+            "highlighted": "str[u]t",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɔ",
+            "example": "lot",
+            "highlighted": "l[o]t",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Diphthongs",
+        "subtitle": "Grouped by glide target",
+        "category": "diphthong",
+        "cells": [
+          {
+            "ipa": "æɪ",
+            "example": "face",
+            "highlighted": "f[a]ce",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɑɪ",
+            "example": "price",
+            "highlighted": "pr[i]ce",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "oɪ",
+            "example": "choice",
+            "highlighted": "ch[oi]ce",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "æʊ",
+            "example": "mouth",
+            "highlighted": "m[ou]th",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "oʊ",
+            "example": "goat",
+            "highlighted": "g[oa]t",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɪə",
+            "example": "near",
+            "highlighted": "n[ea]r",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "eː",
+            "example": "square",
+            "highlighted": "squ[are]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʊə",
+            "example": "cure",
+            "highlighted": "c[ure]",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Consonants",
+        "subtitle": "Organized by place and voicing",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "p",
+            "example": "pin",
+            "highlighted": "[p]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "t",
+            "example": "tin",
+            "highlighted": "[t]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "k",
+            "example": "kin",
+            "highlighted": "[k]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "tʃ",
+            "example": "chin",
+            "highlighted": "[ch]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "f",
+            "example": "fin",
+            "highlighted": "[f]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "θ",
+            "example": "thin",
+            "highlighted": "[th]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "s",
+            "example": "sin",
+            "highlighted": "[s]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ʃ",
+            "example": "shin",
+            "highlighted": "[sh]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "h",
+            "example": "hint",
+            "highlighted": "[h]int",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "b",
+            "example": "bin",
+            "highlighted": "[b]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "d",
+            "example": "din",
+            "highlighted": "[d]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "g",
+            "example": "give",
+            "highlighted": "[g]ive",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "dʒ",
+            "example": "gin",
+            "highlighted": "[g]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "v",
+            "example": "vim",
+            "highlighted": "[v]im",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ð",
+            "example": "this",
+            "highlighted": "[th]is",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "z",
+            "example": "zoo",
+            "highlighted": "[z]oo",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ʒ",
+            "example": "vision",
+            "highlighted": "vi[s]ion",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "m",
+            "example": "map",
+            "highlighted": "[m]ap",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "n",
+            "example": "nap",
+            "highlighted": "[n]ap",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ŋ",
+            "example": "sing",
+            "highlighted": "si[ng]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "w",
+            "example": "win",
+            "highlighted": "[w]in",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "l",
+            "example": "lip",
+            "highlighted": "[l]ip",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ɹ",
+            "example": "rip",
+            "highlighted": "[r]ip",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "j",
+            "example": "yes",
+            "highlighted": "[y]es",
+            "needsSchwa": true
+          }
+        ]
+      }
+    ]
+  },
+  "spanish": {
+    "name": "Spanish (Castilian)",
+    "flag": "🇪🇸",
+    "defaultVoice": "male",
+    "sections": [
+      {
+        "title": "Vowels",
+        "subtitle": "Five pure vowels",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "i",
+            "example": "sí",
+            "highlighted": "s[í]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "e",
+            "example": "mes",
+            "highlighted": "m[e]s",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "a",
+            "example": "casa",
+            "highlighted": "c[a]sa",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "o",
+            "example": "sol",
+            "highlighted": "s[o]l",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "u",
+            "example": "tú",
+            "highlighted": "t[ú]",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Diphthongs",
+        "subtitle": "Common vowel combinations",
+        "category": "diphthong",
+        "cells": [
+          {
+            "ipa": "ai̯",
+            "example": "baile",
+            "highlighted": "b[ai]le",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ei̯",
+            "example": "seis",
+            "highlighted": "s[ei]s",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "oi̯",
+            "example": "hoy",
+            "highlighted": "h[oy]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "au̯",
+            "example": "auto",
+            "highlighted": "[au]to",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "eu̯",
+            "example": "Europa",
+            "highlighted": "[Eu]ropa",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ou̯",
+            "example": "bou",
+            "highlighted": "b[ou]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ie",
+            "example": "bien",
+            "highlighted": "b[ie]n",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ue",
+            "example": "bueno",
+            "highlighted": "b[ue]no",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Consonants",
+        "subtitle": "Voiceless · Voiced · Sonorants",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "p",
+            "example": "padre",
+            "highlighted": "[p]adre",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "t",
+            "example": "toro",
+            "highlighted": "[t]oro",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "k",
+            "example": "casa",
+            "highlighted": "[c]asa",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "tʃ",
+            "example": "chico",
+            "highlighted": "[ch]ico",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "f",
+            "example": "foco",
+            "highlighted": "[f]oco",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "θ",
+            "example": "cero",
+            "highlighted": "[c]ero",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "s",
+            "example": "sol",
+            "highlighted": "[s]ol",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "x",
+            "example": "jota",
+            "highlighted": "[j]ota",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "b",
+            "example": "barco",
+            "highlighted": "[b]arco",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "d",
+            "example": "dedo",
+            "highlighted": "[d]edo",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "g",
+            "example": "gato",
+            "highlighted": "[g]ato",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "m",
+            "example": "mano",
+            "highlighted": "[m]ano",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "n",
+            "example": "nada",
+            "highlighted": "[n]ada",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɲ",
+            "example": "niño",
+            "highlighted": "ni[ñ]o",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "l",
+            "example": "lado",
+            "highlighted": "[l]ado",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʎ",
+            "example": "llave",
+            "highlighted": "[ll]ave",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʝ",
+            "example": "yo",
+            "highlighted": "[y]o",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɾ",
+            "example": "caro",
+            "highlighted": "ca[r]o",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "r",
+            "example": "perro",
+            "highlighted": "pe[rr]o",
+            "needsSchwa": false
+          }
+        ]
+      }
+    ]
+  },
+  "french": {
+    "name": "French (Parisian)",
+    "flag": "🇫🇷",
+    "defaultVoice": "male",
+    "sections": [
+      {
+        "title": "Oral Vowels",
+        "subtitle": "Non-nasal vowels",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "i",
+            "example": "si",
+            "highlighted": "s[i]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "y",
+            "example": "tu",
+            "highlighted": "t[u]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "u",
+            "example": "vous",
+            "highlighted": "v[ou]s",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "e",
+            "example": "été",
+            "highlighted": "[é]té",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ø",
+            "example": "deux",
+            "highlighted": "d[eu]x",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "o",
+            "example": "beau",
+            "highlighted": "b[eau]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɛ",
+            "example": "belle",
+            "highlighted": "b[e]lle",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "œ",
+            "example": "peur",
+            "highlighted": "p[eu]r",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɔ",
+            "example": "porte",
+            "highlighted": "p[o]rte",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "a",
+            "example": "patte",
+            "highlighted": "p[a]tte",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ə",
+            "example": "le",
+            "highlighted": "l[e]",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Nasal Vowels",
+        "subtitle": "Nasalized vowels",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "ɛ̃",
+            "example": "vin",
+            "highlighted": "v[in]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "œ̃",
+            "example": "un",
+            "highlighted": "[un]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɑ̃",
+            "example": "blanc",
+            "highlighted": "bl[an]c",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɔ̃",
+            "example": "bon",
+            "highlighted": "b[on]",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Consonants",
+        "subtitle": "Voiceless · Voiced · Sonorants",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "p",
+            "example": "pain",
+            "highlighted": "[p]ain",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "t",
+            "example": "tu",
+            "highlighted": "[t]u",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "k",
+            "example": "coeur",
+            "highlighted": "[c]oeur",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "f",
+            "example": "feu",
+            "highlighted": "[f]eu",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "s",
+            "example": "sous",
+            "highlighted": "[s]ous",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʃ",
+            "example": "chat",
+            "highlighted": "[ch]at",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "b",
+            "example": "bain",
+            "highlighted": "[b]ain",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "d",
+            "example": "doux",
+            "highlighted": "[d]oux",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "g",
+            "example": "gare",
+            "highlighted": "[g]are",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "v",
+            "example": "vous",
+            "highlighted": "[v]ous",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "z",
+            "example": "rose",
+            "highlighted": "ro[s]e",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʒ",
+            "example": "je",
+            "highlighted": "[j]e",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "m",
+            "example": "mais",
+            "highlighted": "[m]ais",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "n",
+            "example": "non",
+            "highlighted": "[n]on",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɲ",
+            "example": "agneau",
+            "highlighted": "a[gn]eau",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "l",
+            "example": "lui",
+            "highlighted": "[l]ui",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʁ",
+            "example": "rue",
+            "highlighted": "[r]ue",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "j",
+            "example": "yeux",
+            "highlighted": "[y]eux",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɥ",
+            "example": "huit",
+            "highlighted": "[h]uit",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "w",
+            "example": "oui",
+            "highlighted": "[ou]i",
+            "needsSchwa": false
+          }
+        ]
+      }
+    ]
+  },
+  "italian": {
+    "name": "Italian (Standard)",
+    "flag": "🇮🇹",
+    "defaultVoice": "male",
+    "sections": [
+      {
+        "title": "Vowels",
+        "subtitle": "Seven vowel phonemes",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "i",
+            "example": "vino",
+            "highlighted": "v[i]no",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "e",
+            "example": "mela",
+            "highlighted": "m[e]la",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɛ",
+            "example": "bello",
+            "highlighted": "b[e]llo",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "a",
+            "example": "casa",
+            "highlighted": "c[a]sa",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɔ",
+            "example": "cosa",
+            "highlighted": "c[o]sa",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "o",
+            "example": "solo",
+            "highlighted": "s[o]lo",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "u",
+            "example": "luna",
+            "highlighted": "l[u]na",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Diphthongs",
+        "subtitle": "Common vowel combinations",
+        "category": "diphthong",
+        "cells": [
+          {
+            "ipa": "ai",
+            "example": "mai",
+            "highlighted": "m[ai]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ei",
+            "example": "sei",
+            "highlighted": "s[ei]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "au",
+            "example": "auto",
+            "highlighted": "[au]to",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "eu",
+            "example": "europeo",
+            "highlighted": "[eu]ropeo",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ja",
+            "example": "piano",
+            "highlighted": "p[ia]no",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "je",
+            "example": "ieri",
+            "highlighted": "[ie]ri",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "wa",
+            "example": "quale",
+            "highlighted": "q[ua]le",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "wɔ",
+            "example": "buono",
+            "highlighted": "b[uo]no",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Consonants",
+        "subtitle": "Voiceless · Voiced · Sonorants",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "p",
+            "example": "pane",
+            "highlighted": "[p]ane",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "t",
+            "example": "tempo",
+            "highlighted": "[t]empo",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "k",
+            "example": "casa",
+            "highlighted": "[c]asa",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "tʃ",
+            "example": "ciao",
+            "highlighted": "[c]iao",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ts",
+            "example": "zucchero",
+            "highlighted": "[z]ucchero",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "f",
+            "example": "fare",
+            "highlighted": "[f]are",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "s",
+            "example": "sole",
+            "highlighted": "[s]ole",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "b",
+            "example": "bello",
+            "highlighted": "[b]ello",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "d",
+            "example": "dare",
+            "highlighted": "[d]are",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "g",
+            "example": "gatto",
+            "highlighted": "[g]atto",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "dʒ",
+            "example": "gelo",
+            "highlighted": "[g]elo",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "dz",
+            "example": "zero",
+            "highlighted": "[z]ero",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "v",
+            "example": "vino",
+            "highlighted": "[v]ino",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "z",
+            "example": "rosa",
+            "highlighted": "ro[s]a",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "m",
+            "example": "mare",
+            "highlighted": "[m]are",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "n",
+            "example": "naso",
+            "highlighted": "[n]aso",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɲ",
+            "example": "gnomo",
+            "highlighted": "g[n]omo",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "l",
+            "example": "latte",
+            "highlighted": "[l]atte",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʎ",
+            "example": "figlio",
+            "highlighted": "fig[l]io",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "r",
+            "example": "rosso",
+            "highlighted": "[r]osso",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Geminate Consonants",
+        "subtitle": "Phonemic length distinction",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "pː",
+            "example": "cappa",
+            "highlighted": "ca[pp]a",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "tː",
+            "example": "fatto",
+            "highlighted": "fa[tt]o",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "kː",
+            "example": "bocca",
+            "highlighted": "bo[cc]a",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "fː",
+            "example": "affetto",
+            "highlighted": "a[ff]etto",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "sː",
+            "example": "rosso",
+            "highlighted": "ro[ss]o",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "lː",
+            "example": "bello",
+            "highlighted": "be[ll]o",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "rː",
+            "example": "carro",
+            "highlighted": "ca[rr]o",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "nː",
+            "example": "anno",
+            "highlighted": "a[nn]o",
+            "needsSchwa": false
+          }
+        ]
+      }
+    ]
+  },
+  "turkish": {
+    "name": "Turkish",
+    "flag": "🇹🇷",
+    "defaultVoice": "male",
+    "sections": [
+      {
+        "title": "Vowels",
+        "subtitle": "Eight vowel harmony system",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "i",
+            "example": "[translate:bir]",
+            "highlighted": "b[i]r",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "y",
+            "example": "[translate:gül]",
+            "highlighted": "g[ü]l",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɯ",
+            "example": "[translate:kız]",
+            "highlighted": "k[ı]z",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "u",
+            "example": "[translate:su]",
+            "highlighted": "s[u]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "e",
+            "example": "[translate:el]",
+            "highlighted": "[e]l",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ø",
+            "example": "[translate:göz]",
+            "highlighted": "g[ö]z",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "a",
+            "example": "[translate:kapı]",
+            "highlighted": "k[a]pı",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "o",
+            "example": "[translate:okul]",
+            "highlighted": "[o]kul",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Consonants",
+        "subtitle": "Voiceless · Voiced · Other",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "p",
+            "example": "[translate:para]",
+            "highlighted": "[p]ara",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "f",
+            "example": "[translate:fener]",
+            "highlighted": "[f]ener",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "t",
+            "example": "[translate:tak]",
+            "highlighted": "[t]ak",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "s",
+            "example": "[translate:sarı]",
+            "highlighted": "[s]arı",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʃ",
+            "example": "[translate:şarap]",
+            "highlighted": "[ş]arap",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "tʃ",
+            "example": "[translate:çay]",
+            "highlighted": "[ç]ay",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "k",
+            "example": "[translate:kedi]",
+            "highlighted": "[k]edi",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "h",
+            "example": "[translate:hava]",
+            "highlighted": "[h]ava",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "b",
+            "example": "[translate:bal]",
+            "highlighted": "[b]al",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "v",
+            "example": "[translate:ver]",
+            "highlighted": "[v]er",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "d",
+            "example": "[translate:dağ]",
+            "highlighted": "[d]ağ",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "z",
+            "example": "[translate:zaman]",
+            "highlighted": "[z]aman",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʒ",
+            "example": "[translate:jilet]",
+            "highlighted": "[j]ilet",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "dʒ",
+            "example": "[translate:cam]",
+            "highlighted": "[c]am",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "g",
+            "example": "[translate:gaz]",
+            "highlighted": "[g]az",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "m",
+            "example": "[translate:masa]",
+            "highlighted": "[m]asa",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "n",
+            "example": "[translate:nohut]",
+            "highlighted": "[n]ohut",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "l",
+            "example": "[translate:lale]",
+            "highlighted": "[l]ale",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɾ",
+            "example": "[translate:araba]",
+            "highlighted": "a[r]aba",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "j",
+            "example": "[translate:yeni]",
+            "highlighted": "[y]eni",
+            "needsSchwa": false
+          }
+        ]
+      }
+    ]
+  },
+  "russian": {
+    "name": "Russian",
+    "flag": "🇷🇺",
+    "defaultVoice": "male",
+    "sections": [
+      {
+        "title": "Vowels",
+        "subtitle": "Stressed vowels",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "i",
+            "example": "мир mir",
+            "highlighted": "m[i]r",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɨ",
+            "example": "мы my",
+            "highlighted": "m[y]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "u",
+            "example": "ум um",
+            "highlighted": "[u]m",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "e",
+            "example": "это eto",
+            "highlighted": "[e]to",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "o",
+            "example": "он on",
+            "highlighted": "[o]n",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "a",
+            "example": "дай day",
+            "highlighted": "d[a]y",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Reduced Vowels",
+        "subtitle": "Unstressed positions",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "ɪ",
+            "example": "пятак pyatak",
+            "highlighted": "p[ya]tak",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ə",
+            "example": "молоко malako",
+            "highlighted": "m[a]lako",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʊ",
+            "example": "хорошо harasho",
+            "highlighted": "harash[o]",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Stops",
+        "subtitle": "Hard/soft pairs",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "p",
+            "example": "пар par",
+            "highlighted": "[p]ar",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "pʲ",
+            "example": "пять pyatʲ",
+            "highlighted": "[p]yatʲ",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "t",
+            "example": "там tam",
+            "highlighted": "[t]am",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "tʲ",
+            "example": "тень tenʲ",
+            "highlighted": "[t]enʲ",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "k",
+            "example": "кот kot",
+            "highlighted": "[k]ot",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "kʲ",
+            "example": "кит kʲit",
+            "highlighted": "[kʲ]it",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "b",
+            "example": "был byl",
+            "highlighted": "[b]yl",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "bʲ",
+            "example": "бить bʲitʲ",
+            "highlighted": "[bʲ]itʲ",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "d",
+            "example": "дом dom",
+            "highlighted": "[d]om",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "dʲ",
+            "example": "день dʲenʲ",
+            "highlighted": "[dʲ]enʲ",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "g",
+            "example": "год god",
+            "highlighted": "[g]od",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "gʲ",
+            "example": "гид gʲid",
+            "highlighted": "[gʲ]id",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Fricatives",
+        "subtitle": "Hard/soft pairs",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "f",
+            "example": "факт fakt",
+            "highlighted": "[f]akt",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "fʲ",
+            "example": "фильм fʲilʲm",
+            "highlighted": "[fʲ]ilʲm",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "s",
+            "example": "сон son",
+            "highlighted": "[s]on",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "sʲ",
+            "example": "сюда sʲuda",
+            "highlighted": "[sʲ]uda",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "v",
+            "example": "вода vada",
+            "highlighted": "[v]ada",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "vʲ",
+            "example": "вить vʲitʲ",
+            "highlighted": "[vʲ]itʲ",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "z",
+            "example": "зона zona",
+            "highlighted": "[z]ona",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "zʲ",
+            "example": "зима zʲima",
+            "highlighted": "[zʲ]ima",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "x",
+            "example": "хор xor",
+            "highlighted": "[x]or",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "xʲ",
+            "example": "химия xʲimʲija",
+            "highlighted": "[xʲ]imʲija",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Sibilants & Affricates",
+        "subtitle": "Always hard or always soft",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "ʂ",
+            "example": "шум ʂum",
+            "highlighted": "[ʂ]um",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʐ",
+            "example": "жар ʐar",
+            "highlighted": "[ʐ]ar",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ts",
+            "example": "цепь tsepʲ",
+            "highlighted": "[ts]epʲ",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "tɕ",
+            "example": "час tɕas",
+            "highlighted": "[tɕ]as",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ɕː",
+            "example": "щи ɕːi",
+            "highlighted": "[ɕː]i",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "j",
+            "example": "май maj",
+            "highlighted": "ma[j]",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Nasals & Liquids",
+        "subtitle": "Hard/soft pairs",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "m",
+            "example": "мама mama",
+            "highlighted": "[m]ama",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "mʲ",
+            "example": "мясо mʲaso",
+            "highlighted": "[mʲ]aso",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "n",
+            "example": "нос nos",
+            "highlighted": "[n]os",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "nʲ",
+            "example": "няня nʲanʲa",
+            "highlighted": "[nʲ]anʲa",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɫ",
+            "example": "лук luk",
+            "highlighted": "[l]uk",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "lʲ",
+            "example": "лить lʲitʲ",
+            "highlighted": "[lʲ]itʲ",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "r",
+            "example": "рот rot",
+            "highlighted": "[r]ot",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "rʲ",
+            "example": "ряд rʲat",
+            "highlighted": "[rʲ]at",
+            "needsSchwa": false
+          }
+        ]
+      }
+    ]
+  },
+  "portuguese": {
+    "name": "Portuguese (Brazilian)",
+    "flag": "🇧🇷",
+    "defaultVoice": "female",
+    "sections": [
+      {
+        "title": "Oral Vowels",
+        "subtitle": "Non-nasal vowels (stressed positions)",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "i",
+            "example": "mil",
+            "highlighted": "m[i]l",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "e",
+            "example": "vê",
+            "highlighted": "v[ê]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɛ",
+            "example": "pé",
+            "highlighted": "p[é]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "a",
+            "example": "lá",
+            "highlighted": "l[á]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɔ",
+            "example": "pó",
+            "highlighted": "p[ó]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "o",
+            "example": "avô",
+            "highlighted": "av[ô]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "u",
+            "example": "luz",
+            "highlighted": "l[u]z",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Nasal Vowels",
+        "subtitle": "Nasalized vowels",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "ĩ",
+            "example": "fim",
+            "highlighted": "f[ĩ]m",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ẽ",
+            "example": "bem",
+            "highlighted": "b[ẽ]m",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ã",
+            "example": "lã",
+            "highlighted": "l[ã]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "õ",
+            "example": "som",
+            "highlighted": "s[õ]m",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ũ",
+            "example": "um",
+            "highlighted": "[ũ]m",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Diphthongs",
+        "subtitle": "Common oral diphthongs",
+        "category": "diphthong",
+        "cells": [
+          {
+            "ipa": "aj",
+            "example": "pai",
+            "highlighted": "p[ai]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ej",
+            "example": "lei",
+            "highlighted": "l[ei]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɛj",
+            "example": "papéis",
+            "highlighted": "pap[éis]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "oj",
+            "example": "boi",
+            "highlighted": "b[oi]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "aw",
+            "example": "mau",
+            "highlighted": "m[au]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ew",
+            "example": "meu",
+            "highlighted": "m[eu]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɛw",
+            "example": "céu",
+            "highlighted": "c[éu]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "iw",
+            "example": "viu",
+            "highlighted": "v[iu]",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Nasal Diphthongs",
+        "subtitle": "Nasalized combinations",
+        "category": "diphthong",
+        "cells": [
+          {
+            "ipa": "ãw̃",
+            "example": "mão",
+            "highlighted": "m[ão]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "õj̃",
+            "example": "põe",
+            "highlighted": "p[õe]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ãj̃",
+            "example": "mãe",
+            "highlighted": "m[ãe]",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Consonants",
+        "subtitle": "Voiceless · Voiced · Other",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "p",
+            "example": "pão",
+            "highlighted": "[p]ão",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "t",
+            "example": "tudo",
+            "highlighted": "[t]udo",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "k",
+            "example": "casa",
+            "highlighted": "[c]asa",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "tʃ",
+            "example": "tia",
+            "highlighted": "[t]ia",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "f",
+            "example": "fazer",
+            "highlighted": "[f]azer",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "s",
+            "example": "sol",
+            "highlighted": "[s]ol",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʃ",
+            "example": "chá",
+            "highlighted": "[ch]á",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "b",
+            "example": "bom",
+            "highlighted": "[b]om",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "d",
+            "example": "dado",
+            "highlighted": "[d]ado",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "g",
+            "example": "gato",
+            "highlighted": "[g]ato",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "dʒ",
+            "example": "dia",
+            "highlighted": "[d]ia",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "v",
+            "example": "voz",
+            "highlighted": "[v]oz",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "z",
+            "example": "zero",
+            "highlighted": "[z]ero",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʒ",
+            "example": "já",
+            "highlighted": "[j]á",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "m",
+            "example": "mar",
+            "highlighted": "[m]ar",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "n",
+            "example": "não",
+            "highlighted": "[n]ão",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɲ",
+            "example": "ninho",
+            "highlighted": "ni[nh]o",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "l",
+            "example": "lua",
+            "highlighted": "[l]ua",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʎ",
+            "example": "olho",
+            "highlighted": "o[lh]o",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɾ",
+            "example": "caro",
+            "highlighted": "ca[r]o",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʁ",
+            "example": "rato",
+            "highlighted": "[r]ato",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "w",
+            "example": "mau",
+            "highlighted": "ma[u]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "j",
+            "example": "iate",
+            "highlighted": "[i]ate",
+            "needsSchwa": false
+          }
+        ]
+      }
+    ]
+  },
+  "mandarin": {
+    "name": "Mandarin Chinese",
+    "flag": "🇨🇳",
+    "defaultVoice": "female",
+    "sections": [
+      {
+        "title": "Initials (声母)",
+        "subtitle": "Unaspirated · Aspirated · Fricatives · Other",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "p",
+            "example": "八 bā (eight)",
+            "highlighted": "[b]ā",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "t",
+            "example": "大 dà (big)",
+            "highlighted": "[d]à",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "k",
+            "example": "个 gè (one)",
+            "highlighted": "[g]è",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ts",
+            "example": "早 zǎo (early)",
+            "highlighted": "[z]ǎo",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "tʂ",
+            "example": "中 zhōng (middle)",
+            "highlighted": "[zh]ōng",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "tɕ",
+            "example": "家 jiā (home)",
+            "highlighted": "[j]iā",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "pʰ",
+            "example": "怕 pà (fear)",
+            "highlighted": "[p]à",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "tʰ",
+            "example": "他 tā (he)",
+            "highlighted": "[t]ā",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "kʰ",
+            "example": "卡 kǎ (card)",
+            "highlighted": "[k]ǎ",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "tsʰ",
+            "example": "草 cǎo (grass)",
+            "highlighted": "[c]ǎo",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "tʂʰ",
+            "example": "车 chē (car)",
+            "highlighted": "[ch]ē",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "tɕʰ",
+            "example": "七 qī (seven)",
+            "highlighted": "[q]ī",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "f",
+            "example": "发 fā (send)",
+            "highlighted": "[f]ā",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "s",
+            "example": "三 sān (three)",
+            "highlighted": "[s]ān",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʂ",
+            "example": "是 shì (is)",
+            "highlighted": "[sh]ì",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɕ",
+            "example": "西 xī (west)",
+            "highlighted": "[x]ī",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "x",
+            "example": "好 hǎo (good)",
+            "highlighted": "[h]ǎo",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "m",
+            "example": "马 mǎ (horse)",
+            "highlighted": "[m]ǎ",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "n",
+            "example": "你 nǐ (you)",
+            "highlighted": "[n]ǐ",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "l",
+            "example": "来 lái (come)",
+            "highlighted": "[l]ái",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɻ",
+            "example": "人 rén (person)",
+            "highlighted": "[r]én",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Finals (韵母)",
+        "subtitle": "Vowel sounds and syllable endings (note: \"i\" has allophones after certain initials)",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "a",
+            "example": "啊 a (ah)",
+            "highlighted": "[a]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "o",
+            "example": "波 bō (wave)",
+            "highlighted": "b[ō]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɤ",
+            "example": "饿 è (hungry)",
+            "highlighted": "[è]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "i",
+            "example": "一 yī (one)",
+            "highlighted": "y[ī]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "u",
+            "example": "五 wǔ (five)",
+            "highlighted": "w[ǔ]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "y",
+            "example": "鱼 yú (fish)",
+            "highlighted": "y[ú]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ai",
+            "example": "爱 ài (love)",
+            "highlighted": "[ài]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ei",
+            "example": "北 běi (north)",
+            "highlighted": "b[ěi]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "au",
+            "example": "高 gāo (high)",
+            "highlighted": "g[āo]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ou",
+            "example": "口 kǒu (mouth)",
+            "highlighted": "k[ǒu]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ia",
+            "example": "鸭 yā (duck)",
+            "highlighted": "y[ā]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ie",
+            "example": "谢 xiè (thank)",
+            "highlighted": "xi[è]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "an",
+            "example": "安 ān (safe)",
+            "highlighted": "[ān]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ən",
+            "example": "恩 ēn (grace)",
+            "highlighted": "[ēn]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "aŋ",
+            "example": "昂 áng (high)",
+            "highlighted": "[áng]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "əŋ",
+            "example": "鞥 ēng (interj.)",
+            "highlighted": "[ēng]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "in",
+            "example": "因 yīn (cause)",
+            "highlighted": "y[īn]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "iŋ",
+            "example": "英 yīng (hero)",
+            "highlighted": "y[īng]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "un",
+            "example": "温 wēn (warm)",
+            "highlighted": "w[ēn]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "yn",
+            "example": "云 yún (cloud)",
+            "highlighted": "y[ún]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʊŋ",
+            "example": "翁 wēng (old man)",
+            "highlighted": "w[ēng]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "yʊŋ",
+            "example": "穷 qióng (poor)",
+            "highlighted": "qi[óng]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ian",
+            "example": "言 yán (speak)",
+            "highlighted": "y[án]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "uan",
+            "example": "弯 wān (bend)",
+            "highlighted": "w[ān]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "yɛ",
+            "example": "月 yuè (month)",
+            "highlighted": "[yuè]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "yɛn",
+            "example": "远 yuǎn (far)",
+            "highlighted": "yu[ǎn]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "iaŋ",
+            "example": "羊 yáng (sheep)",
+            "highlighted": "y[áng]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "uaŋ",
+            "example": "王 wáng (king)",
+            "highlighted": "w[áng]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ua",
+            "example": "瓜 guā (melon)",
+            "highlighted": "gu[ā]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "iau",
+            "example": "腰 yāo (waist)",
+            "highlighted": "y[āo]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "iou",
+            "example": "优 yōu (excellent)",
+            "highlighted": "y[ōu]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "uai",
+            "example": "歪 wāi (crooked)",
+            "highlighted": "w[āi]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "uei",
+            "example": "为 wèi (for)",
+            "highlighted": "w[èi]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɚ",
+            "example": "二 èr (two)",
+            "highlighted": "è[r]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ŋ̍",
+            "example": "嗯 ńg (hmm)",
+            "highlighted": "[ńg]",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Tones (声调)",
+        "subtitle": "Same syllable, different meanings (demonstrated with \"ma\")",
+        "category": "tone",
+        "cells": [
+          {
+            "ipa": "mā",
+            "example": "妈 mā (mother)",
+            "highlighted": "",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "má",
+            "example": "麻 má (hemp)",
+            "highlighted": "",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "mǎ",
+            "example": "马 mǎ (horse)",
+            "highlighted": "",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "mà",
+            "example": "骂 mà (scold)",
+            "highlighted": "",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ma",
+            "example": "吗 ma (question particle)",
+            "highlighted": "",
+            "needsSchwa": false
+          }
+        ]
+      }
+    ]
+  },
+  "japanese": {
+    "name": "Japanese (Tokyo)",
+    "flag": "🇯🇵",
+    "defaultVoice": "female",
+    "sections": [
+      {
+        "title": "Vowels",
+        "subtitle": "Five vowel phonemes",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "a",
+            "example": "あか aka",
+            "highlighted": "[a]ka",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "i",
+            "example": "いぬ inu",
+            "highlighted": "[i]nu",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɯ",
+            "example": "うま uma",
+            "highlighted": "[u]ma",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "e",
+            "example": "えき eki",
+            "highlighted": "[e]ki",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "o",
+            "example": "おか oka",
+            "highlighted": "[o]ka",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Long Vowels",
+        "subtitle": "Phonemic length distinction",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "aː",
+            "example": "おかあさん okaasan",
+            "highlighted": "ok[aa]san",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "iː",
+            "example": "おにいさん oniisan",
+            "highlighted": "on[ii]san",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɯː",
+            "example": "すうじ suuji",
+            "highlighted": "s[uu]ji",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "eː",
+            "example": "せんせい sensee",
+            "highlighted": "sens[ee]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "oː",
+            "example": "そう soo",
+            "highlighted": "s[oo]",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Stops",
+        "subtitle": "Organized by voicing",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "p",
+            "example": "ぱん pan",
+            "highlighted": "[p]an",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "t",
+            "example": "たこ tako",
+            "highlighted": "[t]ako",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "k",
+            "example": "かき kaki",
+            "highlighted": "[k]aki",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "b",
+            "example": "ばん ban",
+            "highlighted": "[b]an",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "d",
+            "example": "だれ dare",
+            "highlighted": "[d]are",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "g",
+            "example": "がく gaku",
+            "highlighted": "[g]aku",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Affricates",
+        "subtitle": "Organized by voicing",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "ts",
+            "example": "つき tsuki",
+            "highlighted": "[ts]uki",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "tɕ",
+            "example": "ちず chizu",
+            "highlighted": "[ch]izu",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "dz",
+            "example": "つづく tsuzuku",
+            "highlighted": "tsu[dz]uku",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "dʑ",
+            "example": "じかん jikan",
+            "highlighted": "[j]ikan",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Fricatives",
+        "subtitle": "Various positions",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "ɸ",
+            "example": "ふね fune",
+            "highlighted": "[f]une",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "s",
+            "example": "さけ sake",
+            "highlighted": "[s]ake",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɕ",
+            "example": "しお shio",
+            "highlighted": "[sh]io",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ç",
+            "example": "ひと hito",
+            "highlighted": "[h]ito",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "h",
+            "example": "はな hana",
+            "highlighted": "[h]ana",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "z",
+            "example": "ざる zaru",
+            "highlighted": "[z]aru",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʑ",
+            "example": "じしょ jisho",
+            "highlighted": "[j]isho",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Nasals",
+        "subtitle": "Including moraic nasal",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "m",
+            "example": "まめ mame",
+            "highlighted": "[m]ame",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "n",
+            "example": "なに nani",
+            "highlighted": "[n]ani",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɲ",
+            "example": "にゃ nya",
+            "highlighted": "[ny]a",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɴ",
+            "example": "ほん hon",
+            "highlighted": "ho[n]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "m",
+            "example": "さんぽ sanpo",
+            "highlighted": "sa[n]po",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "n",
+            "example": "さんだる sandaru",
+            "highlighted": "sa[n]daru",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ŋ",
+            "example": "さんが sanga",
+            "highlighted": "sa[n]ga",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Liquids & Approximants",
+        "subtitle": "Sonorants",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "ɾ",
+            "example": "らく raku",
+            "highlighted": "[r]aku",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "j",
+            "example": "やま yama",
+            "highlighted": "[y]ama",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "w",
+            "example": "わに wani",
+            "highlighted": "[w]ani",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Geminate Consonants",
+        "subtitle": "Sokuon (っ) - phonemic length",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "kː",
+            "example": "がっこう gakkou",
+            "highlighted": "ga[kk]ou",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "tː",
+            "example": "まった matta",
+            "highlighted": "ma[tt]a",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "pː",
+            "example": "いっぱい ippai",
+            "highlighted": "i[pp]ai",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "sː",
+            "example": "いっさい issai",
+            "highlighted": "i[ss]ai",
+            "needsSchwa": false
+          }
+        ]
+      }
+    ]
+  },
+  "arabic": {
+    "name": "Arabic (MSA)",
+    "flag": "🇸🇦",
+    "defaultVoice": "male",
+    "sections": [
+      {
+        "title": "Short Vowels (حركات)",
+        "subtitle": "Three basic vowels",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "a",
+            "example": "كتب kataba",
+            "highlighted": "k[a]taba",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "i",
+            "example": "بنت bint",
+            "highlighted": "b[i]nt",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "u",
+            "example": "كتب kutiba",
+            "highlighted": "k[u]tiba",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Long Vowels",
+        "subtitle": "Extended vowel duration",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "aː",
+            "example": "باب baab",
+            "highlighted": "b[aa]b",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "iː",
+            "example": "كبير kabiir",
+            "highlighted": "kab[ii]r",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "uː",
+            "example": "نور nuur",
+            "highlighted": "n[uu]r",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Plain Stops & Affricates",
+        "subtitle": "Non-emphatic consonants",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "b",
+            "example": "باب baab",
+            "highlighted": "[b]aab",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "t",
+            "example": "تين tiin",
+            "highlighted": "[t]iin",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "d",
+            "example": "دار daar",
+            "highlighted": "[d]aar",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "k",
+            "example": "كتب kataba",
+            "highlighted": "[k]ataba",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "q",
+            "example": "قلب qalb",
+            "highlighted": "[q]alb",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "dʒ",
+            "example": "جمال dʒamal",
+            "highlighted": "[dʒ]amal",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʔ",
+            "example": "أسد ʔasad",
+            "highlighted": "[ʔ]asad",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Emphatic Consonants",
+        "subtitle": "Pharyngealized (velarized)",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "tˤ",
+            "example": "طير tˤayr",
+            "highlighted": "[tˤ]ayr",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "dˤ",
+            "example": "ضرب dˤarab",
+            "highlighted": "[dˤ]arab",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "sˤ",
+            "example": "صبر sˤabr",
+            "highlighted": "[sˤ]abr",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ðˤ",
+            "example": "ظهر ðˤahr",
+            "highlighted": "[ðˤ]ahr",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Fricatives",
+        "subtitle": "Various positions",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "f",
+            "example": "فم fam",
+            "highlighted": "[f]am",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "θ",
+            "example": "ثلج θalj",
+            "highlighted": "[θ]alj",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ð",
+            "example": "ذهب ðahab",
+            "highlighted": "[ð]ahab",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "s",
+            "example": "سمك samak",
+            "highlighted": "[s]amak",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "z",
+            "example": "زيت zayt",
+            "highlighted": "[z]ayt",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʃ",
+            "example": "شمس ʃams",
+            "highlighted": "[ʃ]ams",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "h",
+            "example": "هواء hawaʔ",
+            "highlighted": "[h]awaʔ",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Pharyngeal & Uvular",
+        "subtitle": "Back consonants",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "x",
+            "example": "خبز xubz",
+            "highlighted": "[x]ubz",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɣ",
+            "example": "غرب ɣarb",
+            "highlighted": "[ɣ]arb",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ħ",
+            "example": "حب ħubb",
+            "highlighted": "[ħ]ubb",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʕ",
+            "example": "عين ʕayn",
+            "highlighted": "[ʕ]ayn",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Sonorants",
+        "subtitle": "Nasals, liquids, approximants",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "m",
+            "example": "ماء maaʔ",
+            "highlighted": "[m]aaʔ",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "n",
+            "example": "نار naar",
+            "highlighted": "[n]aar",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "l",
+            "example": "ليل layl",
+            "highlighted": "[l]ayl",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "r",
+            "example": "رأس raʔs",
+            "highlighted": "[r]aʔs",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "j",
+            "example": "يد yad",
+            "highlighted": "[y]ad",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "w",
+            "example": "ورد ward",
+            "highlighted": "[w]ard",
+            "needsSchwa": false
+          }
+        ]
+      }
+    ]
+  },
+  "hindi": {
+    "name": "Hindi (Standard)",
+    "flag": "🇮🇳",
+    "defaultVoice": "male",
+    "sections": [
+      {
+        "title": "Vowels (स्वर)",
+        "subtitle": "Short and long vowels",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "i",
+            "example": "इति iti",
+            "highlighted": "[i]ti",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "iː",
+            "example": "ईश्वर iːʃwar",
+            "highlighted": "[iː]ʃwar",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "u",
+            "example": "उठा uʈʰaː",
+            "highlighted": "[u]ʈʰaː",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "uː",
+            "example": "ऊंचा uːnʧaː",
+            "highlighted": "[uː]nʧaː",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "eː",
+            "example": "एक eːk",
+            "highlighted": "[eː]k",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "oː",
+            "example": "ओखली oːkhli",
+            "highlighted": "[oː]khli",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɛː",
+            "example": "ऐनक ɛːnak",
+            "highlighted": "[ɛː]nak",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɔː",
+            "example": "औरत ɔːrat",
+            "highlighted": "[ɔː]rat",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ə",
+            "example": "अगर əgar",
+            "highlighted": "[ə]gar",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "aː",
+            "example": "आम aːm",
+            "highlighted": "[aː]m",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Stops (स्पर्श व्यंजन)",
+        "subtitle": "Four-way distinction: voicing × aspiration",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "p",
+            "example": "पानी paːniː",
+            "highlighted": "[p]aːniː",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "t̪",
+            "example": "ताज t̪aːdʒ",
+            "highlighted": "[t̪]aːdʒ",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ʈ",
+            "example": "टोपी ʈoːpiː",
+            "highlighted": "[ʈ]oːpiː",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "c",
+            "example": "चाय caːj",
+            "highlighted": "[c]aːj",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "k",
+            "example": "काम kaːm",
+            "highlighted": "[k]aːm",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "pʰ",
+            "example": "फल pʰal",
+            "highlighted": "[pʰ]al",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "t̪ʰ",
+            "example": "थाली t̪ʰaːliː",
+            "highlighted": "[t̪ʰ]aːliː",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "ʈʰ",
+            "example": "ठंडा ʈʰəɳɖaː",
+            "highlighted": "[ʈʰ]əɳɖaː",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "cʰ",
+            "example": "छत cʰət",
+            "highlighted": "[cʰ]ət",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "kʰ",
+            "example": "खाना kʰaːnaː",
+            "highlighted": "[kʰ]aːnaː",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "b",
+            "example": "बड़ा bəɽaː",
+            "highlighted": "[b]əɽaː",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "d̪",
+            "example": "दाल d̪aːl",
+            "highlighted": "[d̪]aːl",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɖ",
+            "example": "डाल ɖaːl",
+            "highlighted": "[ɖ]aːl",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɟ",
+            "example": "जल ɟəl",
+            "highlighted": "[ɟ]əl",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "g",
+            "example": "गाना gaːnaː",
+            "highlighted": "[g]aːnaː",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "bʱ",
+            "example": "भाई bʱaːiː",
+            "highlighted": "[bʱ]aːiː",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "d̪ʱ",
+            "example": "धन d̪ʱən",
+            "highlighted": "[d̪ʱ]ən",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɖʱ",
+            "example": "ढोल ɖʱoːl",
+            "highlighted": "[ɖʱ]oːl",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɟʱ",
+            "example": "झील ɟʱiːl",
+            "highlighted": "[ɟʱ]iːl",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "gʱ",
+            "example": "घर gʱər",
+            "highlighted": "[gʱ]ər",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Nasals (नासिक्य)",
+        "subtitle": "Five places of articulation",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "m",
+            "example": "माता maːt̪aː",
+            "highlighted": "[m]aːt̪aː",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "n",
+            "example": "नाक naːk",
+            "highlighted": "[n]aːk",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɳ",
+            "example": "पानी paːɳiː",
+            "highlighted": "paː[ɳ]iː",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɲ",
+            "example": "ज्ञान ɡjaːn",
+            "highlighted": "ɡ[ɲ]aːn",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ŋ",
+            "example": "रंग rəŋɡ",
+            "highlighted": "rə[ŋ]ɡ",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Fricatives & Approximants",
+        "subtitle": "Sonorants and continuants",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "s",
+            "example": "साथ saːt̪ʰ",
+            "highlighted": "[s]aːt̪ʰ",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʃ",
+            "example": "शहर ʃəɦər",
+            "highlighted": "[ʃ]əɦər",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɦ",
+            "example": "हाथ ɦaːt̪ʰ",
+            "highlighted": "[ɦ]aːt̪ʰ",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "l",
+            "example": "लाल laːl",
+            "highlighted": "[l]aːl",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "r",
+            "example": "राम raːm",
+            "highlighted": "[r]aːm",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɽ",
+            "example": "बड़ा bəɽaː",
+            "highlighted": "bə[ɽ]aː",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "j",
+            "example": "यह jəɦ",
+            "highlighted": "[j]əɦ",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʋ",
+            "example": "वह ʋəɦ",
+            "highlighted": "[ʋ]əɦ",
+            "needsSchwa": false
+          }
+        ]
+      }
+    ]
+  },
+  "korean": {
+    "name": "Korean (Seoul)",
+    "flag": "🇰🇷",
+    "defaultVoice": "female",
+    "sections": [
+      {
+        "title": "Vowels (모음)",
+        "subtitle": "Monophthongs",
+        "category": "vowel",
+        "cells": [
+          {
+            "ipa": "i",
+            "example": "이 i",
+            "highlighted": "[i]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "e",
+            "example": "에 e",
+            "highlighted": "[e]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɛ",
+            "example": "애 ɛ",
+            "highlighted": "[ɛ]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "a",
+            "example": "아 a",
+            "highlighted": "[a]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ʌ",
+            "example": "어 ʌ",
+            "highlighted": "[ʌ]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "o",
+            "example": "오 o",
+            "highlighted": "[o]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "u",
+            "example": "우 u",
+            "highlighted": "[u]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɯ",
+            "example": "으 ɯ",
+            "highlighted": "[ɯ]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "we",
+            "example": "웨 we",
+            "highlighted": "[we]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "wɛ",
+            "example": "왜 wɛ",
+            "highlighted": "[wɛ]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "wa",
+            "example": "와 wa",
+            "highlighted": "[wa]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "wʌ",
+            "example": "워 wʌ",
+            "highlighted": "[wʌ]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ø",
+            "example": "외 ø",
+            "highlighted": "[ø]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "y",
+            "example": "위 y",
+            "highlighted": "[y]",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Stops (파열음)",
+        "subtitle": "Three-way distinction: lenis/aspirated/fortis",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "p",
+            "example": "바다 pada",
+            "highlighted": "[p]ada",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "pʰ",
+            "example": "파도 pʰado",
+            "highlighted": "[pʰ]ado",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "p͈",
+            "example": "빠다 p͈ada",
+            "highlighted": "[p͈]ada",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "t",
+            "example": "다리 tari",
+            "highlighted": "[t]ari",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "tʰ",
+            "example": "타다 tʰada",
+            "highlighted": "[tʰ]ada",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "t͈",
+            "example": "따다 t͈ada",
+            "highlighted": "[t͈]ada",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "k",
+            "example": "가다 kada",
+            "highlighted": "[k]ada",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "kʰ",
+            "example": "카드 kʰadɯ",
+            "highlighted": "[kʰ]adɯ",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "k͈",
+            "example": "까다 k͈ada",
+            "highlighted": "[k͈]ada",
+            "needsSchwa": true
+          }
+        ]
+      },
+      {
+        "title": "Affricates (파찰음)",
+        "subtitle": "Three-way distinction",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "tɕ",
+            "example": "자다 tɕada",
+            "highlighted": "[tɕ]ada",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "tɕʰ",
+            "example": "차다 tɕʰada",
+            "highlighted": "[tɕʰ]ada",
+            "needsSchwa": true
+          },
+          {
+            "ipa": "t͈ɕ",
+            "example": "짜다 t͈ɕada",
+            "highlighted": "[t͈ɕ]ada",
+            "needsSchwa": true
+          }
+        ]
+      },
+      {
+        "title": "Fricatives (마찰음)",
+        "subtitle": "Plain and fortis",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "s",
+            "example": "사다 sada",
+            "highlighted": "[s]ada",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "s͈",
+            "example": "싸다 s͈ada",
+            "highlighted": "[s͈]ada",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "h",
+            "example": "하다 hada",
+            "highlighted": "[h]ada",
+            "needsSchwa": false
+          }
+        ]
+      },
+      {
+        "title": "Sonorants (공명음)",
+        "subtitle": "Nasals, liquids, approximants",
+        "category": "consonant",
+        "cells": [
+          {
+            "ipa": "m",
+            "example": "마다 mada",
+            "highlighted": "[m]ada",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "n",
+            "example": "나다 nada",
+            "highlighted": "[n]ada",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ŋ",
+            "example": "강 kaŋ",
+            "highlighted": "ka[ŋ]",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "l",
+            "example": "라디오 ladio",
+            "highlighted": "[l]adio",
+            "needsSchwa": false
+          },
+          {
+            "ipa": "ɾ",
+            "example": "가리 kaɾi",
+            "highlighted": "ka[ɾ]i",
+            "needsSchwa": false
+          }
+        ]
+      }
+    ]
+  }
+}
